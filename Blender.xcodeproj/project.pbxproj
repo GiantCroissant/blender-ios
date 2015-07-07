@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3E7C71B4BD8EA0062DA6E /* Podfile */; };
 		3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */; };
 		3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512E1B4BCDD700CA0134 /* ViewController.swift */; };
 		3BD751321B4BCDD700CA0134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751301B4BCDD700CA0134 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3BD751271B4BCDD700CA0134 /* Blender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD7512B1B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		3BD7511E1B4BCDD700CA0134 = {
 			isa = PBXGroup;
 			children = (
+				3BA3E7C71B4BD8EA0062DA6E /* Podfile */,
 				3BD751291B4BCDD700CA0134 /* Blender */,
 				3BD7513F1B4BCDD700CA0134 /* BlenderTests */,
 				3BD751281B4BCDD700CA0134 /* Products */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */,
 				3BD751321B4BCDD700CA0134 /* Main.storyboard in Resources */,
 				3BD751371B4BCDD700CA0134 /* LaunchScreen.xib in Resources */,
 				3BD751341B4BCDD700CA0134 /* Images.xcassets in Resources */,
@@ -411,6 +415,7 @@
 				3BD751481B4BCDD700CA0134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BD751491B4BCDD700CA0134 /* Build configuration list for PBXNativeTarget "BlenderTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				3BD7514B1B4BCDD700CA0134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
