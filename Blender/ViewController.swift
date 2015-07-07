@@ -10,16 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var youTubePlayer: YTPlayerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        youTubePlayer.loadWithVideoId("M7lc1UVf-VE", playerVars: ["playsinline" : 1])
     }
-
 
 }
 
