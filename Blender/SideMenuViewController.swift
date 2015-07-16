@@ -15,25 +15,21 @@ class SideMenuViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        customBackground = UIView()
-        customBackground.backgroundColor = cellSelectedColor
-
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "myCell")
     }
 
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        if (cell.selected) {
-            cell.backgroundColor = cellSelectedColor
-
-        } else {
-            cell.backgroundColor = tableView.backgroundColor
-        }
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! UITableViewCell
-        cell.selectedBackgroundView = customBackground
-        return cell
-    }
+//    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if (cell.selected) {
+//            cell.backgroundColor = cellSelectedColor
+//
+//        } else {
+//            cell.backgroundColor = tableView.backgroundColor
+//        }
+//    }
+//
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! UITableViewCell
+//        cell.selectedBackgroundView = customBackground
+//        return cell
+//    }
 
 }

@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -84,10 +85,40 @@
                         <sections>
                             <tableViewSection id="8Jh-vZ-jHY">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="nXr-2Q-nMf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" id="nXr-2Q-nMf">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nXr-2Q-nMf" id="EAP-wf-QcQ">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_head" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-uU-3pq">
+                                                    <rect key="frame" x="8" y="2" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="HTy-uU-3pq" secondAttribute="height" multiplier="1:1" id="Mkq-rW-JJO"/>
+                                                        <constraint firstAttribute="height" constant="40" id="onO-hh-aoB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8H-Py-66Z">
+                                                    <rect key="frame" x="56" y="11" width="46" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="R8H-Py-66Z" secondAttribute="height" multiplier="2:1" id="JGL-Jc-p87"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="JGL-Jc-p87"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="HTy-uU-3pq" firstAttribute="leading" secondItem="EAP-wf-QcQ" secondAttribute="leadingMargin" id="4g8-Pb-mKu"/>
+                                                <constraint firstAttribute="centerY" secondItem="HTy-uU-3pq" secondAttribute="centerY" id="Faf-xi-X5I"/>
+                                                <constraint firstItem="R8H-Py-66Z" firstAttribute="leading" secondItem="HTy-uU-3pq" secondAttribute="trailing" constant="8" id="QSp-ve-1GD"/>
+                                                <constraint firstAttribute="centerY" secondItem="R8H-Py-66Z" secondAttribute="centerY" id="TkL-Hu-AZU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.0" green="0.45751910779999999" blue="0.95892518940000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,6 +127,18 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1MQ-hD-bwn" id="Uhc-or-qLe">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食譜預覽" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arS-0d-eId">
+                                                    <rect key="frame" x="8" y="12.5" width="68" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="arS-0d-eId" secondAttribute="centerY" id="1nl-2u-xLz"/>
+                                                <constraint firstItem="arS-0d-eId" firstAttribute="leading" secondItem="Uhc-or-qLe" secondAttribute="leadingMargin" id="UIY-nL-zBB"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -103,6 +146,18 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DWq-yl-xJj" id="koa-1l-wDJ">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="個人專區" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18V-fg-NpP">
+                                                    <rect key="frame" x="8" y="12.5" width="68" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="18V-fg-NpP" firstAttribute="leading" secondItem="koa-1l-wDJ" secondAttribute="leadingMargin" id="9as-3Q-wYm"/>
+                                                <constraint firstAttribute="centerY" secondItem="18V-fg-NpP" secondAttribute="centerY" id="Bsu-Ng-cSm"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -110,6 +165,18 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MdL-Eb-EfR" id="KsD-vk-lx0">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="果汁機測試" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ds-4a-33t">
+                                                    <rect key="frame" x="8" y="12.5" width="85" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="9Ds-4a-33t" secondAttribute="centerY" id="0ru-Bc-QqZ"/>
+                                                <constraint firstItem="9Ds-4a-33t" firstAttribute="leading" secondItem="KsD-vk-lx0" secondAttribute="leadingMargin" id="ZOK-K7-jRj"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -117,6 +184,18 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GFG-Jw-GIh" id="YeG-Ez-UOS">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廠商介面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg4-OB-GSZ">
+                                                    <rect key="frame" x="8" y="12.5" width="68" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gg4-OB-GSZ" firstAttribute="leading" secondItem="YeG-Ez-UOS" secondAttribute="leadingMargin" id="kIR-Yg-FlQ"/>
+                                                <constraint firstAttribute="centerY" secondItem="Gg4-OB-GSZ" secondAttribute="centerY" id="uz8-wY-B9a"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -156,5 +235,6 @@
     </scenes>
     <resources>
         <image name="menu" width="22" height="22"/>
+        <image name="user_head" width="84" height="84"/>
     </resources>
 </document>
