@@ -10,15 +10,21 @@ import UIKit
 
 class SideMenuViewController: UITableViewController {
 
+    private var customBackground: UIView!
+    private let cellSelectedColor = UIColor.blackColor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        customBackground = UIView()
+        customBackground.backgroundColor = cellSelectedColor
 
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "myCell")
     }
 
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        if cell.selected {
-            cell.backgroundColor = UIColor.blackColor()
+        if (cell.selected) {
+            cell.backgroundColor = cellSelectedColor
+
         } else {
             cell.backgroundColor = tableView.backgroundColor
         }
@@ -26,9 +32,7 @@ class SideMenuViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! UITableViewCell
-        let selectedBackgroundView = UIView()
-        selectedBackgroundView.backgroundColor = UIColor.blackColor()
-        cell.selectedBackgroundView = selectedBackgroundView
+        cell.selectedBackgroundView = customBackground
         return cell
     }
 
