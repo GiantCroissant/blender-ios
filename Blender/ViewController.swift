@@ -10,12 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var youTubePlayer: YTPlayerView!
-    
+//    @IBOutlet weak var youTubePlayer: YTPlayerView!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        youTubePlayer.loadWithVideoId("M7lc1UVf-VE", playerVars: ["playsinline" : 1])
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+
+//        youTubePlayer.loadWithVideoId("M7lc1UVf-VE", playerVars: ["playsinline" : 1])
     }
 
 }
