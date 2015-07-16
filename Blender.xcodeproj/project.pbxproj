@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B3410251B572758008C975C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410241B572758008C975C /* SWRevealViewController.m */; };
+		3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410261B57B8BA008C975C /* SideMenuViewController.swift */; };
 		3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3E7C71B4BD8EA0062DA6E /* Podfile */; };
 		3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */; };
 		3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512E1B4BCDD700CA0134 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		2D827AD618992EF03EC498B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3B3410231B572758008C975C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3B3410241B572758008C975C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3B3410261B57B8BA008C975C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3BA3E7C91B4BDE450062DA6E /* Blender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blender-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BD751271B4BCDD700CA0134 /* Blender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blender.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */,
 				3BD7512E1B4BCDD700CA0134 /* ViewController.swift */,
 				3BD751301B4BCDD700CA0134 /* Main.storyboard */,
+				3B3410261B57B8BA008C975C /* SideMenuViewController.swift */,
 			);
 			path = Blender;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */,
 				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,
