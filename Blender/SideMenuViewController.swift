@@ -10,26 +10,33 @@ import UIKit
 
 class SideMenuViewController: UITableViewController {
 
-    private var customBackground: UIView!
-    private let cellSelectedColor = UIColor.blackColor()
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-//    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-//        if (cell.selected) {
-//            cell.backgroundColor = cellSelectedColor
-//
-//        } else {
-//            cell.backgroundColor = tableView.backgroundColor
-//        }
+//    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+//        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+//        selectedCell.contentView.backgroundColor = UIColor.blackColor()
+//        return indexPath
 //    }
-//
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! UITableViewCell
-//        cell.selectedBackgroundView = customBackground
-//        return cell
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.blackColor()
+    }
+
+    // if tableView is set in attribute inspector with selection to multiple Selection it should work.
+
+    // Just set it back in deselect
+
+//    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+//        var cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+//        cellToDeSelect.contentView.backgroundColor = UIColor.blackColor()
 //    }
+
+    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+        var cellToDeSelect:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        cellToDeSelect.contentView.backgroundColor = UIColor.blackColor()
+    }
 
 }

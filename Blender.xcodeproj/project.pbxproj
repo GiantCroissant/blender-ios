@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0BA6491B581E0D0044103F /* PersonalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BA6471B581E0D0044103F /* PersonalCollectionViewController.swift */; };
+		3B0BA64A1B581E0D0044103F /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BA6481B581E0D0044103F /* PersonalViewController.swift */; };
+		3B0BA64E1B5825240044103F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BA64D1B5825240044103F /* RecipeViewController.swift */; };
+		3B0BA6501B58257C0044103F /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BA64F1B58257C0044103F /* RecipeTableViewController.swift */; };
+		3B0BA6521B5829DB0044103F /* RecipeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BA6511B5829DB0044103F /* RecipeVideoViewController.swift */; };
+		3B0BA6541B582AFE0044103F /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BA6531B582AFE0044103F /* RecipeDetailsViewController.swift */; };
 		3B3410251B572758008C975C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410241B572758008C975C /* SWRevealViewController.m */; };
 		3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410261B57B8BA008C975C /* SideMenuViewController.swift */; };
 		3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3E7C71B4BD8EA0062DA6E /* Podfile */; };
@@ -16,7 +22,8 @@
 		3BD751341B4BCDD700CA0134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751331B4BCDD700CA0134 /* Images.xcassets */; };
 		3BD751371B4BCDD700CA0134 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */; };
 		3BD751431B4BCDD700CA0134 /* BlenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD751421B4BCDD700CA0134 /* BlenderTests.swift */; };
-		3BEE8A781B57ECB90009B132 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A771B57ECB90009B132 /* RecipeViewController.swift */; };
+		3BEE8A7A1B57FBE90009B132 /* BlenderTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A791B57FBE90009B132 /* BlenderTestViewController.swift */; };
+		3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */; };
 		7CDE6AA666902ED989B83C7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ED360A843EE41F7FEA355A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +39,12 @@
 
 /* Begin PBXFileReference section */
 		2D827AD618992EF03EC498B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0BA6471B581E0D0044103F /* PersonalCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCollectionViewController.swift; sourceTree = "<group>"; };
+		3B0BA6481B581E0D0044103F /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		3B0BA64D1B5825240044103F /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		3B0BA64F1B58257C0044103F /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		3B0BA6511B5829DB0044103F /* RecipeVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeVideoViewController.swift; sourceTree = "<group>"; };
+		3B0BA6531B582AFE0044103F /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		3B3410231B572758008C975C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3B3410241B572758008C975C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		3B3410261B57B8BA008C975C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +60,8 @@
 		3BD7513C1B4BCDD700CA0134 /* BlenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD751411B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD751421B4BCDD700CA0134 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
-		3BEE8A771B57ECB90009B132 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		3BEE8A791B57FBE90009B132 /* BlenderTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderTestViewController.swift; sourceTree = "<group>"; };
+		3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		3C9690D9914711358135D3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0ED360A843EE41F7FEA355A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0BA6461B581E0D0044103F /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				3B0BA6471B581E0D0044103F /* PersonalCollectionViewController.swift */,
+				3B0BA6481B581E0D0044103F /* PersonalViewController.swift */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		3B0BA64C1B5825240044103F /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				3B0BA64D1B5825240044103F /* RecipeViewController.swift */,
+				3B0BA64F1B58257C0044103F /* RecipeTableViewController.swift */,
+				3B0BA6511B5829DB0044103F /* RecipeVideoViewController.swift */,
+				3B0BA6531B582AFE0044103F /* RecipeDetailsViewController.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
 		3B3410221B572758008C975C /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +138,15 @@
 		3BD751291B4BCDD700CA0134 /* Blender */ = {
 			isa = PBXGroup;
 			children = (
-				3B3410221B572758008C975C /* SWRevealViewController */,
 				3BD7512A1B4BCDD700CA0134 /* Supporting Files */,
+				3B0BA6461B581E0D0044103F /* Personal */,
+				3B0BA64C1B5825240044103F /* Recipe */,
 				3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */,
 				3BD7512E1B4BCDD700CA0134 /* ViewController.swift */,
 				3BD751301B4BCDD700CA0134 /* Main.storyboard */,
 				3B3410261B57B8BA008C975C /* SideMenuViewController.swift */,
-				3BEE8A771B57ECB90009B132 /* RecipeViewController.swift */,
+				3BEE8A791B57FBE90009B132 /* BlenderTestViewController.swift */,
+				3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */,
 			);
 			path = Blender;
 			sourceTree = "<group>";
@@ -118,6 +154,7 @@
 		3BD7512A1B4BCDD700CA0134 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B3410221B572758008C975C /* SWRevealViewController */,
 				3BA3E7C91B4BDE450062DA6E /* Blender-Bridging-Header.h */,
 				3BD751331B4BCDD700CA0134 /* Images.xcassets */,
 				3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */,
@@ -296,11 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0BA6521B5829DB0044103F /* RecipeVideoViewController.swift in Sources */,
+				3B0BA6491B581E0D0044103F /* PersonalCollectionViewController.swift in Sources */,
 				3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */,
+				3BEE8A7A1B57FBE90009B132 /* BlenderTestViewController.swift in Sources */,
 				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,
-				3BEE8A781B57ECB90009B132 /* RecipeViewController.swift in Sources */,
+				3B0BA6541B582AFE0044103F /* RecipeDetailsViewController.swift in Sources */,
+				3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */,
+				3B0BA64A1B581E0D0044103F /* PersonalViewController.swift in Sources */,
+				3B0BA64E1B5825240044103F /* RecipeViewController.swift in Sources */,
+				3B0BA6501B58257C0044103F /* RecipeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

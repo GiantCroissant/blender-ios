@@ -8,11 +8,28 @@
 
 import UIKit
 
-class RecipeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RecipeViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var recentRecipesView: UIView!
+    @IBOutlet weak var hotRecipesView: UIView!
     
     var recipeDatas = [String]()
+
+    @IBAction func segmentValueChnaged(sender: UISegmentedControl) {
+        switch (sender.selectedSegmentIndex) {
+        case 0:
+            recentRecipesView.hidden = false
+            hotRecipesView.hidden = true
+            break;
+        case 1:
+            recentRecipesView.hidden = true
+            hotRecipesView.hidden = false
+            break;
+        default:
+            break;
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
