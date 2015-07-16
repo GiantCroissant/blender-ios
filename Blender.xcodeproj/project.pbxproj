@@ -16,6 +16,7 @@
 		3BD751341B4BCDD700CA0134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751331B4BCDD700CA0134 /* Images.xcassets */; };
 		3BD751371B4BCDD700CA0134 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */; };
 		3BD751431B4BCDD700CA0134 /* BlenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD751421B4BCDD700CA0134 /* BlenderTests.swift */; };
+		3BEE8A781B57ECB90009B132 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A771B57ECB90009B132 /* RecipeViewController.swift */; };
 		7CDE6AA666902ED989B83C7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ED360A843EE41F7FEA355A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		3BD7513C1B4BCDD700CA0134 /* BlenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD751411B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD751421B4BCDD700CA0134 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
+		3BEE8A771B57ECB90009B132 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		3C9690D9914711358135D3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0ED360A843EE41F7FEA355A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				3BD7512E1B4BCDD700CA0134 /* ViewController.swift */,
 				3BD751301B4BCDD700CA0134 /* Main.storyboard */,
 				3B3410261B57B8BA008C975C /* SideMenuViewController.swift */,
+				3BEE8A771B57ECB90009B132 /* RecipeViewController.swift */,
 			);
 			path = Blender;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,
+				3BEE8A781B57ECB90009B132 /* RecipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
