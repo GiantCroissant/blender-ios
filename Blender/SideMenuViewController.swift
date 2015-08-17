@@ -13,6 +13,7 @@ class SideMenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 
 //    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
 //        var selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!

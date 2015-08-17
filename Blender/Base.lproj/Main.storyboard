@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--食譜預覽-->
@@ -610,18 +611,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_blender_test" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-QK-PDT">
-                                <rect key="frame" x="37" y="72" width="300" height="300"/>
+                                <rect key="frame" x="62.5" y="209" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="CcF-cL-rUZ"/>
-                                    <constraint firstAttribute="width" secondItem="eYC-QK-PDT" secondAttribute="height" multiplier="1:1" id="fXG-W1-ckL"/>
+                                    <constraint firstAttribute="width" secondItem="eYC-QK-PDT" secondAttribute="height" multiplier="1:1" id="Sti-6w-gLR"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eYC-QK-PDT" firstAttribute="top" secondItem="S0q-fz-HuM" secondAttribute="bottom" constant="8" id="6Vd-UR-4lQ"/>
-                            <constraint firstItem="eYC-QK-PDT" firstAttribute="leading" secondItem="ytp-Gb-dOF" secondAttribute="leading" constant="37" id="DS0-GJ-aL7"/>
-                            <constraint firstAttribute="trailing" secondItem="eYC-QK-PDT" secondAttribute="trailing" constant="38" id="G9v-H9-bmZ"/>
+                            <constraint firstAttribute="centerX" secondItem="eYC-QK-PDT" secondAttribute="centerX" id="8Ev-g3-snK"/>
+                            <constraint firstAttribute="centerY" secondItem="eYC-QK-PDT" secondAttribute="centerY" id="WF2-fD-dxT"/>
+                            <constraint firstItem="eYC-QK-PDT" firstAttribute="width" secondItem="ytp-Gb-dOF" secondAttribute="width" multiplier="1:1.5" id="h7C-4f-XCl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="果汁機檢測" id="luV-vU-hPx">

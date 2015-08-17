@@ -43,7 +43,6 @@ class RecipeViewController: UIViewController {
         }
     }
 
-
     // MARK: UITableViewDataSource Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipeDatas.count
