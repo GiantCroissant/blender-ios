@@ -115,12 +115,6 @@ import UIKit
         var label = labels[selectedIndex]
         label.textColor = selectedLabelColor
 
-        // show selected highlight
-        //        self.thumbView.frame = CGRectMake(label.frame.origin.x,
-        //                                          label.frame.origin.y + label.frame.height - CGFloat(4),
-        //                                          label.frame.width,
-        //                                          4)
-
         UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: nil, animations: {
 
             self.selectedHighlightView.frame = CGRectMake(label.frame.origin.x,

@@ -16,18 +16,20 @@ class RecipeViewController: UIViewController {
     
     var recipeDatas = [String]()
 
-    @IBAction func segmentValueChnaged(sender: UISegmentedControl) {
-        switch (sender.selectedSegmentIndex) {
+    @IBAction func segmentValueChanged(sender: AYOSegmentedControl) {
+        switch (sender.selectedIndex) {
         case 0:
             recentRecipesView.hidden = false
             hotRecipesView.hidden = true
-            break;
+            break
+
         case 1:
             recentRecipesView.hidden = true
             hotRecipesView.hidden = false
-            break;
+            break
+
         default:
-            break;
+            break
         }
     }
 

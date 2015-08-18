@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         setupCustomNavigationBarColor()
-
+        setupCustomStatusBarColor()
         return true
     }
 
@@ -27,6 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearace.barStyle = UIBarStyle.Black
         navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.barTintColor = UIColor(rgba: "#7db343")
+    }
+
+    func setupCustomStatusBarColor() {
+
+//        var statusBar = UIView()
+//        statusBar.frame = CGRectMake(0, 0, 320, 20)
+//        statusBar.backgroundColor = UIColor(rgba: "#7db343")
+//        self.window?.rootViewController?.view.addSubview(statusBar)
+
+        var application = UIApplication.sharedApplication()
+        application.setStatusBarStyle(.LightContent, animated: true)
     }
 
     func applicationWillResignActive(application: UIApplication) {
