@@ -54,6 +54,11 @@
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontFamily" value="HelveticaNeue-Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item1" value="最近食譜"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item2" value="熱門食譜"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QhH-Kx-MN4"/>
@@ -270,19 +275,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nXr-2Q-nMf" id="EAP-wf-QcQ">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_head" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-uU-3pq">
-                                                    <rect key="frame" x="8" y="44" width="40" height="40"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-uU-3pq">
+                                                    <rect key="frame" x="10" y="30" width="60" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="HTy-uU-3pq" secondAttribute="height" multiplier="1:1" id="Mkq-rW-JJO"/>
-                                                        <constraint firstAttribute="height" constant="40" id="onO-hh-aoB"/>
+                                                        <constraint firstAttribute="width" secondItem="HTy-uU-3pq" secondAttribute="height" multiplier="1:1" id="uMz-Gx-MuW"/>
+                                                        <constraint firstAttribute="width" constant="60" id="wRB-7f-frT"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8H-Py-66Z">
-                                                    <rect key="frame" x="56" y="54" width="46" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test_user@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8H-Py-66Z">
+                                                    <rect key="frame" x="10" y="100.5" width="140" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="R8H-Py-66Z" secondAttribute="height" multiplier="2:1" id="JGL-Jc-p87"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
@@ -294,10 +299,10 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="HTy-uU-3pq" firstAttribute="leading" secondItem="EAP-wf-QcQ" secondAttribute="leadingMargin" id="4g8-Pb-mKu"/>
-                                                <constraint firstAttribute="centerY" secondItem="HTy-uU-3pq" secondAttribute="centerY" id="Faf-xi-X5I"/>
-                                                <constraint firstItem="R8H-Py-66Z" firstAttribute="leading" secondItem="HTy-uU-3pq" secondAttribute="trailing" constant="8" id="QSp-ve-1GD"/>
-                                                <constraint firstAttribute="centerY" secondItem="R8H-Py-66Z" secondAttribute="centerY" id="TkL-Hu-AZU"/>
+                                                <constraint firstAttribute="bottom" secondItem="R8H-Py-66Z" secondAttribute="bottom" constant="10" id="NaL-b8-Db6"/>
+                                                <constraint firstItem="HTy-uU-3pq" firstAttribute="top" secondItem="EAP-wf-QcQ" secondAttribute="top" constant="30" id="PTy-Y3-IAf"/>
+                                                <constraint firstItem="HTy-uU-3pq" firstAttribute="leading" secondItem="EAP-wf-QcQ" secondAttribute="leading" constant="10" id="ejO-RH-pH0"/>
+                                                <constraint firstItem="R8H-Py-66Z" firstAttribute="leading" secondItem="EAP-wf-QcQ" secondAttribute="leading" constant="10" id="t4x-sY-Vxz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -396,8 +401,8 @@
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
-                                                            <exclude reference="knY-95-7wj"/>
                                                             <exclude reference="0yg-26-ifw"/>
+                                                            <exclude reference="knY-95-7wj"/>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
@@ -435,8 +440,8 @@
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
-                                                            <exclude reference="bsg-ft-C5f"/>
                                                             <exclude reference="WiP-bF-tO9"/>
+                                                            <exclude reference="bsg-ft-C5f"/>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
@@ -1034,7 +1039,7 @@
         <image name="side_icon_recipe" width="44" height="44"/>
         <image name="side_icon_shop" width="44" height="44"/>
         <image name="side_icon_test" width="44" height="44"/>
-        <image name="user_head" width="84" height="84"/>
+        <image name="user_profile_icon" width="65" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JRu-xA-XMY"/>

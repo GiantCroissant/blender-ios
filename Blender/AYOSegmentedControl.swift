@@ -13,15 +13,34 @@ import UIKit
     private var labels = [UILabel]()
     var selectedHighlightView = UIView()
 
-    var items: [String] = ["最近食譜", "熱門食譜"] {
+    var items: [String] = ["Item 1", "Item 2"] {
         didSet {
             setupLabels()
+        }
+    }
+
+    @IBInspectable var count: Int = 0 {
+        didSet {
         }
     }
 
     var selectedIndex: Int = 0 {
         didSet {
             displayNewSelectedIndex()
+        }
+    }
+
+    @IBInspectable var item1: String = "Item 1" {
+        didSet {
+            items[0] = item1
+            setupLabels()
+        }
+    }
+
+    @IBInspectable var item2: String = "Item 2" {
+        didSet {
+            items[1] = item2
+            setupLabels()
         }
     }
 
@@ -163,12 +182,11 @@ import UIKit
         labels.removeAll(keepCapacity: true)
 
         for index in 1...items.count {
-
             let label = UILabel(frame: CGRectMake(0, 0, 70, 40))
             label.text = items[index - 1]
             label.backgroundColor = UIColor.clearColor()
             label.textAlignment = .Center
-            label.font = UIFont(name: "Avenir-Black", size: 15)
+            label.font = UIFont(name: fontFamily, size: fontSize)
             label.textColor = index == 1 ? selectedLabelColor : unselectedLabelColor
             label.setTranslatesAutoresizingMaskIntoConstraints(false)
             self.addSubview(label)
