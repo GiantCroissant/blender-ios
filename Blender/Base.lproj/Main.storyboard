@@ -19,18 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ype-O5-4BB" userLabel="熱門食譜">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
-                                <connections>
-                                    <segue destination="3ez-CD-qo2" kind="embed" id="jsk-Gv-5xv"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fah-T7-Qbb" userLabel="最近食譜">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
-                                <connections>
-                                    <segue destination="qI1-11-6qM" kind="embed" id="z2r-G9-86v"/>
-                                </connections>
-                            </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-cZ-8As" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="374.5" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,6 +52,18 @@
                                     <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QhH-Kx-MN4"/>
                                 </connections>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ype-O5-4BB" userLabel="熱門食譜">
+                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                                <connections>
+                                    <segue destination="3ez-CD-qo2" kind="embed" id="jsk-Gv-5xv"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fah-T7-Qbb" userLabel="最近食譜">
+                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                                <connections>
+                                    <segue destination="qI1-11-6qM" kind="embed" id="z2r-G9-86v"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -528,24 +528,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iyE-Nl-H6V">
-                                <rect key="frame" x="16" y="78" width="343" height="29"/>
-                                <segments>
-                                    <segment title="健康履歷"/>
-                                    <segment title="收藏"/>
-                                </segments>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-Ek-FcG" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ZBo-dh-cYo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.49019607840000001" green="0.70196078429999997" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLabelColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedLabelColor">
+                                        <color key="value" red="0.75686274509999996" green="0.82352941180000006" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="1" green="1" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamily" value="HelveticaNeue-Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item1" value="健康履歷"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item2" value="收藏"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="segmentValueChanged:" destination="nCS-l4-klM" eventType="valueChanged" id="XY2-ez-WuG"/>
+                                    <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="egD-JF-snP"/>
+                                    <action selector="segmentValueChanged:" destination="nCS-l4-klM" eventType="valueChanged" id="nWS-WW-diA"/>
                                 </connections>
-                            </segmentedControl>
+                            </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-s8-wpB" userLabel="收藏">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
                                 <connections>
                                     <segue destination="DxQ-AC-aux" kind="embed" id="CRY-Te-ngL"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sq-tX-X8q" userLabel="健康履歷容器">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
                                 <connections>
                                     <segue destination="pKY-mj-fLG" kind="embed" id="SN8-Pb-nfR"/>
                                 </connections>
@@ -553,17 +577,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hj4-8I-BfK" firstAttribute="top" secondItem="1sq-tX-X8q" secondAttribute="bottom" id="2xS-kB-6Hz"/>
-                            <constraint firstAttribute="trailing" secondItem="1sq-tX-X8q" secondAttribute="trailing" id="5KA-yR-wF0"/>
-                            <constraint firstItem="OFa-s8-wpB" firstAttribute="leading" secondItem="bxO-1e-kX4" secondAttribute="leading" id="6Qu-Fg-rMQ"/>
-                            <constraint firstItem="iyE-Nl-H6V" firstAttribute="top" secondItem="VPL-3u-EmZ" secondAttribute="bottom" constant="14" id="COg-p8-Ewu"/>
-                            <constraint firstItem="OFa-s8-wpB" firstAttribute="top" secondItem="iyE-Nl-H6V" secondAttribute="bottom" constant="14" id="H0V-Q7-EHh"/>
-                            <constraint firstItem="iyE-Nl-H6V" firstAttribute="leading" secondItem="bxO-1e-kX4" secondAttribute="leadingMargin" id="O9H-Gq-3cB"/>
-                            <constraint firstItem="1sq-tX-X8q" firstAttribute="top" secondItem="iyE-Nl-H6V" secondAttribute="bottom" constant="14" id="dzX-JK-1Z6"/>
-                            <constraint firstAttribute="trailing" secondItem="OFa-s8-wpB" secondAttribute="trailing" id="gAm-Fa-EsD"/>
-                            <constraint firstItem="1sq-tX-X8q" firstAttribute="leading" secondItem="bxO-1e-kX4" secondAttribute="leading" id="qIe-dC-7za"/>
-                            <constraint firstItem="hj4-8I-BfK" firstAttribute="top" secondItem="OFa-s8-wpB" secondAttribute="bottom" id="u8E-Hd-8vj"/>
-                            <constraint firstItem="iyE-Nl-H6V" firstAttribute="trailing" secondItem="bxO-1e-kX4" secondAttribute="trailingMargin" id="xk9-Vd-snJ"/>
+                            <constraint firstItem="1sq-tX-X8q" firstAttribute="top" secondItem="DTK-Ek-FcG" secondAttribute="bottom" id="0wU-Jw-c4N"/>
+                            <constraint firstItem="OFa-s8-wpB" firstAttribute="top" secondItem="DTK-Ek-FcG" secondAttribute="bottom" id="9AN-Ae-rhK"/>
+                            <constraint firstItem="OFa-s8-wpB" firstAttribute="leading" secondItem="bxO-1e-kX4" secondAttribute="leading" id="Glq-ee-ssq"/>
+                            <constraint firstAttribute="trailing" secondItem="OFa-s8-wpB" secondAttribute="trailing" id="Iyz-3o-5XZ"/>
+                            <constraint firstItem="DTK-Ek-FcG" firstAttribute="leading" secondItem="bxO-1e-kX4" secondAttribute="leading" id="Ook-EG-FL6"/>
+                            <constraint firstItem="1sq-tX-X8q" firstAttribute="leading" secondItem="bxO-1e-kX4" secondAttribute="leading" id="bra-Up-zjq"/>
+                            <constraint firstAttribute="trailing" secondItem="1sq-tX-X8q" secondAttribute="trailing" id="fQU-F0-eBt"/>
+                            <constraint firstAttribute="trailing" secondItem="DTK-Ek-FcG" secondAttribute="trailing" id="jE0-WI-7N6"/>
+                            <constraint firstItem="hj4-8I-BfK" firstAttribute="top" secondItem="1sq-tX-X8q" secondAttribute="bottom" id="jZY-xk-C6L"/>
+                            <constraint firstItem="hj4-8I-BfK" firstAttribute="top" secondItem="OFa-s8-wpB" secondAttribute="bottom" id="usq-e2-fmo"/>
+                            <constraint firstItem="DTK-Ek-FcG" firstAttribute="top" secondItem="VPL-3u-EmZ" secondAttribute="bottom" id="wud-c4-j6U"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="個人專區" id="ssC-34-fSP">

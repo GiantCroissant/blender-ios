@@ -14,24 +14,23 @@ class PersonalViewController: UIViewController {
     @IBOutlet weak var personalCollectionView: UIView!
     @IBOutlet weak var personalProfileView: UIView!
     
-    @IBAction func segmentValueChanged(sender: UISegmentedControl) {
-        switch (sender.selectedSegmentIndex) {
+    @IBAction func segmentValueChanged(sender: AYOSegmentedControl) {
+        switch (sender.selectedIndex) {
         case 0:
             personalProfileView.hidden = false
             personalCollectionView.hidden = true
-            break;
+            break
         case 1:
             personalProfileView.hidden = true
             personalCollectionView.hidden = false
-            break;
+            break
         default:
-            break;
+            break
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
