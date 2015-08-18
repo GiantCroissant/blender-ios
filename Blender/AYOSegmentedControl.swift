@@ -49,9 +49,21 @@ import UIKit
         }
     }
 
-    @IBInspectable var font: UIFont = UIFont.systemFontOfSize(12) {
+    @IBInspectable var fontSize: CGFloat = 13.0 {
         didSet {
             updateFont()
+        }
+    }
+
+    @IBInspectable var fontFamily: String = "DIN Light" {
+        didSet {
+            updateFont()
+        }
+    }
+
+    func updateFont() {
+        for item in labels {
+            item.font = UIFont(name: fontFamily, size: fontSize)
         }
     }
 
@@ -69,29 +81,19 @@ import UIKit
         }
     }
 
-    func updateFont(){
-        for item in labels {
-            item.font = font
-        }
-    }
-
     func updateBackgroundColor() {
         self.backgroundColor = bgColor
     }
 
-
     override init(frame: CGRect) {
         super.init(frame: frame)
-
         setupView()
     }
 
     required init(coder: NSCoder) {
         super.init(coder: coder)
-
         setupView()
     }
-
 
     override func layoutSubviews() {
         super.layoutSubviews()
