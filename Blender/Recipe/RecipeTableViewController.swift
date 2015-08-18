@@ -17,6 +17,8 @@ class RecipeTableViewController: UITableViewController {
 
         recipes = ["", "", "", "", "", "", "", "", "", ""]
 
+
+        self.tableView.contentInset = UIEdgeInsetsMake(5, 0, 5, 0)
     }
 
     // MARK: - Table view data source
