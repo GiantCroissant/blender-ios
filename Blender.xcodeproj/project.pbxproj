@@ -18,6 +18,8 @@
 		3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */; };
 		3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3E7C71B4BD8EA0062DA6E /* Podfile */; };
 		3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */; };
+		3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */; };
+		3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98D1B81E734002BC353 /* CardView.swift */; };
 		3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */; };
 		3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512E1B4BCDD700CA0134 /* ViewController.swift */; };
 		3BD751321B4BCDD700CA0134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751301B4BCDD700CA0134 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3BA3E7C91B4BDE450062DA6E /* Blender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blender-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderTestViewController.swift; sourceTree = "<group>"; };
+		3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYOSegmentedControl.swift; sourceTree = "<group>"; };
+		3BCBD98D1B81E734002BC353 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3BD751271B4BCDD700CA0134 /* Blender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD7512B1B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */,
 				3BD7512B1B4BCDD700CA0134 /* Info.plist */,
 				3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */,
+				3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */,
+				3BCBD98D1B81E734002BC353 /* CardView.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -336,9 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */,
 				3B0BA6521B5829DB0044103F /* RecipeVideoViewController.swift in Sources */,
 				3B0BA6491B581E0D0044103F /* PersonalCollectionViewController.swift in Sources */,
 				3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */,
+				3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */,
 				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
 				3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */,
