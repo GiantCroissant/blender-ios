@@ -14,18 +14,20 @@ class RecipeDetailsViewController: UIViewController {
     @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var stepsView: UIView!
 
-    @IBAction func segmentValueChanged(sender: UISegmentedControl) {
-        switch (sender.selectedSegmentIndex) {
+    @IBAction func segmentValueChanged(sender: AYOSegmentedControl) {
+        switch (sender.selectedIndex) {
         case 0:
             infoView.hidden = false
             videoView.hidden = true
             stepsView.hidden = true
             break
+
         case 1:
             infoView.hidden = true
             videoView.hidden = false
             stepsView.hidden = true
             break
+
         case 2:
             infoView.hidden = true
             videoView.hidden = true

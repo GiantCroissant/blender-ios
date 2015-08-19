@@ -13,14 +13,30 @@ import UIKit
     private var labels = [UILabel]()
     var selectedHighlightView = UIView()
 
-    var items: [String] = ["Item 1", "Item 2"] {
+    var items: [String] = ["1", "2", "3"] {
         didSet {
             setupLabels()
         }
     }
 
-    @IBInspectable var count: Int = 0 {
+    @IBInspectable var count: Int = 2 {
         didSet {
+            switch (count) {
+            case 1:
+                items = [item1]
+                break
+
+            case 2:
+                items = [item1, item2]
+                break
+
+            case 3:
+                items = [item1, item2, item3]
+                break
+
+            default:
+                break
+            }
         }
     }
 
@@ -32,15 +48,25 @@ import UIKit
 
     @IBInspectable var item1: String = "Item 1" {
         didSet {
-            items[0] = item1
-            setupLabels()
+            if (items.count > 0) {
+                items[0] = item1
+            }
         }
     }
 
     @IBInspectable var item2: String = "Item 2" {
         didSet {
-            items[1] = item2
-            setupLabels()
+            if (items.count > 1) {
+                items[1] = item2
+            }
+        }
+    }
+
+    @IBInspectable var item3: String = "Item 3" {
+        didSet {
+            if (items.count > 2) {
+                items[2] = item3
+            }
         }
     }
 
