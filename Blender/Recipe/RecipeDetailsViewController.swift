@@ -15,6 +15,7 @@ class RecipeDetailsViewController: UIViewController {
     @IBOutlet weak var stepsView: UIView!
 
     @IBAction func segmentValueChanged(sender: AYOSegmentedControl) {
+
         switch (sender.selectedIndex) {
         case 0:
             infoView.hidden = false
@@ -33,13 +34,10 @@ class RecipeDetailsViewController: UIViewController {
             videoView.hidden = true
             stepsView.hidden = false
             break
+
         default:
             break
         }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 
 }
