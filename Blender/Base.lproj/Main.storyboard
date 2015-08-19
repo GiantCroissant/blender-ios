@@ -81,6 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="食譜預覽" id="Nih-eV-tPn">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="xzv-To-bhc"/>
+                        <barButtonItem key="rightBarButtonItem" image="nav_icon_search" id="R5H-ci-VMP"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -768,6 +769,9 @@
                                         <constraint firstAttribute="trailing" secondItem="8yE-NQ-g3x" secondAttribute="trailing" constant="10" id="XZH-tu-tmp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="LKV-X4-zsH" kind="show" id="vSq-4L-U57"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1061,24 +1065,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20y-8L-vOm" userLabel="CardView" customClass="CardView" customModule="Blender" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="355" height="583"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_recipe" translatesAutoresizingMaskIntoConstraints="NO" id="nLs-Qm-ZIu">
-                                        <rect key="frame" x="0.0" y="310" width="355" height="262"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="nLs-Qm-ZIu" secondAttribute="height" multiplier="726:536" id="4NE-VJ-dXm"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD2-fz-5F5">
-                                        <rect key="frame" x="14" y="14" width="106" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_03" translatesAutoresizingMaskIntoConstraints="NO" id="shF-zN-hkv">
-                                        <rect key="frame" x="14" y="42" width="327" height="254"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="shF-zN-hkv" secondAttribute="height" multiplier="160:124" id="HI4-Yz-wDi"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS7-11-vot">
                                         <rect key="frame" x="315" y="8" width="32" height="32"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1090,26 +1076,38 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="雪梨香蕉汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD2-fz-5F5">
+                                        <rect key="frame" x="14" y="14" width="85" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_03" translatesAutoresizingMaskIntoConstraints="NO" id="shF-zN-hkv">
+                                        <rect key="frame" x="14" y="42" width="327" height="254"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="shF-zN-hkv" secondAttribute="height" multiplier="160:124" id="HI4-Yz-wDi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="demo_recipe" translatesAutoresizingMaskIntoConstraints="NO" id="nLs-Qm-ZIu">
+                                        <rect key="frame" x="0.0" y="312" width="355" height="271"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nLs-Qm-ZIu" secondAttribute="height" multiplier="355:271" id="c7i-vJ-jyF"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nLs-Qm-ZIu" secondAttribute="trailing" id="DAy-OX-RoQ"/>
                                     <constraint firstItem="iS7-11-vot" firstAttribute="top" secondItem="20y-8L-vOm" secondAttribute="top" constant="8" id="FDs-K3-yf8"/>
                                     <constraint firstItem="bD2-fz-5F5" firstAttribute="leading" secondItem="20y-8L-vOm" secondAttribute="leading" constant="14" id="HIb-2P-75R"/>
-                                    <constraint firstItem="nLs-Qm-ZIu" firstAttribute="top" secondItem="shF-zN-hkv" secondAttribute="bottom" constant="14" id="LQe-yF-CXJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="nLs-Qm-ZIu" secondAttribute="trailing" id="Qip-q4-Ag7"/>
+                                    <constraint firstItem="nLs-Qm-ZIu" firstAttribute="leading" secondItem="20y-8L-vOm" secondAttribute="leading" id="HTV-U4-bgA"/>
+                                    <constraint firstAttribute="bottom" secondItem="nLs-Qm-ZIu" secondAttribute="bottom" id="PWx-Pj-vyq"/>
                                     <constraint firstAttribute="trailing" secondItem="iS7-11-vot" secondAttribute="trailing" constant="8" id="UjF-Zb-LEc"/>
-                                    <constraint firstAttribute="leading" secondItem="nLs-Qm-ZIu" secondAttribute="leading" id="gKk-LM-b0Z"/>
                                     <constraint firstItem="shF-zN-hkv" firstAttribute="top" secondItem="bD2-fz-5F5" secondAttribute="bottom" constant="8" id="h6A-mX-vFl"/>
                                     <constraint firstAttribute="trailing" secondItem="shF-zN-hkv" secondAttribute="trailing" constant="14" id="ljX-uM-TCy"/>
                                     <constraint firstItem="bD2-fz-5F5" firstAttribute="top" secondItem="20y-8L-vOm" secondAttribute="top" constant="14" id="maO-vZ-njh"/>
                                     <constraint firstItem="shF-zN-hkv" firstAttribute="leading" secondItem="20y-8L-vOm" secondAttribute="leading" constant="14" id="qxD-Ze-eDv"/>
-                                    <constraint firstAttribute="bottom" secondItem="nLs-Qm-ZIu" secondAttribute="bottom" id="sSf-qB-M2G"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="sSf-qB-M2G"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1135,6 +1133,7 @@
         <image name="demo_steps" width="710" height="890"/>
         <image name="demo_youtube" width="760" height="1340"/>
         <image name="menu" width="22" height="22"/>
+        <image name="nav_icon_search" width="22" height="22"/>
         <image name="recipe" width="260" height="208"/>
         <image name="recipe_01" width="160" height="124"/>
         <image name="recipe_02" width="160" height="124"/>
@@ -1146,7 +1145,7 @@
         <image name="user_profile_icon" width="65" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qgd-nv-Z57"/>
+        <segue reference="vSq-4L-U57"/>
         <segue reference="JRu-xA-XMY"/>
     </inferredMetricsTieBreakers>
 </document>
