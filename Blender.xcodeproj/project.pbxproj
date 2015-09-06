@@ -27,6 +27,8 @@
 		3BD751371B4BCDD700CA0134 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */; };
 		3BD751431B4BCDD700CA0134 /* BlenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD751421B4BCDD700CA0134 /* BlenderTests.swift */; };
 		3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */; };
+		3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */; };
+		3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AA01B9C55E700490A0B /* OperationSetting.swift */; };
 		7CDE6AA666902ED989B83C7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ED360A843EE41F7FEA355A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		3BD751411B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD751421B4BCDD700CA0134 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
 		3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSetting.swift; sourceTree = "<group>"; };
+		3BF48AA01B9C55E700490A0B /* OperationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationSetting.swift; sourceTree = "<group>"; };
 		3C9690D9914711358135D3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0ED360A843EE41F7FEA355A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,6 +148,7 @@
 		3BD751291B4BCDD700CA0134 /* Blender */ = {
 			isa = PBXGroup;
 			children = (
+				3BF48A9D1B9C53DD00490A0B /* DeviceSetting */,
 				3BD7512A1B4BCDD700CA0134 /* Supporting Files */,
 				3B0BA6461B581E0D0044103F /* Personal */,
 				3B0BA64C1B5825240044103F /* Recipe */,
@@ -187,6 +192,15 @@
 				3BD751411B4BCDD700CA0134 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BF48A9D1B9C53DD00490A0B /* DeviceSetting */ = {
+			isa = PBXGroup;
+			children = (
+				3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */,
+				3BF48AA01B9C55E700490A0B /* OperationSetting.swift */,
+			);
+			path = DeviceSetting;
 			sourceTree = "<group>";
 		};
 		6D41EE14C10FEC76628DC859 /* Pods */ = {
@@ -342,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */,
 				3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */,
 				3B0BA6521B5829DB0044103F /* RecipeVideoViewController.swift in Sources */,
 				3B0BA6491B581E0D0044103F /* PersonalCollectionViewController.swift in Sources */,
@@ -349,6 +364,7 @@
 				3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */,
 				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
+				3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */,
 				3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,
 				3B0BA6541B582AFE0044103F /* RecipeDetailsViewController.swift in Sources */,
