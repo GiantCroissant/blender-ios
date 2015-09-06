@@ -29,6 +29,8 @@
 		3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */; };
 		3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */; };
 		3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AA01B9C55E700490A0B /* OperationSetting.swift */; };
+		3BF48AFF1B9CA21A00490A0B /* RecipeProduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */; };
+		3BF48B011B9CB59300490A0B /* RecipeProduceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */; };
 		7CDE6AA666902ED989B83C7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ED360A843EE41F7FEA355A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSetting.swift; sourceTree = "<group>"; };
 		3BF48AA01B9C55E700490A0B /* OperationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationSetting.swift; sourceTree = "<group>"; };
+		3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeProduceViewController.swift; sourceTree = "<group>"; };
+		3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeProduceTableViewCell.swift; sourceTree = "<group>"; };
 		3C9690D9914711358135D3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0ED360A843EE41F7FEA355A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +115,8 @@
 				3B0BA64F1B58257C0044103F /* RecipeTableViewController.swift */,
 				3B0BA6511B5829DB0044103F /* RecipeVideoViewController.swift */,
 				3B0BA6531B582AFE0044103F /* RecipeDetailsViewController.swift */,
+				3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */,
+				3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -371,6 +377,8 @@
 				3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */,
 				3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */,
 				3B0BA64A1B581E0D0044103F /* PersonalViewController.swift in Sources */,
+				3BF48AFF1B9CA21A00490A0B /* RecipeProduceViewController.swift in Sources */,
+				3BF48B011B9CB59300490A0B /* RecipeProduceTableViewCell.swift in Sources */,
 				3B0BA64E1B5825240044103F /* RecipeViewController.swift in Sources */,
 				3B0BA6501B58257C0044103F /* RecipeTableViewController.swift in Sources */,
 			);
