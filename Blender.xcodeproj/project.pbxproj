@@ -31,6 +31,8 @@
 		3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AA01B9C55E700490A0B /* OperationSetting.swift */; };
 		3BF48AFF1B9CA21A00490A0B /* RecipeProduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */; };
 		3BF48B011B9CB59300490A0B /* RecipeProduceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */; };
+		3BF48B031B9CDF6F00490A0B /* BlenderBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B021B9CDF6F00490A0B /* BlenderBluetoothManager.swift */; };
+		3BF48B051B9CE53700490A0B /* BLEDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B041B9CE53700490A0B /* BLEDeviceTableViewCell.swift */; };
 		7CDE6AA666902ED989B83C7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ED360A843EE41F7FEA355A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		3BF48AA01B9C55E700490A0B /* OperationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationSetting.swift; sourceTree = "<group>"; };
 		3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeProduceViewController.swift; sourceTree = "<group>"; };
 		3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeProduceTableViewCell.swift; sourceTree = "<group>"; };
+		3BF48B021B9CDF6F00490A0B /* BlenderBluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderBluetoothManager.swift; sourceTree = "<group>"; };
+		3BF48B041B9CE53700490A0B /* BLEDeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceTableViewCell.swift; sourceTree = "<group>"; };
 		3C9690D9914711358135D3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0ED360A843EE41F7FEA355A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,6 +168,7 @@
 				3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */,
 				3B3410261B57B8BA008C975C /* SideMenuViewController.swift */,
 				3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */,
+				3BF48B021B9CDF6F00490A0B /* BlenderBluetoothManager.swift */,
 			);
 			path = Blender;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			children = (
 				3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */,
 				3BF48AA01B9C55E700490A0B /* OperationSetting.swift */,
+				3BF48B041B9CE53700490A0B /* BLEDeviceTableViewCell.swift */,
 			);
 			path = DeviceSetting;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */,
+				3BF48B031B9CDF6F00490A0B /* BlenderBluetoothManager.swift in Sources */,
 				3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */,
 				3B0BA6521B5829DB0044103F /* RecipeVideoViewController.swift in Sources */,
 				3B0BA6491B581E0D0044103F /* PersonalCollectionViewController.swift in Sources */,
@@ -373,6 +380,7 @@
 				3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */,
 				3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,
+				3BF48B051B9CE53700490A0B /* BLEDeviceTableViewCell.swift in Sources */,
 				3B0BA6541B582AFE0044103F /* RecipeDetailsViewController.swift in Sources */,
 				3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */,
 				3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */,

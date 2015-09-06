@@ -8,12 +8,14 @@
 
 import UIKit
 
-class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, BlenderConnectionState {
 
     @IBOutlet weak var startBlendingBtn: UIButton!
     @IBOutlet weak var skipBlendingBtn: UIButton!
     @IBOutlet weak var confirmBtn: UIButton!
     @IBOutlet weak var completeBtn: UIButton!
+    @IBOutlet weak var connectBlenderSettingBtn: UIButton!
+    @IBOutlet weak var connectionStatusLabel: UILabel!
 
     let demoSteps = [
         "雪梨洗淨去皮，切成可放入榨汁機內 雪梨洗淨去皮，切成可放入榨汁機內",
@@ -27,10 +29,10 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     let demoSpeeds = [
         0,
         0,
-        2,
+        1, // 2
         0,
         0,
-        3
+        1  // 3
     ]
 
     let demoTimes = [
@@ -58,8 +60,20 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        BlenderBluetoothManager.sharedLoader.connectionDelegate = self
+        didUpdateState()
+
         setupCornerRadius()
         updateExcuteButton()
+    }
+
+    func didUpdateState() {
+        if (BlenderBluetoothManager.sharedLoader.connected) {
+            connectionStatusLabel.text = "已連結"
+
+        } else {
+            connectionStatusLabel.text = "未連結"
+        }
     }
 
     @IBAction func onCompleteBtnTouchUp(sender: UIButton) {
@@ -74,6 +88,11 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
 
     @IBAction func onStartBlendingBtnTouchUp(sender: UIButton) {
         println("StartBlending")
+
+        let time = demoTimes[currentStep]
+        let speed = demoSpeeds[currentStep]
+        BlenderBluetoothManager.sharedLoader.startBlending(time, speed: speed)
+
         completeStep()
     }
 
@@ -81,6 +100,7 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
         println("SkipBlending")
         completeStep()
     }
+
 
     func restartRecipe() {
         currentStep = 0
@@ -106,10 +126,17 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     }
 
     func updateExcuteButton() {
+        connectBlenderSettingBtn.hidden = true
         startBlendingBtn.hidden = true
         skipBlendingBtn.hidden = true
         confirmBtn.hidden = true
         completeBtn.hidden = true
+
+        // not connected 
+        if !BlenderBluetoothManager.sharedLoader.connected {
+            connectBlenderSettingBtn.hidden = false
+            return
+        }
 
         if currentStep == demoSteps.count {
             completeBtn.hidden = false
