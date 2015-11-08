@@ -11,12 +11,12 @@ import UIKit
 class SideMenuViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var cell = tableView.cellForRowAtIndexPath(indexPath)!
+        let cell = tableView.cellForRowAtIndexPath(indexPath)!
         cell.contentView.backgroundColor = UIColor(rgba: "#dceec8")
     }
 
     override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
-        var cell = tableView.cellForRowAtIndexPath(indexPath)!
+        let cell = tableView.cellForRowAtIndexPath(indexPath)!
         cell.contentView.backgroundColor = UIColor(rgba: "#dceec8")
     }
 

@@ -60,9 +60,9 @@ class BlenderBluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralD
         }
     }
 
-    func peripheral(peripheral: CBPeripheral!, didWriteValueForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
+    func peripheral(peripheral: CBPeripheral, didWriteValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
         if error != nil {
-            println(error)
+            print(error)
         }
     }
 
@@ -86,21 +86,21 @@ class BlenderBluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralD
         }
     }
 
-    func centralManagerDidUpdateState(central: CBCentralManager!) {
+    func centralManagerDidUpdateState(central: CBCentralManager) {
         if central.state == CBCentralManagerState.PoweredOn {
             central.scanForPeripheralsWithServices(nil, options: nil)
 
         } else {
-            println("Bluetooth switched off or not initialized")
+            print("Bluetooth switched off or not initialized")
         }
     }
 
-    func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
+    func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
 
         let deviceName = "ITRI_JUICER_v1.0"
         let nameOfDeviceFound = (advertisementData as NSDictionary).objectForKey(CBAdvertisementDataLocalNameKey) as? String
         if nameOfDeviceFound == deviceName {
-            if !contains(devices, peripheral) {
+            if !devices.contains(peripheral) {
                 devices.append(peripheral)
             }
             delegate?.didDiscoveredDevice()
@@ -115,7 +115,7 @@ class BlenderBluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralD
         centralManager.connectPeripheral(device, options: nil)
     }
 
-    func centralManager(central: CBCentralManager!, didConnectPeripheral peripheral: CBPeripheral!) {
+    func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         connected = true
         connectedDevice = peripheral
 
@@ -124,28 +124,28 @@ class BlenderBluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralD
         delegate?.didConnectedDevice()
     }
 
-    func peripheral(peripheral: CBPeripheral!, didDiscoverServices error: NSError!) {
+    func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
         if (error != nil) {
-            println(error)
+            print(error)
         }
-        for service in peripheral.services {
-            let thisService = service as! CBService
+        for service in peripheral.services! {
+            let thisService = service 
             if thisService.UUID == BLENDER_CONTROL_SERVICE_ID {
                 peripheral.discoverCharacteristics(nil, forService: thisService)
             }
         }
     }
 
-    func peripheral(peripheral: CBPeripheral!, didDiscoverCharacteristicsForService service: CBService!, error: NSError!) {
-        for characteristic in service.characteristics {
-            let thisCharacteristic = characteristic as! CBCharacteristic
+    func peripheral(peripheral: CBPeripheral, didDiscoverCharacteristicsForService service: CBService, error: NSError?) {
+        for characteristic in service.characteristics! {
+            let thisCharacteristic = characteristic 
             if thisCharacteristic.UUID == BLENDER_SETTING_CHARACTERISTIC_ID {
                 blenderSetting = thisCharacteristic
             }
         }
     }
 
-    func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
+    func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
         connected = false
         connectedDevice = nil
     }

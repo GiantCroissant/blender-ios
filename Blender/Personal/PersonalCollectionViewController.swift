@@ -28,7 +28,7 @@ class PersonalCollectionViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("collectionCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("collectionCell", forIndexPath: indexPath) 
 
         // Configure the cell...
 
@@ -41,7 +41,7 @@ class PersonalCollectionViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
-            var refreshAlert = UIAlertController(title: "刪除收藏", message: "確定要刪除此筆收藏？", preferredStyle: UIAlertControllerStyle.Alert)
+            let refreshAlert = UIAlertController(title: "刪除收藏", message: "確定要刪除此筆收藏？", preferredStyle: UIAlertControllerStyle.Alert)
 
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
 

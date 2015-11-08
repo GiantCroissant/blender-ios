@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func setupCustomNavigationBarColor() {
-        var navigationBarAppearace = UINavigationBar.appearance()
+        let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.barStyle = UIBarStyle.Black
         navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.barTintColor = UIColor(rgba: "#7db343")
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        statusBar.backgroundColor = UIColor(rgba: "#7db343")
 //        self.window?.rootViewController?.view.addSubview(statusBar)
 
-        var application = UIApplication.sharedApplication()
+        let application = UIApplication.sharedApplication()
         application.setStatusBarStyle(.LightContent, animated: true)
     }
 

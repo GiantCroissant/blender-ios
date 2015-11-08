@@ -36,7 +36,7 @@ class OperationSetting: UIViewController, UIPickerViewDataSource, UIPickerViewDe
 
     func checkBlenderConnection() {
         if (!BlenderBluetoothManager.sharedLoader.connected) {
-            var alert = UIAlertController(title: "未連接果汁機", message: "請先至連線設定頁面連接果汁機", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "未連接果汁機", message: "請先至連線設定頁面連接果汁機", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
@@ -120,7 +120,7 @@ class OperationSetting: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         return 0
     }
 
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(row + 1)
     }
 

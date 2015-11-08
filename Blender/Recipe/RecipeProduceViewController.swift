@@ -77,17 +77,17 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     }
 
     @IBAction func onCompleteBtnTouchUp(sender: UIButton) {
-        println("Complete")
+        print("Complete")
         restartRecipe()
     }
 
     @IBAction func onConfirmBtnTouchUp(sender: UIButton) {
-        println("Confirm")
+        print("Confirm")
         completeStep()
     }
 
     @IBAction func onStartBlendingBtnTouchUp(sender: UIButton) {
-        println("StartBlending")
+        print("StartBlending")
 
         let time = demoTimes[currentStep]
         let speed = demoSpeeds[currentStep]
@@ -97,7 +97,7 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     }
 
     @IBAction func onSkipBlendingBtnTouchUp(sender: UIButton) {
-        println("SkipBlending")
+        print("SkipBlending")
         completeStep()
     }
 
