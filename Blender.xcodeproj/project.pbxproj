@@ -26,6 +26,7 @@
 		3BD751341B4BCDD700CA0134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751331B4BCDD700CA0134 /* Images.xcassets */; };
 		3BD751371B4BCDD700CA0134 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */; };
 		3BD751431B4BCDD700CA0134 /* BlenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD751421B4BCDD700CA0134 /* BlenderTests.swift */; };
+		3BE624371BFCA6E600B3FD6D /* CompanyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE624361BFCA6E600B3FD6D /* CompanyInfoViewController.swift */; };
 		3BEE8A7C1B57FD0A0009B132 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */; };
 		3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */; };
 		3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AA01B9C55E700490A0B /* OperationSetting.swift */; };
@@ -73,6 +74,7 @@
 		3BD7513C1B4BCDD700CA0134 /* BlenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD751411B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD751421B4BCDD700CA0134 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
+		3BE624361BFCA6E600B3FD6D /* CompanyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyInfoViewController.swift; path = Blender/CompanyInfo/CompanyInfoViewController.swift; sourceTree = SOURCE_ROOT; };
 		3BEE8A7B1B57FD0A0009B132 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSetting.swift; sourceTree = "<group>"; };
 		3BF48AA01B9C55E700490A0B /* OperationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationSetting.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		3BD751291B4BCDD700CA0134 /* Blender */ = {
 			isa = PBXGroup;
 			children = (
+				3BE624351BFCA64900B3FD6D /* CompanyInfo */,
 				3BF48A9D1B9C53DD00490A0B /* DeviceSetting */,
 				3BD7512A1B4BCDD700CA0134 /* Supporting Files */,
 				3B0BA6461B581E0D0044103F /* Personal */,
@@ -203,6 +206,15 @@
 				3BD751411B4BCDD700CA0134 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BE624351BFCA64900B3FD6D /* CompanyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3BE624361BFCA6E600B3FD6D /* CompanyInfoViewController.swift */,
+			);
+			name = CompanyInfo;
+			path = Recipe/CompanyInfo;
 			sourceTree = "<group>";
 		};
 		3BF48A9D1B9C53DD00490A0B /* DeviceSetting */ = {
@@ -279,6 +291,7 @@
 		3BD7511F1B4BCDD700CA0134 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = GiantCroissant;
 				TargetAttributes = {
@@ -390,6 +403,7 @@
 				3B0BA6521B5829DB0044103F /* RecipeVideoViewController.swift in Sources */,
 				3B0BA6491B581E0D0044103F /* PersonalCollectionViewController.swift in Sources */,
 				3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */,
+				3BE624371BFCA6E600B3FD6D /* CompanyInfoViewController.swift in Sources */,
 				3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */,
 				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
