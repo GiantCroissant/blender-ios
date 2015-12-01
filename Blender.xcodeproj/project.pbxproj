@@ -59,7 +59,7 @@
 		3B3410241B572758008C975C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		3B3410261B57B8BA008C975C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BA3E7C91B4BDE450062DA6E /* Blender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blender-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderTestViewController.swift; sourceTree = "<group>"; };
 		3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYOSegmentedControl.swift; sourceTree = "<group>"; };
@@ -160,9 +160,9 @@
 		3BD751291B4BCDD700CA0134 /* Blender */ = {
 			isa = PBXGroup;
 			children = (
+				3BD7512A1B4BCDD700CA0134 /* Supporting Files */,
 				3BE624351BFCA64900B3FD6D /* CompanyInfo */,
 				3BF48A9D1B9C53DD00490A0B /* DeviceSetting */,
-				3BD7512A1B4BCDD700CA0134 /* Supporting Files */,
 				3B0BA6461B581E0D0044103F /* Personal */,
 				3B0BA64C1B5825240044103F /* Recipe */,
 				3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */,

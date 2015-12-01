@@ -15,10 +15,6 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
     @IBOutlet weak var recentRecipesView: UIView!
     @IBOutlet weak var hotRecipesView: UIView!
     @IBOutlet weak var segmentedControlView: AYOSegmentedControl!
-    
-
-    var recentRecipesVC: RecipeTableViewController!
-    var hotRecipesVC: RecipeTableViewController!
 
     var resultSearchController = UISearchController()
 
@@ -92,21 +88,6 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
 
-        for vc in self.childViewControllers
-        {
-            if vc.isKindOfClass(RecipeTableViewController)
-            {
-                print("hello world : \(vc.title)")
-                if let name = vc.title
-                {
-                    if name == "recent"
-                    {
-                        recentRecipesVC = vc as! RecipeTableViewController
-                    }
-                }
-            }
-        }
-
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
         self.resultSearchController.delegate = self
@@ -164,8 +145,6 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
-
-        print("test")
         self.resultSearchController.active = false;
         self.tableView.tableHeaderView = nil
         self.tableView.hidden = true
