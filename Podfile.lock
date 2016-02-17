@@ -1,10 +1,13 @@
 PODS:
+  - Gloss (0.6.2)
   - youtube-ios-player-helper (0.1.5)
 
 DEPENDENCIES:
+  - Gloss (~> 0.6)
   - youtube-ios-player-helper (~> 0.1.4)
 
 SPEC CHECKSUMS:
+  Gloss: 22fd970682b5449e08e2f41c5087eefe7d7d084b
   youtube-ios-player-helper: 8706bb155ffee74fbe5f2f5cf41c2dafe60dc155
 
 COCOAPODS: 0.39.0

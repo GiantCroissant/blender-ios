@@ -10,52 +10,34 @@ import UIKit
 
 class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchControllerDelegate, UISearchBarDelegate, UITableViewDataSource
 {
+    @IBOutlet weak var segmentedControlView: AYOSegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var recentRecipesView: UIView!
     @IBOutlet weak var hotRecipesView: UIView!
-    @IBOutlet weak var segmentedControlView: AYOSegmentedControl!
 
-    var resultSearchController = UISearchController()
-
+    var resultSearchController: UISearchController!
     var recipeDatas = [String]()
     var filteredRecipeDatas = [String]()
 
     @IBAction func searchActive(sender: UIBarButtonItem)
     {
-        self.tableView.hidden = false
-        self.resultSearchController.active = true;
+        resultSearchController.active = true;
+        tableView.hidden = false
     }
 
     func presentSearchController(searchController: UISearchController)
     {
-        self.tableView.tableHeaderView = self.resultSearchController.searchBar
-        self.resultSearchController.searchBar.becomeFirstResponder()
+        tableView.tableHeaderView = resultSearchController.searchBar
+        resultSearchController.searchBar.becomeFirstResponder()
     }
 
     func searchBarCancelButtonClicked(searchBar: UISearchBar)
     {
-        self.resultSearchController.active = false;
-        self.tableView.tableHeaderView = nil
-        self.tableView.hidden = true
+        resultSearchController.active = false;
+        tableView.tableHeaderView = nil
+        tableView.hidden = true
     }
-
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)
-    {
-        print("selectedScope \(selectedScope)")
-    }
-
-
-//    func searchBarResultsListButtonClicked(searchBar: UISearchBar)
-//    {
-//        print("test")
-//
-//        self.resultSearchController.active = false;
-//        self.tableView.tableHeaderView = nil
-//        self.tableView.hidden = true
-//
-//        self.performSegueWithIdentifier("toRecipeDetail", sender: nil)
-//    }
 
     @IBAction func segmentValueChanged(sender: AYOSegmentedControl)
     {
@@ -75,30 +57,39 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
         }
     }
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        self.tableView.hidden = true
-
-        recipeDatas = ["蘋果汁", "蘋果奇異果汁", "蘋果鳳梨汁", "", "", "", "", "", "", ""]
-
-        if self.revealViewController() != nil {
+        tableView.hidden = true
+        recipeDatas = ["aaa", "bbb", "ccc", "", "", "", "", "", "", ""]
+        if revealViewController() != nil
+        {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
 
-        self.resultSearchController = UISearchController(searchResultsController: nil)
-        self.resultSearchController.searchResultsUpdater = self
-        self.resultSearchController.delegate = self
-        self.resultSearchController.searchBar.delegate = self
+        resultSearchController = UISearchController(searchResultsController: nil)
+        resultSearchController.searchResultsUpdater = self
+        resultSearchController.delegate = self
+        resultSearchController.searchBar.delegate = self
+        resultSearchController.dimsBackgroundDuringPresentation = false
+        resultSearchController.searchBar.sizeToFit()
+        resultSearchController.searchBar.barTintColor = UIColor(rgba: "#7db343")
+        resultSearchController.searchBar.tintColor = UIColor(rgba: "#FFFFFF")
+    }
 
-        self.resultSearchController.dimsBackgroundDuringPresentation = false
-        self.resultSearchController.searchBar.sizeToFit()
+    /*
+        Fix iOS bug :
 
-        self.resultSearchController.searchBar.barTintColor = UIColor(rgba: "#7db343")
-
-        self.resultSearchController.searchBar.tintColor = UIColor(rgba: "#FFFFFF")
+        "Attempting to load the view of a view controller
+            while it is deallocating is not allowed and may result in undefined behavior"
+    
+        reference URL : http://goo.gl/g6OnkO
+    */
+    deinit
+    {
+        self.resultSearchController.view.removeFromSuperview()
     }
 
     func updateSearchResultsForSearchController(searchController: UISearchController)
@@ -117,40 +108,39 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        if self.resultSearchController.active
+        if resultSearchController.active
         {
-            return self.filteredRecipeDatas.count
+            return filteredRecipeDatas.count
         }
         else
         {
-            return self.recipeDatas.count
+            return recipeDatas.count
         }
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-
-        if self.resultSearchController.active
+        if resultSearchController.active
         {
-            cell.textLabel?.text = self.filteredRecipeDatas[indexPath.row]
+            cell.textLabel?.text = filteredRecipeDatas[indexPath.row]
         }
         else
         {
-            cell.textLabel?.text = self.recipeDatas[indexPath.row]
+//            cell.textLabel?.text = self.recipeDatas[indexPath.row]
+            cell.textLabel?.text = ""
         }
-
         return cell
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        resultSearchController.active = false
+        tableView.tableHeaderView = nil
+        tableView.hidden = true
 
-        self.resultSearchController.active = false;
-        self.tableView.tableHeaderView = nil
-        self.tableView.hidden = true
-
-        self.navigationController?.pushViewController((self.storyboard?.instantiateViewControllerWithIdentifier("storyBoardIdentifier"))!, animated: true)
-
+        let vc = (self.storyboard?.instantiateViewControllerWithIdentifier("storyBoardIdentifier"))!
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
