@@ -16,13 +16,13 @@
 		3B3410251B572758008C975C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410241B572758008C975C /* SWRevealViewController.m */; };
 		3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410261B57B8BA008C975C /* SideMenuViewController.swift */; };
 		3B48AEB21C747C3500FF4E11 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B48AEB11C747C3500FF4E11 /* data.json */; };
+		3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48AEB41C74920D00FF4E11 /* Recipe.swift */; };
 		3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */; };
 		3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3E7C71B4BD8EA0062DA6E /* Podfile */; };
 		3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */; };
 		3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */; };
 		3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98D1B81E734002BC353 /* CardView.swift */; };
 		3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */; };
-		3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7512E1B4BCDD700CA0134 /* ViewController.swift */; };
 		3BD751321B4BCDD700CA0134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751301B4BCDD700CA0134 /* Main.storyboard */; };
 		3BD751341B4BCDD700CA0134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751331B4BCDD700CA0134 /* Images.xcassets */; };
 		3BD751371B4BCDD700CA0134 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD751351B4BCDD700CA0134 /* LaunchScreen.xib */; };
@@ -61,6 +61,7 @@
 		3B3410241B572758008C975C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		3B3410261B57B8BA008C975C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		3B48AEB11C747C3500FF4E11 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		3B48AEB41C74920D00FF4E11 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BA3E7C91B4BDE450062DA6E /* Blender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blender-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		3BD751271B4BCDD700CA0134 /* Blender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD7512B1B4BCDD700CA0134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BD7512E1B4BCDD700CA0134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BD751311B4BCDD700CA0134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BD751331B4BCDD700CA0134 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BD751361B4BCDD700CA0134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -146,6 +146,14 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		3B48AEB31C7491E200FF4E11 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B48AEB41C74920D00FF4E11 /* Recipe.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		3BD7511E1B4BCDD700CA0134 = {
 			isa = PBXGroup;
 			children = (
@@ -170,13 +178,13 @@
 		3BD751291B4BCDD700CA0134 /* Blender */ = {
 			isa = PBXGroup;
 			children = (
+				3B48AEB31C7491E200FF4E11 /* Data */,
 				3BD7512A1B4BCDD700CA0134 /* Supporting Files */,
 				3BE624351BFCA64900B3FD6D /* CompanyInfo */,
 				3BF48A9D1B9C53DD00490A0B /* DeviceSetting */,
 				3B0BA6461B581E0D0044103F /* Personal */,
 				3B0BA64C1B5825240044103F /* Recipe */,
 				3BD7512C1B4BCDD700CA0134 /* AppDelegate.swift */,
-				3BD7512E1B4BCDD700CA0134 /* ViewController.swift */,
 				3BD751301B4BCDD700CA0134 /* Main.storyboard */,
 				3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */,
 				3B3410261B57B8BA008C975C /* SideMenuViewController.swift */,
@@ -418,8 +426,8 @@
 				3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */,
 				3BE624371BFCA6E600B3FD6D /* CompanyInfoViewController.swift in Sources */,
 				3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */,
-				3BD7512F1B4BCDD700CA0134 /* ViewController.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
+				3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */,
 				3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */,
 				3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,

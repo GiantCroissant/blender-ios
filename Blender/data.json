@@ -1,10 +1,12 @@
 {
-  "recipesCollection": [
+  "recipesCollection":
+  [
     {
       "id": "b138cca5-9b88-4d93-9a0c-9f89b7420fdb",
       "title": "苦瓜降壓汁",
       "image": "1-1",
-      "ingredients": [
+      "ingredients":
+      [
         {
           "name": "苦瓜",
           "exactMeasurement": true,
