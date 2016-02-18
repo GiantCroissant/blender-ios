@@ -32,6 +32,19 @@ class CardView: UIView {
 
 }
 
+@IBDesignable
+class ClipView: UIView {
+
+  var cornerRadius: CGFloat = 2
+
+  override func layoutSubviews() {
+    layer.cornerRadius = cornerRadius
+    layer.masksToBounds = true
+  }
+
+
+}
+
 //import UIKit
 //
 //class CardView: UIView {
