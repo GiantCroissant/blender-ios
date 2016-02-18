@@ -108,7 +108,8 @@ import UIKit
 
     func updateFont() {
         for item in labels {
-            item.font = UIFont(name: fontFamily, size: fontSize)
+//            item.font = UIFont(name: fontFamily, size: fontSize)
+          item.font = UIFont.boldSystemFontOfSize(fontSize)
         }
     }
 

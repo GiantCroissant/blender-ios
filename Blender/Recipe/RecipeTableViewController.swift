@@ -9,23 +9,11 @@
 import UIKit
 
 class RecipeTableViewController: UITableViewController {
-
   var recipes = [Recipe]()
-
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // custom UI
-    self.tableView.contentInset = UIEdgeInsetsMake(5, 0, 5, 0)
-
-    // load recipe datas
     recipes = RecipeManager.sharedInstance.loadRecipes()
-  }
-
-  // MARK: - Table view data source
-  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 1
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,7 +27,6 @@ class RecipeTableViewController: UITableViewController {
     cell.updateUI(recipe)
     return cell
   }
-
 }
 
 
@@ -52,17 +39,8 @@ class RecipeCell: UITableViewCell {
     title.text = recipe.title
   }
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
-  }
-
-  override func setSelected(selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-  }
-
   override func setHighlighted(highlighted: Bool, animated: Bool) {
     if (highlighted) {
-
       UIView.animateWithDuration(0.1) {
         self.transform = CGAffineTransformMakeScale(0.95, 0.95)
         self.alpha = 0.8
@@ -73,6 +51,7 @@ class RecipeCell: UITableViewCell {
         self.transform = CGAffineTransformMakeScale(1, 1)
         self.alpha = 1.0
       }
+
     }
   }
 
