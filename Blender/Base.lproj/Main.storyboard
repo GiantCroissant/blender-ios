@@ -1281,10 +1281,10 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
             </objects>
             <point key="canvasLocation" x="3122.5" y="-211.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Info View Controller-->
         <scene sceneID="RE3-k3-cud">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="mB0-wd-UGh" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="mB0-wd-UGh" customClass="RecipeInfoViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DHX-0s-dNT"/>
                         <viewControllerLayoutGuide type="bottom" id="Oy1-PK-dF7"/>

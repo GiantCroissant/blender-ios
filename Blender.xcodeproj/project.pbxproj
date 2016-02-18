@@ -21,6 +21,7 @@
 		3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48AEB41C74920D00FF4E11 /* Recipe.swift */; };
 		3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */; };
 		3BA3E7C81B4BD8EA0062DA6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3E7C71B4BD8EA0062DA6E /* Podfile */; };
+		3BC01CD41C76837B00867841 /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC01CD31C76837B00867841 /* RecipeInfoViewController.swift */; };
 		3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */; };
 		3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */; };
 		3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98D1B81E734002BC353 /* CardView.swift */; };
@@ -69,6 +70,7 @@
 		3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3BA3E7C71B4BD8EA0062DA6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3BA3E7C91B4BDE450062DA6E /* Blender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blender-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BC01CD31C76837B00867841 /* RecipeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeInfoViewController.swift; sourceTree = "<group>"; };
 		3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderTestViewController.swift; sourceTree = "<group>"; };
 		3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYOSegmentedControl.swift; sourceTree = "<group>"; };
 		3BCBD98D1B81E734002BC353 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				3B0BA6531B582AFE0044103F /* RecipeDetailsViewController.swift */,
 				3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */,
 				3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */,
+				3BC01CD31C76837B00867841 /* RecipeInfoViewController.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */,
 				3B0BA64A1B581E0D0044103F /* PersonalViewController.swift in Sources */,
 				3BF48AFF1B9CA21A00490A0B /* RecipeProduceViewController.swift in Sources */,
+				3BC01CD41C76837B00867841 /* RecipeInfoViewController.swift in Sources */,
 				3BF48B011B9CB59300490A0B /* RecipeProduceTableViewCell.swift in Sources */,
 				3B0BA64E1B5825240044103F /* RecipeViewController.swift in Sources */,
 				3B0BA6501B58257C0044103F /* RecipeTableViewController.swift in Sources */,
