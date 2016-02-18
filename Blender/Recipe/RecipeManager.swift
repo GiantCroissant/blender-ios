@@ -12,13 +12,11 @@ class RecipeManager {
   static let sharedInstance = RecipeManager()
 
   private let userDefaults = NSUserDefaults.standardUserDefaults()
-  private var collectionIds: [Int]
+  private var collectionIds = [Int]()
 
   init() {
     if userDefaults.arrayForKey("collection") == nil {
-      let emptyCollection = [Int]()
-      userDefaults.setObject(emptyCollection, forKey: "collection")
-      print("adding empty collection")
+      updateUserDefaults()
     }
     collectionIds = userDefaults.arrayForKey("collection") as! [Int]
   }
@@ -27,10 +25,35 @@ class RecipeManager {
     return collectionIds
   }
 
-  func saveCollection(recipeId recipeId: Int) {
-    collectionIds.append(recipeId)
-    userDefaults.setObject(collectionIds, forKey: "collection")
-    print("collection saved: \(recipeId)")
+  func collectRecipe(recipeId: Int) {
+    if collectionIds.contains(recipeId) {
+      collectionIds.removeObject(recipeId)
+      updateUserDefaults()
+
+    } else {
+      collectionIds.append(recipeId)
+      updateUserDefaults()
+    }
   }
-  
+
+  private func updateUserDefaults() {
+    userDefaults.setObject(collectionIds, forKey: "collection")
+  }
+
+}
+
+// Swift 2 Array Extension
+extension Array where Element: Equatable {
+
+  mutating func removeObject(object: Element) {
+    if let index = self.indexOf(object) {
+      self.removeAtIndex(index)
+    }
+  }
+
+  mutating func removeObjectsInArray(array: [Element]) {
+    for object in array {
+      self.removeObject(object)
+    }
+  }
 }

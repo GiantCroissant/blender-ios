@@ -19,7 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let ids = RecipeManager.sharedInstance.getCollectionRecipeIds()
     print("collection ids = \(ids)")
-
+    RecipeManager.sharedInstance.collectRecipe(1)
+    RecipeManager.sharedInstance.collectRecipe(1)
+    RecipeManager.sharedInstance.collectRecipe(1)
+    RecipeManager.sharedInstance.collectRecipe(2)
+    RecipeManager.sharedInstance.collectRecipe(3)
 
     setupCustomNavigationBarColor()
     setupCustomStatusBarColor()
@@ -73,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
-
+  
+  
 }
 
