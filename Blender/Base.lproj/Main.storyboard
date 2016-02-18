@@ -1293,63 +1293,97 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20y-8L-vOm" userLabel="CardView" customClass="CardView" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="355" height="599"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-qM-Nj0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS7-11-vot">
-                                        <rect key="frame" x="315" y="8" width="32" height="32"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-On-cCS" userLabel="Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="311.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIx-Vo-zyF" userLabel="CardView" customClass="CardView" customModule="Blender" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="16" width="343" height="279.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-1o-iHn">
+                                                        <rect key="frame" x="295" y="11" width="32" height="32"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="32" id="Lsl-HR-szb"/>
+                                                            <constraint firstAttribute="width" secondItem="ngr-1o-iHn" secondAttribute="height" multiplier="1:1" id="RyP-Ed-wFH"/>
+                                                        </constraints>
+                                                        <state key="normal" image="btn_collected">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="雪梨香蕉汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-EW-frr">
+                                                        <rect key="frame" x="16" y="16" width="90" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_03" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-LZ-ZMp">
+                                                        <rect key="frame" x="14" y="53.5" width="315" height="210"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Xmi-LZ-ZMp" secondAttribute="height" multiplier="3:2" id="lol-ov-eVn"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Xmi-LZ-ZMp" firstAttribute="leading" secondItem="lIx-Vo-zyF" secondAttribute="leading" constant="14" id="3lg-1m-Ig8"/>
+                                                    <constraint firstItem="NTr-EW-frr" firstAttribute="leading" secondItem="lIx-Vo-zyF" secondAttribute="leading" constant="16" id="5Ob-g3-KS1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ngr-1o-iHn" secondAttribute="trailing" constant="16" id="VgI-oe-1Va"/>
+                                                    <constraint firstItem="Xmi-LZ-ZMp" firstAttribute="top" secondItem="NTr-EW-frr" secondAttribute="bottom" constant="16" id="gCz-yT-tt7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Xmi-LZ-ZMp" secondAttribute="bottom" constant="16" id="geN-Ig-jEy"/>
+                                                    <constraint firstItem="NTr-EW-frr" firstAttribute="top" secondItem="lIx-Vo-zyF" secondAttribute="top" constant="16" id="nLo-dn-coI"/>
+                                                    <constraint firstItem="ngr-1o-iHn" firstAttribute="centerY" secondItem="NTr-EW-frr" secondAttribute="centerY" id="sbE-bC-UEF"/>
+                                                    <constraint firstItem="ngr-1o-iHn" firstAttribute="top" secondItem="lIx-Vo-zyF" secondAttribute="top" constant="16" id="vzH-rO-Kgy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xmi-LZ-ZMp" secondAttribute="trailing" constant="14" id="x8R-Ok-NJE"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="vzH-rO-Kgy"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="32" id="O2t-NM-SRV"/>
-                                            <constraint firstAttribute="width" secondItem="iS7-11-vot" secondAttribute="height" multiplier="1:1" id="b0x-iJ-8lZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="lIx-Vo-zyF" secondAttribute="trailing" constant="16" id="1fr-08-Mnl"/>
+                                            <constraint firstItem="lIx-Vo-zyF" firstAttribute="top" secondItem="MaX-On-cCS" secondAttribute="top" constant="16" id="8QH-5M-j6Y"/>
+                                            <constraint firstAttribute="bottom" secondItem="lIx-Vo-zyF" secondAttribute="bottom" constant="16" id="Osf-jr-lBa"/>
+                                            <constraint firstItem="lIx-Vo-zyF" firstAttribute="leading" secondItem="MaX-On-cCS" secondAttribute="leading" constant="16" id="ddN-9p-lAA"/>
                                         </constraints>
-                                        <state key="normal" image="btn_collected">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="雪梨香蕉汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD2-fz-5F5">
-                                        <rect key="frame" x="14" y="14" width="85" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_03" translatesAutoresizingMaskIntoConstraints="NO" id="shF-zN-hkv">
-                                        <rect key="frame" x="14" y="42" width="327" height="254"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="shF-zN-hkv" secondAttribute="height" multiplier="160:124" id="HI4-Yz-wDi"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="demo_recipe" translatesAutoresizingMaskIntoConstraints="NO" id="nLs-Qm-ZIu">
-                                        <rect key="frame" x="0.0" y="328" width="355" height="271"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="nLs-Qm-ZIu" secondAttribute="height" multiplier="355:271" id="c7i-vJ-jyF"/>
-                                        </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="nLs-Qm-ZIu" secondAttribute="trailing" id="DAy-OX-RoQ"/>
-                                    <constraint firstItem="iS7-11-vot" firstAttribute="top" secondItem="20y-8L-vOm" secondAttribute="top" constant="8" id="FDs-K3-yf8"/>
-                                    <constraint firstItem="bD2-fz-5F5" firstAttribute="leading" secondItem="20y-8L-vOm" secondAttribute="leading" constant="14" id="HIb-2P-75R"/>
-                                    <constraint firstItem="nLs-Qm-ZIu" firstAttribute="leading" secondItem="20y-8L-vOm" secondAttribute="leading" id="HTV-U4-bgA"/>
-                                    <constraint firstAttribute="bottom" secondItem="nLs-Qm-ZIu" secondAttribute="bottom" id="PWx-Pj-vyq"/>
-                                    <constraint firstAttribute="trailing" secondItem="iS7-11-vot" secondAttribute="trailing" constant="8" id="UjF-Zb-LEc"/>
-                                    <constraint firstItem="shF-zN-hkv" firstAttribute="top" secondItem="bD2-fz-5F5" secondAttribute="bottom" constant="8" id="h6A-mX-vFl"/>
-                                    <constraint firstAttribute="trailing" secondItem="shF-zN-hkv" secondAttribute="trailing" constant="14" id="ljX-uM-TCy"/>
-                                    <constraint firstItem="bD2-fz-5F5" firstAttribute="top" secondItem="20y-8L-vOm" secondAttribute="top" constant="14" id="maO-vZ-njh"/>
-                                    <constraint firstItem="shF-zN-hkv" firstAttribute="leading" secondItem="20y-8L-vOm" secondAttribute="leading" constant="14" id="qxD-Ze-eDv"/>
+                                    <constraint firstAttribute="bottom" secondItem="MaX-On-cCS" secondAttribute="bottom" id="Ixo-Gj-sHz"/>
+                                    <constraint firstAttribute="trailing" secondItem="MaX-On-cCS" secondAttribute="trailing" id="bPq-qk-jbF"/>
+                                    <constraint firstItem="MaX-On-cCS" firstAttribute="leading" secondItem="mDL-qM-Nj0" secondAttribute="leading" id="daf-om-bw3"/>
+                                    <constraint firstItem="MaX-On-cCS" firstAttribute="top" secondItem="mDL-qM-Nj0" secondAttribute="top" id="em5-hu-Vwq"/>
+                                    <constraint firstItem="MaX-On-cCS" firstAttribute="centerX" secondItem="mDL-qM-Nj0" secondAttribute="centerX" id="hKY-cz-lw9"/>
+                                    <constraint firstItem="MaX-On-cCS" firstAttribute="centerY" secondItem="mDL-qM-Nj0" secondAttribute="centerY" id="vWV-SD-bPJ"/>
                                 </constraints>
-                            </view>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vWV-SD-bPJ"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="20y-8L-vOm" firstAttribute="top" secondItem="DHX-0s-dNT" secondAttribute="bottom" constant="10" id="2pB-BP-2HD"/>
-                            <constraint firstItem="Oy1-PK-dF7" firstAttribute="top" secondItem="20y-8L-vOm" secondAttribute="bottom" constant="10" id="Age-15-SGG"/>
-                            <constraint firstAttribute="trailing" secondItem="20y-8L-vOm" secondAttribute="trailing" constant="10" id="BGY-kR-qrq"/>
-                            <constraint firstItem="20y-8L-vOm" firstAttribute="leading" secondItem="gT0-HG-fUe" secondAttribute="leading" constant="10" id="H57-rm-wnw"/>
+                            <constraint firstItem="mDL-qM-Nj0" firstAttribute="top" secondItem="DHX-0s-dNT" secondAttribute="bottom" id="E3e-hS-69D"/>
+                            <constraint firstItem="mDL-qM-Nj0" firstAttribute="leading" secondItem="gT0-HG-fUe" secondAttribute="leading" id="PFp-nP-ULT"/>
+                            <constraint firstItem="Oy1-PK-dF7" firstAttribute="top" secondItem="mDL-qM-Nj0" secondAttribute="bottom" id="Uch-T8-bOo"/>
+                            <constraint firstAttribute="trailing" secondItem="mDL-qM-Nj0" secondAttribute="trailing" id="sJU-K3-sCA"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="collectButton" destination="ngr-1o-iHn" id="cq3-Jc-5To"/>
+                        <outlet property="recipeImage" destination="Xmi-LZ-ZMp" id="YdT-Dx-JuH"/>
+                        <outlet property="recipeTitle" destination="NTr-EW-frr" id="9zI-CY-QQ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGf-Oa-NON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1929,7 +1963,6 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
     <resources>
         <image name="btn_collected" width="44" height="44"/>
         <image name="checked_icon" width="53" height="53"/>
-        <image name="demo_recipe" width="726" height="536"/>
         <image name="demo_youtube" width="760" height="1340"/>
         <image name="device_not_connected" width="44" height="44"/>
         <image name="menu" width="22" height="22"/>

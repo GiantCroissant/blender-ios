@@ -17,7 +17,11 @@ class RecipeDetailsViewController: UIViewController {
   var recipe: Recipe!
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let destVC = segue.destinationViewController
+
     if segue.identifier == "info" {
+      let infoVC = destVC as! RecipeInfoViewController
+      infoVC.recipe = self.recipe
     }
 
     if segue.identifier == "video" {

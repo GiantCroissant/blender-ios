@@ -9,5 +9,15 @@
 import UIKit
 
 class RecipeInfoViewController: UIViewController {
+  @IBOutlet weak var recipeTitle: UILabel!
+  @IBOutlet weak var collectButton: UIButton!
+  @IBOutlet weak var recipeImage: UIImageView!
+
+  var recipe: Recipe!
+
+  override func viewDidLoad() {
+    recipeTitle.text = recipe.title
+    recipeImage.image = UIImage(named: recipe.image)
+  }
 
 }
