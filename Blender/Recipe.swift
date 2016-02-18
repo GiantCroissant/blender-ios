@@ -24,6 +24,7 @@ struct Recipe: Glossy {
   let id: String
   let title: String
   let image: String
+  let viewedCount: Int
   let description: String
   let videoCode: String
   let steps: [Step]
@@ -33,6 +34,7 @@ struct Recipe: Glossy {
     self.id = "id" <~~ json ?? ""
     self.title = "title" <~~ json ?? ""
     self.image = "image" <~~ json ?? ""
+    self.viewedCount = "viewedCount" <~~ json ?? 0
     self.description = "description" <~~ json ?? ""
     self.videoCode = "videoCode" <~~ json ?? ""
     self.steps = "steps" <~~ json ?? [Step]()

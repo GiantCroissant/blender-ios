@@ -89,6 +89,10 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
             return
           }
 
+          for recipe in recipeCollection.recipes {
+            print(recipe)
+          }
+
         } catch let error {
           print(error)
         }
