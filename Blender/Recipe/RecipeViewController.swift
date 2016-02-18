@@ -80,24 +80,7 @@ class RecipeViewController: UIViewController, UISearchResultsUpdating, UISearchC
         resultSearchController.searchBar.tintColor = UIColor(rgba: "#FFFFFF")
 
 
-      if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
-        do {
-          let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-          let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
-          guard let recipeCollection = RecipeCollections(json: jsonResult as! JSON) else {
-            print("Issue deserializing model")
-            return
-          }
-
-          for recipe in recipeCollection.recipes {
-            print(recipe)
-          }
-
-        } catch let error {
-          print(error)
-        }
-      }
-
+      
     }
 
     /*
