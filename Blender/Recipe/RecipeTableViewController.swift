@@ -60,4 +60,20 @@ class RecipeCell: UITableViewCell {
     super.setSelected(selected, animated: animated)
   }
 
+  override func setHighlighted(highlighted: Bool, animated: Bool) {
+    if (highlighted) {
+
+      UIView.animateWithDuration(0.1) {
+        self.transform = CGAffineTransformMakeScale(0.95, 0.95)
+        self.alpha = 0.8
+      }
+
+    } else {
+      UIView.animateWithDuration(0.1) {
+        self.transform = CGAffineTransformMakeScale(1, 1)
+        self.alpha = 1.0
+      }
+    }
+  }
+
 }

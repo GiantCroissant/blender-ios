@@ -42,7 +42,6 @@ class ClipView: UIView {
     layer.masksToBounds = true
   }
 
-
 }
 
 //import UIKit
