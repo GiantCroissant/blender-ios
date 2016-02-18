@@ -10,14 +10,21 @@ import UIKit
 
 class SideMenuViewController: UITableViewController {
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)!
-        cell.contentView.backgroundColor = UIColor(rgba: "#dceec8")
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.revealViewController().rearViewRevealWidth = self.view.frame.width - 64
 
-    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)!
-        cell.contentView.backgroundColor = UIColor(rgba: "#dceec8")
-    }
+    
+  }
 
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let cell = tableView.cellForRowAtIndexPath(indexPath)!
+    cell.contentView.backgroundColor = UIColor(rgba: "#dceec8")
+  }
+
+  override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+    let cell = tableView.cellForRowAtIndexPath(indexPath)!
+    cell.contentView.backgroundColor = UIColor(rgba: "#dceec8")
+  }
+  
 }
