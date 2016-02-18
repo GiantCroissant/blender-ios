@@ -14,12 +14,27 @@ class RecipeManager {
 
   private let userDefaults = NSUserDefaults.standardUserDefaults()
   private var collectionIds = [Int]()
+  private var recipes = [Recipe]()
 
   init() {
     if userDefaults.arrayForKey("collection") == nil {
       updateUserDefaults()
     }
     collectionIds = userDefaults.arrayForKey("collection") as! [Int]
+
+    if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
+      do {
+        let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+        let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
+        if let recipeCollection = RecipeCollections(json: jsonResult as! JSON) {
+          self.recipes = recipeCollection.recipes
+        }
+      } catch {
+        print(error)
+      }
+    } else {
+      print("data.json not found!")
+    }
   }
 
   func getCollectionRecipeIds() -> [Int] {
@@ -41,25 +56,12 @@ class RecipeManager {
     userDefaults.setObject(collectionIds, forKey: "collection")
   }
 
-  func loadRecipes() -> [Recipe] {
-    if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
-      do {
-        let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-        let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
-        guard let recipeCollection = RecipeCollections(json: jsonResult as! JSON) else {
-          print("Issue deserializing model")
-          return [Recipe]()
-        }
-        return recipeCollection.recipes
-        
-      } catch {
-        print(error)
-      }
+  func loadRecentRecipes() -> [Recipe] {
+    return recipes
+  }
 
-    } else {
-      print("data.json not found!")
-    }
-    return [Recipe]()
+  func loadFakeHotRecipes() -> [Recipe] {
+    return recipes.sort { $0.viewedCount > $1.viewedCount }
   }
 
 }

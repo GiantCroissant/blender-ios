@@ -21,9 +21,12 @@ class RecipeTableViewController: UITableViewController {
     super.viewDidLoad()
 
     if listType == .Recent {
-      recipes = RecipeManager.sharedInstance.loadRecipes()
+      recipes = RecipeManager.sharedInstance.loadRecentRecipes()
     }
 
+    if listType == .Hot {
+      recipes = RecipeManager.sharedInstance.loadFakeHotRecipes()
+    }
 
   }
 
