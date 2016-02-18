@@ -49,6 +49,7 @@ class RecipeCell: UITableViewCell {
 
   func updateUI(recipe: Recipe) {
     recipeImage.image = UIImage(named: recipe.image)
+    recipeImage.layer.cornerRadius = 2
     title.text = recipe.title
   }
 
