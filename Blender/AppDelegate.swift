@@ -15,16 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
-
-    let ids = RecipeManager.sharedInstance.getCollectionRecipeIds()
-    print("collection ids = \(ids)")
-    RecipeManager.sharedInstance.collectRecipe(1)
-    RecipeManager.sharedInstance.collectRecipe(1)
-    RecipeManager.sharedInstance.collectRecipe(1)
-    RecipeManager.sharedInstance.collectRecipe(2)
-    RecipeManager.sharedInstance.collectRecipe(3)
-
     setupCustomNavigationBarColor()
     setupCustomStatusBarColor()
     return true
