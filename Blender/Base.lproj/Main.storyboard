@@ -137,28 +137,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwd-c8-iJd" userLabel="製作">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
                                     <segue destination="fcM-jY-sg1" kind="embed" id="uAQ-N1-Haz"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7z-ee-c8l" userLabel="影片">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
                                     <segue destination="jXF-Ob-MfV" kind="embed" id="jxh-Cg-10H"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s00-MA-9vr" userLabel="簡介">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
                                     <segue destination="mB0-wd-UGh" kind="embed" id="67S-8r-4qR"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktU-6D-r2j" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPQ-Ld-Mlw" userLabel="Video Button">
-                                        <rect key="frame" x="124.5" y="0.0" width="125" height="64"/>
+                                        <rect key="frame" x="124.5" y="0.0" width="125" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title=" ">
                                             <color key="titleColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
@@ -171,7 +171,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="centerX" secondItem="ktU-6D-r2j" secondAttribute="centerX" id="2VG-SW-ImV"/>
-                                    <constraint firstAttribute="height" constant="64" id="4Q2-zo-vzg"/>
+                                    <constraint firstAttribute="height" constant="48" id="4Q2-zo-vzg"/>
                                     <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="centerY" secondItem="ktU-6D-r2j" secondAttribute="centerY" id="8iu-jn-lwH"/>
                                     <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="height" secondItem="ktU-6D-r2j" secondAttribute="height" id="krd-ua-eSv"/>
                                     <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="width" secondItem="ktU-6D-r2j" secondAttribute="width" multiplier="1/3" id="o8B-76-y4v"/>
@@ -193,7 +193,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamily" value="HelveticaNeue-Bold"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item1" value="製作"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item2" value="影片"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="count">
@@ -240,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrD-EK-z6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188.5" y="-243.5"/>
+            <point key="canvasLocation" x="2146.5" y="-250.5"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="nrI-2y-MqY">
@@ -316,7 +315,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食譜預覽" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arS-0d-eId">
                                                     <rect key="frame" x="78" y="21.5" width="72" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -363,7 +362,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="個人專區" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbE-yM-ymr">
                                                     <rect key="frame" x="78" y="22" width="72" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -404,7 +403,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="連線及操作設定" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kS-b6-AeY">
                                                     <rect key="frame" x="78" y="22" width="126" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -445,7 +444,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="廠商介面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhB-xx-wIT">
                                                     <rect key="frame" x="78" y="22" width="72" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -749,7 +748,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgo-BB-ZLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="-583"/>
+            <point key="canvasLocation" x="1663.5" y="-250.5"/>
         </scene>
         <!--連線及操作設定-->
         <scene sceneID="hdR-qR-1es">
@@ -1007,11 +1006,11 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <viewControllerLayoutGuide type="bottom" id="wSe-S7-3CM"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GEq-Dh-roy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWQ-L2-gyg" customClass="CardView" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="9" y="9" width="357" height="433.5"/>
+                                <rect key="frame" x="9" y="9" width="357" height="445"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未連結" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-qp-jIn">
                                         <rect key="frame" x="304" y="8" width="39" height="16"/>
@@ -1026,7 +1025,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AAm-aB-rgK">
-                                        <rect key="frame" x="14" y="40" width="329" height="385.5"/>
+                                        <rect key="frame" x="14" y="40" width="329" height="397"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeStepCell" rowHeight="62" id="kdR-ck-Yl5" customClass="RecipeProduceTableViewCell" customModule="Blender" customModuleProvider="target">
@@ -1118,7 +1117,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4q-Uo-F5x">
-                                <rect key="frame" x="9" y="475" width="173.5" height="58"/>
+                                <rect key="frame" x="9" y="487" width="173.5" height="59.5"/>
                                 <color key="backgroundColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" red="0.75686274509999996" green="0.82352941180000006" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -1131,7 +1130,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18c-vh-gk2">
-                                <rect key="frame" x="192" y="475" width="173.5" height="58"/>
+                                <rect key="frame" x="192" y="487" width="173.5" height="59.5"/>
                                 <color key="backgroundColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" red="0.75686274509999996" green="0.82352941180000006" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -1144,7 +1143,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrS-Zg-lH4">
-                                <rect key="frame" x="9" y="475" width="357" height="58"/>
+                                <rect key="frame" x="9" y="487" width="357" height="59.5"/>
                                 <color key="backgroundColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" red="0.75686274509999996" green="0.82352941180000006" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -1157,7 +1156,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUZ-NS-BWC">
-                                <rect key="frame" x="9" y="475" width="357" height="58"/>
+                                <rect key="frame" x="9" y="486" width="357" height="59.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="完成">
@@ -1169,7 +1168,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irK-7b-2YX">
-                                <rect key="frame" x="8" y="475" width="357" height="58"/>
+                                <rect key="frame" x="8" y="486" width="357" height="58"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="rBO-M8-x64"/>
@@ -1243,11 +1242,11 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <viewControllerLayoutGuide type="bottom" id="dBg-F4-H3M"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Je6-Ij-8N8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_youtube" translatesAutoresizingMaskIntoConstraints="NO" id="ysx-Cb-bvj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1291,11 +1290,11 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <viewControllerLayoutGuide type="bottom" id="Oy1-PK-dF7"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gT0-HG-fUe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20y-8L-vOm" userLabel="CardView" customClass="CardView" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="355" height="583"/>
+                                <rect key="frame" x="10" y="10" width="355" height="599"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS7-11-vot">
                                         <rect key="frame" x="315" y="8" width="32" height="32"/>
@@ -1309,7 +1308,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="雪梨香蕉汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD2-fz-5F5">
-                                        <rect key="frame" x="14" y="14" width="85" height="20"/>
+                                        <rect key="frame" x="14" y="14" width="85" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1321,7 +1320,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="demo_recipe" translatesAutoresizingMaskIntoConstraints="NO" id="nLs-Qm-ZIu">
-                                        <rect key="frame" x="0.0" y="312" width="355" height="271"/>
+                                        <rect key="frame" x="0.0" y="328" width="355" height="271"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nLs-Qm-ZIu" secondAttribute="height" multiplier="355:271" id="c7i-vJ-jyF"/>
                                         </constraints>
