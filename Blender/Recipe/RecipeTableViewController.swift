@@ -33,12 +33,31 @@ class RecipeTableViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath)
+    let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath) as! RecipeCell
 
-    // Configure the cell...
-    print(recipes[indexPath.row].title)
-
+    let recipe = recipes[indexPath.row]
+    cell.updateUI(recipe)
     return cell
+  }
+
+}
+
+
+class RecipeCell: UITableViewCell {
+  @IBOutlet weak var recipeImage: UIImageView!
+  @IBOutlet weak var title: UILabel!
+
+  func updateUI(recipe: Recipe) {
+    recipeImage.image = UIImage(named: recipe.image)
+    title.text = recipe.title
+  }
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+  }
+
+  override func setSelected(selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
   }
 
 }

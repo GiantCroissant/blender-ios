@@ -128,17 +128,17 @@
             </objects>
             <point key="canvasLocation" x="1163.5" y="-250.5"/>
         </scene>
-        <!--Recipe Table View Controller-->
+        <!--熱門食譜-->
         <scene sceneID="myO-4P-UQK">
             <objects>
-                <tableViewController id="qI1-11-6qM" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="qI1-11-6qM" userLabel="熱門食譜" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="124" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kbg-CG-AtV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="j8M-cw-oEA">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="j8M-cw-oEA" customClass="RecipeCell" customModule="Blender" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="375" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j8M-cw-oEA" id="LM7-fG-Z8o">
@@ -196,6 +196,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="recipeImage" destination="MBW-KX-OG3" id="HU1-PF-kmR"/>
+                                    <outlet property="title" destination="q4g-KR-oUk" id="bTB-bp-BlU"/>
                                     <segue destination="LKV-X4-zsH" kind="show" id="Qgd-nv-Z57"/>
                                 </connections>
                             </tableViewCell>
@@ -751,17 +753,17 @@
             </objects>
             <point key="canvasLocation" x="1585.5" y="995.5"/>
         </scene>
-        <!--recent-->
+        <!--最新食譜-->
         <scene sceneID="lF1-9r-CHN">
             <objects>
-                <tableViewController title="recent" id="3ez-CD-qo2" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="recent" id="3ez-CD-qo2" userLabel="最新食譜" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="124" sectionHeaderHeight="22" sectionFooterHeight="22" id="ICp-vu-a5M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="oZ6-du-Xtw">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="oZ6-du-Xtw" customClass="RecipeCell" customModule="Blender" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="375" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oZ6-du-Xtw" id="fSf-SI-gJD">
@@ -771,19 +773,19 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yE-NQ-g3x" customClass="CardView" customModule="Blender" customModuleProvider="target">
                                             <rect key="frame" x="10" y="5" width="355" height="114"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_02" translatesAutoresizingMaskIntoConstraints="NO" id="HZo-eP-ukA">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_02" translatesAutoresizingMaskIntoConstraints="NO" id="HZo-eP-ukA" userLabel="Recipe Image">
                                                     <rect key="frame" x="0.0" y="0.0" width="147" height="114"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="HZo-eP-ukA" secondAttribute="height" multiplier="160:124" id="iS3-4h-9iE"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="柳橙檸檬汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-rQ-PyF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="柳橙檸檬汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-rQ-PyF" userLabel="Title">
                                                     <rect key="frame" x="161" y="14" width="80" height="20"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="柳橙 270g 紅葡萄汁 10c.c. 檸檬汁蜂蜜各15c.c." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2v2-zj-Fg6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="柳橙 270g 紅葡萄汁 10c.c. 檸檬汁蜂蜜各15c.c." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2v2-zj-Fg6" userLabel="Description">
                                                     <rect key="frame" x="161" y="41" width="186" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -819,6 +821,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="recipeImage" destination="HZo-eP-ukA" id="uvP-de-lnH"/>
+                                    <outlet property="title" destination="Bde-rQ-PyF" id="Xq8-kM-afN"/>
                                     <segue destination="LKV-X4-zsH" kind="show" identifier="" id="vSq-4L-U57"/>
                                 </connections>
                             </tableViewCell>
