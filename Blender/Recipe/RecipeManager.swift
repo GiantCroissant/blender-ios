@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Gloss
 
 class RecipeManager {
   static let sharedInstance = RecipeManager()
@@ -38,6 +39,27 @@ class RecipeManager {
 
   private func updateUserDefaults() {
     userDefaults.setObject(collectionIds, forKey: "collection")
+  }
+
+  func loadRecipes() -> [Recipe] {
+    if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
+      do {
+        let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+        let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
+        guard let recipeCollection = RecipeCollections(json: jsonResult as! JSON) else {
+          print("Issue deserializing model")
+          return [Recipe]()
+        }
+        return recipeCollection.recipes
+        
+      } catch {
+        print(error)
+      }
+
+    } else {
+      print("data.json not found!")
+    }
+    return [Recipe]()
   }
 
 }

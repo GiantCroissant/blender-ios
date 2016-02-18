@@ -10,33 +10,35 @@ import UIKit
 
 class RecipeTableViewController: UITableViewController {
 
-    var recipes = [String]()
-    var filteredAppleProducts = [String]()
+  var recipes = [Recipe]()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        recipes = ["", "", "", "", "", "", "", "", "", ""]
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-        // custom UI
-        self.tableView.contentInset = UIEdgeInsetsMake(5, 0, 5, 0)
-    }
+    // custom UI
+    self.tableView.contentInset = UIEdgeInsetsMake(5, 0, 5, 0)
 
-    // MARK: - Table view data source
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
+    // load recipe datas
+    recipes = RecipeManager.sharedInstance.loadRecipes()
+  }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipes.count
-    }
+  // MARK: - Table view data source
+  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    return 1
+  }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath) 
+  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return recipes.count
+  }
 
-        // Configure the cell...
+  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath)
 
-        return cell
-    }
+    // Configure the cell...
+    print(recipes[indexPath.row].title)
+
+    return cell
+  }
 
 }
