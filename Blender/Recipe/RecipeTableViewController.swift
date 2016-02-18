@@ -9,11 +9,22 @@
 import UIKit
 
 class RecipeTableViewController: UITableViewController {
+
+  enum ListType {
+    case Recent
+    case Hot
+  }
+  var listType: ListType!
   var recipes = [Recipe]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    recipes = RecipeManager.sharedInstance.loadRecipes()
+
+    if listType == .Recent {
+      recipes = RecipeManager.sharedInstance.loadRecipes()
+    }
+
+
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

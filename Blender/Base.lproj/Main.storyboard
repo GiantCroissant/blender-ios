@@ -55,13 +55,13 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ype-O5-4BB" userLabel="熱門食譜">
                                 <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
-                                    <segue destination="3ez-CD-qo2" kind="embed" id="Uvj-Ud-ZpQ"/>
+                                    <segue destination="3ez-CD-qo2" kind="embed" identifier="hot" id="vUS-EO-aSP"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fah-T7-Qbb" userLabel="最近食譜">
                                 <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
-                                    <segue destination="3ez-CD-qo2" kind="embed" id="Sdr-Ky-0wo"/>
+                                    <segue destination="3ez-CD-qo2" kind="embed" identifier="recent" id="FcL-qU-1cx"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -1946,7 +1946,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vSq-4L-U57"/>
-        <segue reference="Uvj-Ud-ZpQ"/>
+        <segue reference="FcL-qU-1cx"/>
         <segue reference="JRu-xA-XMY"/>
         <segue reference="02K-jX-39Q"/>
     </inferredMetricsTieBreakers>
