@@ -36,10 +36,16 @@ class RecipeTableViewController: UITableViewController {
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath) as! RecipeCell
-
-    let recipe = recipes[indexPath.row]
-    cell.updateUI(recipe)
+    cell.recipe = recipes[indexPath.row]
     return cell
+  }
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "recipe_detail" {
+      let cell = sender as! RecipeCell
+      let vc = segue.destinationViewController as! RecipeDetailsViewController
+      vc.recipe = cell.recipe
+    }
   }
 }
 
@@ -48,9 +54,11 @@ class RecipeCell: UITableViewCell {
   @IBOutlet weak var recipeImage: UIImageView!
   @IBOutlet weak var title: UILabel!
 
-  func updateUI(recipe: Recipe) {
-    recipeImage.image = UIImage(named: recipe.image)
-    title.text = recipe.title
+  var recipe: Recipe! {
+    didSet {
+      recipeImage.image = UIImage(named: recipe.image)
+      title.text = recipe.title
+    }
   }
 
   override func setHighlighted(highlighted: Bool, animated: Bool) {
@@ -65,7 +73,6 @@ class RecipeCell: UITableViewCell {
         self.transform = CGAffineTransformMakeScale(1, 1)
         self.alpha = 1.0
       }
-
     }
   }
 

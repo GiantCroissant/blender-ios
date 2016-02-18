@@ -139,19 +139,19 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwd-c8-iJd" userLabel="製作">
                                 <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
-                                    <segue destination="fcM-jY-sg1" kind="embed" id="uAQ-N1-Haz"/>
+                                    <segue destination="fcM-jY-sg1" kind="embed" identifier="produce" id="uAQ-N1-Haz"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7z-ee-c8l" userLabel="影片">
                                 <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
-                                    <segue destination="jXF-Ob-MfV" kind="embed" id="jxh-Cg-10H"/>
+                                    <segue destination="jXF-Ob-MfV" kind="embed" identifier="video" id="jxh-Cg-10H"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s00-MA-9vr" userLabel="簡介">
                                 <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
-                                    <segue destination="mB0-wd-UGh" kind="embed" id="67S-8r-4qR"/>
+                                    <segue destination="mB0-wd-UGh" kind="embed" identifier="info" id="67S-8r-4qR"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktU-6D-r2j" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
@@ -193,12 +193,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="item1" value="製作"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item1" value="簡介"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item2" value="影片"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="count">
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="item3" value="簡介"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item3" value="製作"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -735,7 +735,7 @@
                                 <connections>
                                     <outlet property="recipeImage" destination="HZo-eP-ukA" id="uvP-de-lnH"/>
                                     <outlet property="title" destination="Bde-rQ-PyF" id="Xq8-kM-afN"/>
-                                    <segue destination="LKV-X4-zsH" kind="show" identifier="" id="vSq-4L-U57"/>
+                                    <segue destination="LKV-X4-zsH" kind="show" identifier="recipe_detail" id="vSq-4L-U57"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
