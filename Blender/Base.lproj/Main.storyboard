@@ -42,7 +42,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="item1" value="最新食譜"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item1" value="最近食譜"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item2" value="熱門食譜"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="count">
                                         <integer key="value" value="2"/>
@@ -55,57 +55,26 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ype-O5-4BB" userLabel="熱門食譜">
                                 <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
-                                    <segue destination="3ez-CD-qo2" kind="embed" id="jsk-Gv-5xv"/>
+                                    <segue destination="3ez-CD-qo2" kind="embed" id="Uvj-Ud-ZpQ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fah-T7-Qbb" userLabel="最近食譜">
                                 <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
-                                    <segue destination="qI1-11-6qM" kind="embed" id="z2r-G9-86v"/>
+                                    <segue destination="3ez-CD-qo2" kind="embed" id="Sdr-Ky-0wo"/>
                                 </connections>
                             </containerView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fHT-J3-jdA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="aHP-nw-KQG" rowHeight="102" style="IBUITableViewCellStyleDefault" id="Txh-pI-JbL">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="102"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Txh-pI-JbL" id="VdL-x3-o0I">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aHP-nw-KQG">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="101.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6X6-s1-Dbs"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="g8m-5V-rww"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fah-T7-Qbb" secondAttribute="trailing" id="ImG-Tb-152"/>
-                            <constraint firstItem="fHT-J3-jdA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J24-64-P9M"/>
                             <constraint firstItem="ype-O5-4BB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KB5-Y2-RYZ"/>
                             <constraint firstItem="f7X-cZ-8As" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sqr-Lc-6Wz"/>
-                            <constraint firstItem="fHT-J3-jdA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Uqa-Mo-buj"/>
                             <constraint firstItem="ype-O5-4BB" firstAttribute="top" secondItem="f7X-cZ-8As" secondAttribute="bottom" id="ZpS-Tg-QrM"/>
                             <constraint firstItem="f7X-cZ-8As" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a0t-wl-Juf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fah-T7-Qbb" secondAttribute="bottom" id="bXr-Sn-gCI"/>
                             <constraint firstItem="fah-T7-Qbb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e1h-or-nbG"/>
                             <constraint firstAttribute="trailing" secondItem="ype-O5-4BB" secondAttribute="trailing" id="mNh-EX-P3g"/>
-                            <constraint firstAttribute="trailing" secondItem="fHT-J3-jdA" secondAttribute="trailing" id="miq-YQ-RlU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fHT-J3-jdA" secondAttribute="bottom" id="pXf-8H-sGM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ype-O5-4BB" secondAttribute="bottom" id="tT2-fe-4XF"/>
                             <constraint firstItem="fah-T7-Qbb" firstAttribute="top" secondItem="f7X-cZ-8As" secondAttribute="bottom" id="vkp-0W-H3d"/>
                             <constraint firstAttribute="trailing" secondItem="f7X-cZ-8As" secondAttribute="trailing" id="weK-hw-TS5"/>
@@ -124,93 +93,36 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" id="fHT-J3-jdA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <prototypes>
+                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="aHP-nw-KQG" rowHeight="102" style="IBUITableViewCellStyleDefault" id="Txh-pI-JbL">
+                            <rect key="frame" x="0.0" y="28" width="375" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Txh-pI-JbL" id="VdL-x3-o0I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aHP-nw-KQG">
+                                        <rect key="frame" x="15" y="0.0" width="345" height="101.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </tableViewCellContentView>
+                        </tableViewCell>
+                    </prototypes>
+                    <connections>
+                        <outlet property="dataSource" destination="BYZ-38-t0r" id="6X6-s1-Dbs"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="g8m-5V-rww"/>
+                    </connections>
+                </tableView>
             </objects>
             <point key="canvasLocation" x="1163.5" y="-250.5"/>
-        </scene>
-        <!--熱門食譜-->
-        <scene sceneID="myO-4P-UQK">
-            <objects>
-                <tableViewController id="qI1-11-6qM" userLabel="熱門食譜" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="124" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kbg-CG-AtV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="j8M-cw-oEA" customClass="RecipeCell" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="375" height="124"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j8M-cw-oEA" id="LM7-fG-Z8o">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yr-OY-DLw" customClass="CardView" customModule="Blender" customModuleProvider="target">
-                                            <rect key="frame" x="10" y="5" width="355" height="114"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_01" translatesAutoresizingMaskIntoConstraints="NO" id="MBW-KX-OG3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="147" height="114"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="MBW-KX-OG3" secondAttribute="height" multiplier="160:124" id="vnj-ZV-DQ9"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="西瓜檸檬汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-KR-oUk">
-                                                    <rect key="frame" x="161" y="14" width="80" height="20"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                    <color key="textColor" red="0.20392156862745098" green="0.41176470588235292" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西瓜 270g 紅葡萄汁 10c.c. 檸檬汁蜂蜜各15c.c." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75O-hv-7vJ">
-                                                    <rect key="frame" x="161" y="41" width="186" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="q4g-KR-oUk" firstAttribute="top" secondItem="8Yr-OY-DLw" secondAttribute="top" constant="14" id="5T6-7k-s5Z"/>
-                                                <constraint firstItem="MBW-KX-OG3" firstAttribute="top" secondItem="8Yr-OY-DLw" secondAttribute="top" id="BXO-Fa-fdV"/>
-                                                <constraint firstItem="MBW-KX-OG3" firstAttribute="leading" secondItem="8Yr-OY-DLw" secondAttribute="leading" id="IWO-8M-gbt"/>
-                                                <constraint firstItem="75O-hv-7vJ" firstAttribute="top" secondItem="q4g-KR-oUk" secondAttribute="bottom" constant="8" id="MTN-EW-yNq"/>
-                                                <constraint firstAttribute="bottom" secondItem="MBW-KX-OG3" secondAttribute="bottom" id="ana-Ed-LQl"/>
-                                                <constraint firstAttribute="trailing" secondItem="75O-hv-7vJ" secondAttribute="trailing" constant="8" id="eYf-sn-bZK"/>
-                                                <constraint firstItem="75O-hv-7vJ" firstAttribute="leading" secondItem="MBW-KX-OG3" secondAttribute="trailing" constant="14" id="i42-g1-Pbj"/>
-                                                <constraint firstAttribute="bottom" secondItem="75O-hv-7vJ" secondAttribute="bottom" constant="25" id="omm-pv-Zkb"/>
-                                                <constraint firstItem="q4g-KR-oUk" firstAttribute="leading" secondItem="MBW-KX-OG3" secondAttribute="trailing" constant="14" id="r4L-yA-aVJ"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="omm-pv-Zkb"/>
-                                                </mask>
-                                            </variation>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="8Yr-OY-DLw" firstAttribute="leading" secondItem="LM7-fG-Z8o" secondAttribute="leading" constant="10" id="1mD-G0-4F2"/>
-                                        <constraint firstAttribute="bottom" secondItem="8Yr-OY-DLw" secondAttribute="bottom" constant="5" id="8V7-YC-ojD"/>
-                                        <constraint firstItem="8Yr-OY-DLw" firstAttribute="top" secondItem="LM7-fG-Z8o" secondAttribute="top" constant="5" id="O2Y-2Z-aEB"/>
-                                        <constraint firstAttribute="trailing" secondItem="8Yr-OY-DLw" secondAttribute="trailing" constant="10" id="zew-iz-Fg0"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="recipeImage" destination="MBW-KX-OG3" id="HU1-PF-kmR"/>
-                                    <outlet property="title" destination="q4g-KR-oUk" id="bTB-bp-BlU"/>
-                                    <segue destination="LKV-X4-zsH" kind="show" id="Qgd-nv-Z57"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="qI1-11-6qM" id="wNc-Ba-0MW"/>
-                            <outlet property="delegate" destination="qI1-11-6qM" id="wkM-pt-rYy"/>
-                        </connections>
-                    </tableView>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EcZ-my-abs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1653.5" y="129.5"/>
         </scene>
         <!--Recipe Details View Controller-->
         <scene sceneID="QAy-6C-xoD">
@@ -752,10 +664,10 @@
             </objects>
             <point key="canvasLocation" x="1585.5" y="995.5"/>
         </scene>
-        <!--最新食譜-->
+        <!--食譜清單-->
         <scene sceneID="lF1-9r-CHN">
             <objects>
-                <tableViewController title="recent" id="3ez-CD-qo2" userLabel="最新食譜" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Recipe List" id="3ez-CD-qo2" userLabel="食譜清單" customClass="RecipeTableViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="240" sectionHeaderHeight="22" sectionFooterHeight="22" id="ICp-vu-a5M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2024,7 +1936,6 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
         <image name="menu" width="22" height="22"/>
         <image name="mrblender_logo-1" width="200" height="120"/>
         <image name="recipe" width="260" height="208"/>
-        <image name="recipe_01" width="160" height="124"/>
         <image name="recipe_02" width="160" height="124"/>
         <image name="recipe_03" width="160" height="124"/>
         <image name="side_icon_personal" width="44" height="44"/>
@@ -2035,8 +1946,9 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
         <image name="time_setup_icon" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="02K-jX-39Q"/>
-        <segue reference="JRu-xA-XMY"/>
         <segue reference="vSq-4L-U57"/>
+        <segue reference="Uvj-Ud-ZpQ"/>
+        <segue reference="JRu-xA-XMY"/>
+        <segue reference="02K-jX-39Q"/>
     </inferredMetricsTieBreakers>
 </document>
