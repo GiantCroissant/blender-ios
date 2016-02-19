@@ -1021,7 +1021,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-Kp-0j0">
-                                                            <rect key="frame" x="305" y="12" width="26" height="26"/>
+                                                            <rect key="frame" x="305" y="10" width="26" height="26"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="mK5-Kp-0j0" secondAttribute="height" multiplier="1:1" id="3C7-5R-IaU"/>
                                                                 <constraint firstAttribute="width" constant="26" id="6qm-Rv-h56"/>
@@ -1037,7 +1037,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="步驟" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXL-CW-lhh">
-                                                            <rect key="frame" x="36" y="12" width="261" height="75.5"/>
+                                                            <rect key="frame" x="36" y="12" width="265" height="75.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1046,12 +1046,12 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <constraints>
                                                         <constraint firstItem="bZi-z5-Sjx" firstAttribute="leading" secondItem="eIg-Ra-e4z" secondAttribute="leading" constant="12" id="3lU-j4-SuA"/>
                                                         <constraint firstAttribute="bottom" secondItem="mK5-Kp-0j0" secondAttribute="bottom" constant="12" id="9nP-qo-xqT"/>
-                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="top" secondItem="HXL-CW-lhh" secondAttribute="top" id="C3V-Xg-417"/>
+                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="top" secondItem="HXL-CW-lhh" secondAttribute="top" constant="-2" id="C3V-Xg-417"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="12" id="EgP-rp-chh"/>
                                                         <constraint firstItem="bZi-z5-Sjx" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="F9s-TE-KxI"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="20" id="HMI-h8-bmO"/>
                                                         <constraint firstAttribute="trailing" secondItem="mK5-Kp-0j0" secondAttribute="trailing" constant="12" id="UNM-ke-7HA"/>
-                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="8" id="kZY-Rd-GCB"/>
+                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="4" id="kZY-Rd-GCB"/>
                                                         <constraint firstItem="HXL-CW-lhh" firstAttribute="leading" secondItem="bZi-z5-Sjx" secondAttribute="trailing" constant="12" id="qLf-U9-v75"/>
                                                         <constraint firstAttribute="bottom" secondItem="HXL-CW-lhh" secondAttribute="bottom" constant="12" id="xsm-pR-w08"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="zHo-vO-oD6"/>
@@ -1161,7 +1161,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                     <action selector="onCompleteBtnTouchUp:" destination="fcM-jY-sg1" eventType="touchUpInside" id="GRp-IP-iG6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irK-7b-2YX">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irK-7b-2YX">
                                 <rect key="frame" x="16" y="545" width="343" height="58"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1170,7 +1170,6 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="連接果汁機設定">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="7Zz-6k-NuV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="A0S-vB-Eb0"/>
@@ -1330,7 +1329,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作法文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-oe-6I8">
                                                         <rect key="frame" x="16" y="356" width="311" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8h-m2-YTl" userLabel="材料">
@@ -1342,13 +1341,13 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOo-bG-MxY">
                                                         <rect key="frame" x="16" y="413" width="311" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="材料文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIw-Vp-15e">
                                                         <rect key="frame" x="16" y="298" width="311" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
