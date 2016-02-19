@@ -1015,6 +1015,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cellBackgroundView" destination="h1v-gy-1mr" id="VKZ-Li-T26"/>
                                             <outlet property="madeDate" destination="rLk-xv-HBx" id="K7X-T6-xgC"/>
                                             <outlet property="recipeTitle" destination="EgI-45-4Zm" id="Yvn-ok-Wat"/>
                                         </connections>

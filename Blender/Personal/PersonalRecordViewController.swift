@@ -29,6 +29,9 @@ extension PersonalRecordViewController: UITableViewDataSource {
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("recordCell", forIndexPath: indexPath) as! RecordCell
     cell.record = records[indexPath.row]
+
+    let bgColor = indexPath.row % 2 == 0 ? UIColor(rgba: "#fafafa") : UIColor.whiteColor()
+    cell.cellBackgroundView.backgroundColor = bgColor
     return cell
   }
 }
@@ -36,6 +39,7 @@ extension PersonalRecordViewController: UITableViewDataSource {
 class RecordCell: UITableViewCell {
   @IBOutlet weak var recipeTitle: UILabel!
   @IBOutlet weak var madeDate: UILabel!
+  @IBOutlet weak var cellBackgroundView: UIView!
 
   var record: Record! {
     didSet {
