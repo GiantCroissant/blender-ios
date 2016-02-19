@@ -104,10 +104,10 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     completeBtn.hidden = true
 
     // not connected
-//    if !BlenderBluetoothManager.sharedLoader.connected {
-//      connectBlenderSettingBtn.hidden = false
-//      return
-//    }
+    if !BlenderBluetoothManager.sharedLoader.connected {
+      connectBlenderSettingBtn.hidden = false
+      return
+    }
 
     if currentStep == totalStepCount {
       completeBtn.hidden = false
