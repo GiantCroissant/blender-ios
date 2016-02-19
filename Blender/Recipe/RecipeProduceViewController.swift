@@ -17,46 +17,51 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
   @IBOutlet weak var connectBlenderSettingBtn: UIButton!
   @IBOutlet weak var connectionStatusLabel: UILabel!
   @IBOutlet weak var recipeSteps: UITableView!
+  @IBOutlet weak var recipeTitle: UILabel!
 
+  var recipe: Recipe!
+//
+//  let demoSteps = [
+//    "雪梨洗淨去皮，切成可放入榨汁機內 雪梨洗淨去皮，切成可放入榨汁機內",
+//    "香蕉去皮切成數段",
+//    "啟動果汁機，轉速2，10秒。",
+//    "檸檬連皮對切為四份去核",
+//    "將所有材料順序放入榨汁機內壓榨成汁榨成汁",
+//    "啟動果汁機，轉速3，7秒。"
+//  ]
+//
+//  let demoSpeeds = [
+//    0,
+//    0,
+//    1, // 2
+//    0,
+//    0,
+//    1  // 3
+//  ]
+//
+//  let demoTimes = [
+//    0,
+//    0,
+//    10,
+//    0,
+//    0,
+//    7
+//  ]
+//
+//  var demoCheckState = [
+//    false,
+//    false,
+//    false,
+//    false,
+//    false,
+//    false
+//  ]
 
-  let demoSteps = [
-    "雪梨洗淨去皮，切成可放入榨汁機內 雪梨洗淨去皮，切成可放入榨汁機內",
-    "香蕉去皮切成數段",
-    "啟動果汁機，轉速2，10秒。",
-    "檸檬連皮對切為四份去核",
-    "將所有材料順序放入榨汁機內壓榨成汁榨成汁",
-    "啟動果汁機，轉速3，7秒。"
-  ]
-
-  let demoSpeeds = [
-    0,
-    0,
-    1, // 2
-    0,
-    0,
-    1  // 3
-  ]
-
-  let demoTimes = [
-    0,
-    0,
-    10,
-    0,
-    0,
-    7
-  ]
-
-  var demoCheckState = [
-    false,
-    false,
-    false,
-    false,
-    false,
-    false
-  ]
-
-
+  var blendSpeeds = [Int]()
+  var blendTimes = [Int]()
+  var checkStates = [Bool]()
   var currentStep: Int = 0
+  var totalStepCount: Int = 0
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -65,15 +70,24 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     didUpdateState()
 
     setupCornerRadius()
-    updateExcuteButton()
+
 
     configureTableView()
+
+    recipeTitle.text = recipe.title
+    recipe.steps.forEach { step in
+      blendSpeeds.append(step.machineAction?.speed ?? 0)
+      blendTimes.append(step.machineAction?.time ?? 0)
+      checkStates.append(false)
+      totalStepCount++
+    }
+
+    updateExcuteButton()
   }
 
   func configureTableView() {
     recipeSteps.rowHeight = UITableViewAutomaticDimension
     recipeSteps.estimatedRowHeight = 160.0
-    recipeSteps.layoutMargins = UIEdgeInsetsZero
     recipeSteps.separatorInset = UIEdgeInsetsZero
   }
 
@@ -97,12 +111,12 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
   }
 
   @IBAction func onStartBlendingBtnTouchUp(sender: UIButton) {
-    print("StartBlending")
 
-    let time = demoTimes[currentStep]
-    let speed = demoSpeeds[currentStep]
+
+    let time = blendTimes[currentStep]
+    let speed = blendSpeeds[currentStep]
     BlenderBluetoothManager.sharedLoader.startBlending(time, speed: speed)
-
+    print("StartBlending -> time[ \(time) ] speed[ \(speed) ]")
     completeStep()
   }
 
@@ -114,22 +128,14 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
 
   func restartRecipe() {
     currentStep = 0
-
-    demoCheckState = [
-      false,
-      false,
-      false,
-      false,
-      false,
-      false
-    ]
+    checkStates = checkStates.flatMap { _ in false }
 
     updateExcuteButton()
     recipeSteps.reloadData()
   }
 
   func completeStep() {
-    demoCheckState[currentStep] = true
+    checkStates[currentStep] = true
     currentStep++
     updateExcuteButton()
     recipeSteps.reloadData()
@@ -142,18 +148,18 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     confirmBtn.hidden = true
     completeBtn.hidden = true
 
-    // not connected
-    if !BlenderBluetoothManager.sharedLoader.connected {
-      connectBlenderSettingBtn.hidden = false
-      return
-    }
+//    // not connected
+//    if !BlenderBluetoothManager.sharedLoader.connected {
+//      connectBlenderSettingBtn.hidden = false
+//      return
+//    }
 
-    if currentStep == demoSteps.count {
+    if currentStep == totalStepCount {
       completeBtn.hidden = false
       return
     }
 
-    let stepTime = demoTimes[currentStep]
+    let stepTime = blendTimes[currentStep]
     if (stepTime > 0) {
       startBlendingBtn.hidden = false
       skipBlendingBtn.hidden = false
@@ -164,48 +170,37 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
   }
 
   func setupCornerRadius() {
-    startBlendingBtn.layer.cornerRadius = 3.5
-    startBlendingBtn.layer.masksToBounds = true
-
-    skipBlendingBtn.layer.cornerRadius = 3.5
-    skipBlendingBtn.layer.masksToBounds = true
-
-    confirmBtn.layer.cornerRadius = 3.5
-    confirmBtn.layer.masksToBounds = true
-
-    completeBtn.layer.cornerRadius = 3.5
-    completeBtn.layer.masksToBounds = true
+    startBlendingBtn.rounded(3.5)
+    skipBlendingBtn.rounded(3.5)
+    confirmBtn.rounded(3.5)
+    completeBtn.rounded(3.5)
+    connectBlenderSettingBtn.rounded(3.5)
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return demoSteps.count
+    return recipe.steps.count
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("recipeStepCell", forIndexPath: indexPath) as! RecipeProduceTableViewCell
 
     cell.stepNumber.text = String(indexPath.row + 1)
-    cell.stepContent.text = demoSteps[indexPath.row]
-    cell.stepCheckIcon.hidden = !demoCheckState[indexPath.row]
-    cell.layoutMargins = UIEdgeInsetsZero
-
+    cell.stepContent.text = recipe.steps[indexPath.row].action
+    cell.stepCheckIcon.hidden = !checkStates[indexPath.row]
     return cell
   }
 
 }
 
 class RecipeProduceTableViewCell: UITableViewCell {
-
   @IBOutlet weak var stepNumber: UILabel!
   @IBOutlet weak var stepContent: UILabel!
   @IBOutlet weak var stepCheckIcon: UIImageView!
+}
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
+extension UIButton {
+  func rounded(radius: CGFloat) {
+    self.layer.cornerRadius = radius
+    self.layer.masksToBounds = true
   }
-
-  override func setSelected(selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-  }
-
 }

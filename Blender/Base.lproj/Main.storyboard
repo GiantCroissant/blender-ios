@@ -1219,6 +1219,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <outlet property="connectBlenderSettingBtn" destination="irK-7b-2YX" id="pba-He-XpE"/>
                         <outlet property="connectionStatusLabel" destination="qfM-qp-jIn" id="vnm-8c-3GN"/>
                         <outlet property="recipeSteps" destination="AAm-aB-rgK" id="yHO-gX-tGy"/>
+                        <outlet property="recipeTitle" destination="Pyq-QC-UdJ" id="NQq-8r-Syf"/>
                         <outlet property="skipBlendingBtn" destination="18c-vh-gk2" id="3dB-gC-Z3h"/>
                         <outlet property="startBlendingBtn" destination="C4q-Uo-F5x" id="5zn-y3-hOf"/>
                     </connections>

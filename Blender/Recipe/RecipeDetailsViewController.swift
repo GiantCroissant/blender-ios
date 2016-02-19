@@ -30,6 +30,8 @@ class RecipeDetailsViewController: UIViewController {
     }
 
     if segue.identifier == "produce" {
+      let produceVC = destVC as! RecipeProduceViewController
+      produceVC.recipe = self.recipe
     }
   }
 
