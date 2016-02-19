@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     setupCustomNavigationBarColor()
     setupCustomStatusBarColor()
@@ -28,20 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   func setupCustomStatusBarColor() {
-
-    //        var statusBar = UIView()
-    //        statusBar.frame = CGRectMake(0, 0, 320, 20)
-    //        statusBar.backgroundColor = UIColor(rgba: "#7db343")
-    //        self.window?.rootViewController?.view.addSubview(statusBar)
-
     let view = UIView(frame:
       CGRect(x: 0.0, y: 0.0, width: UIScreen.mainScreen().bounds.size.width, height: 20.0)
     )
     view.backgroundColor = UIColor(rgba: "#336900")
     self.window?.rootViewController?.view.addSubview(view)
-
-    //      self.revealViewController().view.addSubview(view)
-
     let application = UIApplication.sharedApplication()
     application.setStatusBarStyle(.LightContent, animated: true)
   }

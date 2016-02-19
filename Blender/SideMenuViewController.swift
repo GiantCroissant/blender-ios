@@ -12,9 +12,7 @@ class SideMenuViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.revealViewController().rearViewRevealWidth = self.view.frame.width - 64
-
-    
+    self.revealViewController().rearViewRevealWidth = self.view.frame.width - 64    
   }
 
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

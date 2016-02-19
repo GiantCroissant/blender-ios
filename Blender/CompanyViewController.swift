@@ -9,7 +9,6 @@
 import UIKit
 
 class CompanyViewController: UITableViewController {
-
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
     var productDatas = [String]()
@@ -37,5 +36,4 @@ class CompanyViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("product", forIndexPath: indexPath) 
         return cell
     }
-
 }
