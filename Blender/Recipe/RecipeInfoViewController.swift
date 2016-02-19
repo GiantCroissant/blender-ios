@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TTGSnackbar
 
 class RecipeInfoViewController: UIViewController {
   @IBOutlet weak var recipeTitle: UILabel!
@@ -30,6 +31,10 @@ class RecipeInfoViewController: UIViewController {
   @IBAction func onCollect(sender: AnyObject) {
     RecipeManager.sharedInstance.collectRecipe(recipe.id)
     configureCollectButtonIcon()
+
+    let collected = RecipeManager.sharedInstance.isCollected(recipe.id)
+    let message = recipe.title + (collected ? " 已加入收藏" : " 已取消收藏")
+    TTGSnackbar.init(message: message, duration: TTGSnackbarDuration.Short).show()
   }
 
   func configureCollectButtonIcon() {

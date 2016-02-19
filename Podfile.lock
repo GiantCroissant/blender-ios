@@ -1,9 +1,11 @@
 PODS:
   - Gloss (0.6.2)
+  - TTGSnackbar (0.2.2)
   - youtube-ios-player-helper (0.1.5)
 
 DEPENDENCIES:
   - Gloss (~> 0.6)
+  - TTGSnackbar
   - youtube-ios-player-helper (from `https://github.com/youtube/youtube-ios-player-helper`,
     commit `head`)
 
@@ -19,6 +21,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Gloss: 22fd970682b5449e08e2f41c5087eefe7d7d084b
+  TTGSnackbar: 6013f3c7aa556fdac91fef64ccf3f5c136903027
   youtube-ios-player-helper: 921da8927a575debc293a94c678c658f38cde150
 
 COCOAPODS: 0.39.0
