@@ -53,18 +53,14 @@ class PersonalCollectionViewController: UITableViewController {
 
   override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     if (editingStyle == UITableViewCellEditingStyle.Delete) {
-      let refreshAlert = UIAlertController(title: "刪除收藏", message: "確定要刪除此筆收藏？", preferredStyle: UIAlertControllerStyle.Alert)
-
-      refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-
+      let refreshAlert = UIAlertController(title: "刪除收藏", message: "確定要刪除此筆收藏？", preferredStyle: .Alert)
+      refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default) { _ in
+        let recipe = self.collections[indexPath.row]
         self.collections.removeAtIndex(indexPath.row)
+        RecipeManager.sharedInstance.collectRecipe(recipe.id)
         tableView.reloadData()
-
-      }))
-
-      refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
-      }))
-
+      })
+      refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default) { _ in })
       presentViewController(refreshAlert, animated: true, completion: nil)
     }
   }
