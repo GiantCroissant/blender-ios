@@ -63,8 +63,14 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
 
   @IBAction func onCompleteBtnTouchUp(sender: UIButton) {
     print("Complete")
-    restartRecipe()
     RecipeManager.sharedInstance.saveRecord(recipe)
+
+    let refreshAlert = UIAlertController(title: "恭喜製作完成", message: "\(recipe.title)", preferredStyle: .Alert)
+    let doneAction = UIAlertAction(title: "OK", style: .Default) { _ in
+      self.restartRecipe()
+    }
+    refreshAlert.addAction(doneAction)
+    presentViewController(refreshAlert, animated: true, completion: nil)
   }
 
   @IBAction func onConfirmBtnTouchUp(sender: UIButton) {
