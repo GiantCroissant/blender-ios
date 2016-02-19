@@ -757,10 +757,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvh-lD-SUP" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="otX-y3-glW"/>
+                                    <constraint firstAttribute="height" constant="48" id="otX-y3-glW"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -792,13 +792,13 @@
                                 </connections>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Us-CUh" userLabel="Operation Setting Page">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
                                     <segue destination="kXr-RX-BPY" kind="embed" id="gwq-a6-dFq"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSG-ct-QP3" userLabel="Connection Setting Page">
-                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
                                     <segue destination="QOg-cs-g39" kind="embed" id="ubG-Me-auv"/>
                                 </connections>
@@ -1547,7 +1547,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yw5-Fp-RHc"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NoD-yp-KaN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="555"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adC-El-3z0" userLabel="Control Panel">
@@ -1732,7 +1732,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5W-Fy-ebe" userLabel="TimerPicker">
-                                <rect key="frame" x="0.0" y="305" width="375" height="254"/>
+                                <rect key="frame" x="0.0" y="301" width="375" height="254"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-O2-oZN" userLabel="Tool Bar">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -1810,7 +1810,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di3-w2-LGO" userLabel="SpeedPicker">
-                                <rect key="frame" x="0.0" y="305" width="375" height="254"/>
+                                <rect key="frame" x="0.0" y="301" width="375" height="254"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-7Z-Y36" userLabel="Tool Bar">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -1926,7 +1926,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1bc-xl-toj"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p3y-Rb-msy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="555"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-tm-Xvk" customClass="CardView" customModule="Blender" customModuleProvider="target">
@@ -1981,10 +1981,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XV-FA-FBf" userLabel="Devices Area">
-                                <rect key="frame" x="0.0" y="138" width="375" height="421"/>
+                                <rect key="frame" x="0.0" y="138" width="375" height="417"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zja-ra-Tvo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="421"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="blenderDeviceCell" rowHeight="64" id="u3R-By-t3R" customClass="BLEDeviceTableViewCell" customModule="Blender" customModuleProvider="target">
