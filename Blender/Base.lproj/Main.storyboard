@@ -526,7 +526,7 @@
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item1" value="健康履歷"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="item2" value="收藏"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="item2" value="我的收藏"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="count">
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
@@ -940,57 +940,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-O1-a8f">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-O1-a8f">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="max-DK-8jz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recordCell" id="3VP-Rq-DmT" customClass="RecordCell" customModule="Blender" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="29" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3VP-Rq-DmT" id="h1v-gy-1mr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="製作日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLk-xv-HBx">
-                                                    <rect key="frame" x="16" y="59.5" width="343" height="16"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="16" id="3ui-A3-bp6"/>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="103" id="yQk-wf-FUG"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="yQk-wf-FUG"/>
-                                                        </mask>
-                                                    </variation>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食譜名稱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgI-45-4Zm">
-                                                    <rect key="frame" x="16" y="24" width="343" height="27.5"/>
+                                                    <rect key="frame" x="16" y="24" width="343" height="34"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="aTn-LF-yUM"/>
                                                         <constraint firstAttribute="height" constant="21" id="eyC-gq-hsd"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="rcI-f4-RZG"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="yV5-RW-QZI"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
+                                                            <exclude reference="aTn-LF-yUM"/>
                                                             <exclude reference="eyC-gq-hsd"/>
+                                                            <exclude reference="rcI-f4-RZG"/>
                                                             <exclude reference="yV5-RW-QZI"/>
                                                         </mask>
                                                     </variation>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="製作日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLk-xv-HBx">
+                                                    <rect key="frame" x="16" y="60" width="343" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="1ka-6x-c3k"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="3ui-A3-bp6"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="103" id="yQk-wf-FUG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="3ui-A3-bp6"/>
+                                                            <exclude reference="yQk-wf-FUG"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5i-Rl-SAY">
+                                                    <rect key="frame" x="0.0" y="98" width="375" height="1"/>
+                                                    <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="zcB-Gd-h59"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="rLk-xv-HBx" secondAttribute="trailing" constant="16" id="5Aa-U7-gPi"/>
                                                 <constraint firstAttribute="bottom" secondItem="rLk-xv-HBx" secondAttribute="bottom" constant="24" id="9GL-8B-5wP"/>
                                                 <constraint firstItem="EgI-45-4Zm" firstAttribute="leading" secondItem="h1v-gy-1mr" secondAttribute="leading" constant="16" id="9WB-Un-rBd"/>
+                                                <constraint firstAttribute="bottom" secondItem="s5i-Rl-SAY" secondAttribute="bottom" id="Eai-kZ-Krr"/>
+                                                <constraint firstAttribute="trailing" secondItem="s5i-Rl-SAY" secondAttribute="trailing" id="Fob-Ee-S2j"/>
+                                                <constraint firstItem="s5i-Rl-SAY" firstAttribute="leading" secondItem="h1v-gy-1mr" secondAttribute="leading" id="UoI-O0-cyB"/>
                                                 <constraint firstItem="EgI-45-4Zm" firstAttribute="top" secondItem="h1v-gy-1mr" secondAttribute="top" constant="24" id="j0W-ND-t5v"/>
                                                 <constraint firstItem="rLk-xv-HBx" firstAttribute="leading" secondItem="h1v-gy-1mr" secondAttribute="leading" constant="16" id="pkN-bE-j5C"/>
                                                 <constraint firstAttribute="trailing" secondItem="EgI-45-4Zm" secondAttribute="trailing" constant="16" id="qG6-Am-ooi"/>
-                                                <constraint firstItem="rLk-xv-HBx" firstAttribute="top" secondItem="EgI-45-4Zm" secondAttribute="bottom" constant="8" id="rwD-rJ-rwz"/>
+                                                <constraint firstItem="rLk-xv-HBx" firstAttribute="top" secondItem="EgI-45-4Zm" secondAttribute="bottom" constant="2" id="rwD-rJ-rwz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

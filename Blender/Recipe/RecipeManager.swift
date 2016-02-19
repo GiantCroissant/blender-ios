@@ -18,28 +18,9 @@ class RecipeManager {
   private var records = [Record]()
 
   init() {
-    if userDefaults.arrayForKey("collection") == nil {
-      updateUserDefaults()
-    }
-    collectionIds = userDefaults.arrayForKey("collection") as! [String]
-
-    if userDefaults.arrayForKey("record") == nil {
-      userDefaults.setObject(records, forKey: "record")
-    }
-
-    if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
-      do {
-        let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-        let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
-        if let recipeCollection = RecipeCollections(json: jsonResult as! JSON) {
-          self.recipes = recipeCollection.recipes
-        }
-      } catch {
-        print(error)
-      }
-    } else {
-      print("data.json not found!")
-    }
+    collectionIds = userDefaults.arrayForKey("collection") as? [String] ?? [String]()
+    records = unarchiveRecords()
+    recipes = readRecipesFromBundleJson()
   }
 
   func getCollectionRecipeIds() -> [String] {
@@ -81,17 +62,39 @@ class RecipeManager {
     return records
   }
 
-  /*
-  let encodedData = NSKeyedArchiver.archivedDataWithRootObject(teams)
-  userDefaults.setObject(encodedData, forKey: "teams")
-  */
-
   func saveRecord(recipe: Recipe) {
     let newRecord = Record(title: recipe.title, date: NSDate().stringFormattedAsRFC3339)
     records.append(newRecord)
+    records.sortInPlace { $0.date.toNSDate() > $1.date.toNSDate() }
+
     let encodedRecords = NSKeyedArchiver.archivedDataWithRootObject(records)
     userDefaults.setObject(encodedRecords, forKey: "record")
-    userDefaults.synchronize()
+  }
+
+  func unarchiveRecords() -> [Record] {
+    if let encodedRecords = userDefaults.objectForKey("record") as? NSData {
+      let deCodedRecords = NSKeyedUnarchiver.unarchiveObjectWithData(encodedRecords) as! [Record]
+      return deCodedRecords.sort { $0.date.toNSDate() > $1.date.toNSDate() }
+    }
+    return [Record]()
+  }
+
+  func readRecipesFromBundleJson() -> [Recipe] {
+    if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
+      do {
+        let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+        let jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers)
+        if let recipeCollection = RecipeCollections(json: jsonResult as! JSON) {
+          return recipeCollection.recipes
+        }
+      } catch {
+        print(error)
+      }
+    } else {
+      print("data.json not found!")
+    }
+
+    return [Recipe]()
   }
 
 }

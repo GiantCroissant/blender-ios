@@ -16,6 +16,8 @@ class PersonalRecordViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     records = RecipeManager.sharedInstance.loadRecords()
+    recordTableView.rowHeight = UITableViewAutomaticDimension
+    recordTableView.estimatedRowHeight = 100
   }
 }
 
@@ -37,8 +39,13 @@ class RecordCell: UITableViewCell {
 
   var record: Record! {
     didSet {
+      let formatter = NSDateFormatter()
+      formatter.dateStyle = .MediumStyle
+      formatter.timeStyle = .MediumStyle
+
+      let dateString = formatter.stringFromDate(record.date.toNSDate())
       recipeTitle.text = record.title
-      madeDate.text = record.date.toNSDate().stringFormattedAsRFC3339
+      madeDate.text = dateString
     }
   }
 }

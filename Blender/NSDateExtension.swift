@@ -21,16 +21,6 @@ extension String {
 
 
 extension NSDate {
-  //    struct Date {
-  //        static let formatter = NSDateFormatter()
-  //    }
-  //    var formatted: String {
-  //        Date.formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSX"
-  //        Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-  //        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
-  //        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-  //        return Date.formatter.stringFromDate(self)
-  //    }
 
   var stringFormattedAsRFC3339: String {
     return rfc3339formatter.stringFromDate(self)
@@ -115,4 +105,23 @@ extension NSDate {
     return "0秒前"
   }
 
+}
+
+
+func <=(lhs: NSDate, rhs: NSDate) -> Bool {
+  let res = lhs.compare(rhs)
+  return res == .OrderedAscending || res == .OrderedSame
+}
+func >=(lhs: NSDate, rhs: NSDate) -> Bool {
+  let res = lhs.compare(rhs)
+  return res == .OrderedDescending || res == .OrderedSame
+}
+func >(lhs: NSDate, rhs: NSDate) -> Bool {
+  return lhs.compare(rhs) == .OrderedDescending
+}
+func <(lhs: NSDate, rhs: NSDate) -> Bool {
+  return lhs.compare(rhs) == .OrderedAscending
+}
+func ==(lhs: NSDate, rhs: NSDate) -> Bool {
+  return lhs.compare(rhs) == .OrderedSame
 }
