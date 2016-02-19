@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class RecipeVideoViewController: UIViewController {
+  @IBOutlet weak var player: YTPlayerView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  var recipe: Recipe!
 
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.title = recipe.title
+    player.loadWithVideoId(recipe.videoCode)
+  }
 }

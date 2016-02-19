@@ -24,7 +24,9 @@ class RecipeDetailsViewController: UIViewController {
       infoVC.recipe = self.recipe
     }
 
-    if segue.identifier == "video" {
+    if segue.identifier == "videoPlayer" {
+      let videoVC = destVC as! RecipeVideoViewController
+      videoVC.recipe = self.recipe
     }
 
     if segue.identifier == "produce" {

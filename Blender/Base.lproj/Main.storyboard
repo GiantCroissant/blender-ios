@@ -145,7 +145,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7z-ee-c8l" userLabel="影片">
                                 <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                                 <connections>
-                                    <segue destination="jXF-Ob-MfV" kind="embed" identifier="video" id="jxh-Cg-10H"/>
+                                    <segue destination="OuT-4W-arH" kind="embed" identifier="videoPlayer" id="R7x-8h-E6v"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s00-MA-9vr" userLabel="簡介">
@@ -156,26 +156,9 @@
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktU-6D-r2j" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPQ-Ld-Mlw" userLabel="Video Button">
-                                        <rect key="frame" x="124.5" y="0.0" width="125" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title=" ">
-                                            <color key="titleColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="OuT-4W-arH" kind="show" id="HH9-8z-bmw"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="centerX" secondItem="ktU-6D-r2j" secondAttribute="centerX" id="2VG-SW-ImV"/>
                                     <constraint firstAttribute="height" constant="48" id="4Q2-zo-vzg"/>
-                                    <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="centerY" secondItem="ktU-6D-r2j" secondAttribute="centerY" id="8iu-jn-lwH"/>
-                                    <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="height" secondItem="ktU-6D-r2j" secondAttribute="height" id="krd-ua-eSv"/>
-                                    <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="width" secondItem="ktU-6D-r2j" secondAttribute="width" multiplier="1/3" id="o8B-76-y4v"/>
-                                    <constraint firstItem="aPQ-Ld-Mlw" firstAttribute="centerX" secondItem="ktU-6D-r2j" secondAttribute="centerX" id="ulP-Y2-h4K"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -200,11 +183,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item3" value="製作"/>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ulP-Y2-h4K"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="DMs-TV-l3W"/>
                                     <action selector="segmentValueChanged:" destination="LKV-X4-zsH" eventType="valueChanged" id="rYU-R6-T4U"/>
@@ -1156,7 +1134,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUZ-NS-BWC">
-                                <rect key="frame" x="9" y="486" width="357" height="59.5"/>
+                                <rect key="frame" x="9" y="487" width="357" height="59.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="完成">
@@ -1168,7 +1146,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irK-7b-2YX">
-                                <rect key="frame" x="8" y="486" width="357" height="58"/>
+                                <rect key="frame" x="8" y="487" width="357" height="58"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="rBO-M8-x64"/>
@@ -1234,36 +1212,6 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
             <point key="canvasLocation" x="2696.5" y="722.5"/>
         </scene>
         <!--Recipe Video View Controller-->
-        <scene sceneID="N8g-G9-YxI">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jXF-Ob-MfV" customClass="RecipeVideoViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HJH-kC-dYG"/>
-                        <viewControllerLayoutGuide type="bottom" id="dBg-F4-H3M"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Je6-Ij-8N8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_youtube" translatesAutoresizingMaskIntoConstraints="NO" id="ysx-Cb-bvj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ysx-Cb-bvj" secondAttribute="trailing" id="HQz-ki-Has"/>
-                            <constraint firstItem="dBg-F4-H3M" firstAttribute="top" secondItem="ysx-Cb-bvj" secondAttribute="bottom" id="Rhl-rk-9lU"/>
-                            <constraint firstItem="ysx-Cb-bvj" firstAttribute="top" secondItem="HJH-kC-dYG" secondAttribute="bottom" id="XWN-94-VlG"/>
-                            <constraint firstItem="ysx-Cb-bvj" firstAttribute="leading" secondItem="Je6-Ij-8N8" secondAttribute="leading" id="zRr-Fd-1o2"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NNp-MK-Kx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2676.5" y="-243.5"/>
-        </scene>
-        <!--Recipe Video View Controller-->
         <scene sceneID="02G-AZ-TMG">
             <objects>
                 <viewController id="OuT-4W-arH" customClass="RecipeVideoViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
@@ -1272,14 +1220,37 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <viewControllerLayoutGuide type="bottom" id="XrU-WT-EJn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9ba-I2-9gV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeK-sC-Fkd" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="0Np-RS-cdi"/>
+                                    <constraint firstAttribute="width" secondItem="eeK-sC-Fkd" secondAttribute="height" multiplier="4:3" id="eMy-ye-SRc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Np-RS-cdi"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eeK-sC-Fkd" firstAttribute="leading" secondItem="9ba-I2-9gV" secondAttribute="leading" id="9az-qn-Vb0"/>
+                            <constraint firstAttribute="trailing" secondItem="eeK-sC-Fkd" secondAttribute="trailing" id="IEy-j1-bnn"/>
+                            <constraint firstItem="eeK-sC-Fkd" firstAttribute="top" secondItem="lZw-TQ-Zxa" secondAttribute="bottom" id="IUF-CG-S01"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="player" destination="eeK-sC-Fkd" id="aCo-bA-M0u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zB-uw-feh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3122.5" y="-211.5"/>
+            <point key="canvasLocation" x="2676.5" y="-226.5"/>
         </scene>
         <!--Recipe Info View Controller-->
         <scene sceneID="RE3-k3-cud">
@@ -2026,7 +1997,6 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
         <image name="1_1" width="480" height="269"/>
         <image name="btn_collected" width="44" height="44"/>
         <image name="checked_icon" width="53" height="53"/>
-        <image name="demo_youtube" width="760" height="1340"/>
         <image name="device_not_connected" width="44" height="44"/>
         <image name="menu" width="22" height="22"/>
         <image name="mrblender_logo-1" width="200" height="120"/>
