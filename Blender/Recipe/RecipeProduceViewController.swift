@@ -10,6 +10,8 @@ import UIKit
 
 class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, BlenderConnectionState {
 
+  let DEBUG_MODE = true
+
   @IBOutlet weak var startBlendingBtn: UIButton!
   @IBOutlet weak var skipBlendingBtn: UIButton!
   @IBOutlet weak var confirmBtn: UIButton!
@@ -62,6 +64,7 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
   @IBAction func onCompleteBtnTouchUp(sender: UIButton) {
     print("Complete")
     restartRecipe()
+    RecipeManager.sharedInstance.saveRecord(recipe)
   }
 
   @IBAction func onConfirmBtnTouchUp(sender: UIButton) {
@@ -104,9 +107,11 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
     completeBtn.hidden = true
 
     // not connected
-    if !BlenderBluetoothManager.sharedLoader.connected {
-      connectBlenderSettingBtn.hidden = false
-      return
+    if !DEBUG_MODE {
+      if !BlenderBluetoothManager.sharedLoader.connected {
+        connectBlenderSettingBtn.hidden = false
+        return
+      }
     }
 
     if currentStep == totalStepCount {

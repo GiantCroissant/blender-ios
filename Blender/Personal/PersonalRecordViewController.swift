@@ -15,7 +15,6 @@ class PersonalRecordViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
     records = RecipeManager.sharedInstance.loadRecords()
   }
 }
@@ -27,7 +26,6 @@ extension PersonalRecordViewController: UITableViewDataSource {
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("recordCell", forIndexPath: indexPath) as! RecordCell
-
     cell.record = records[indexPath.row]
     return cell
   }
@@ -40,13 +38,30 @@ class RecordCell: UITableViewCell {
   var record: Record! {
     didSet {
       recipeTitle.text = record.title
-      madeDate.text = record.date
+      madeDate.text = record.date.toNSDate().stringFormattedAsRFC3339
     }
   }
 }
 
+class Record: NSObject, NSCoding {
+  var title: String!
+  var date: String!
 
-struct Record {
-  var title = ""
-  var date = ""
+  init(title: String, date: String) {
+    self.title = title
+    self.date = date
+  }
+
+  required convenience init(coder aDecoder: NSCoder) {
+    let title = aDecoder.decodeObjectForKey("title") as! String
+    let date = aDecoder.decodeObjectForKey("date") as! String
+    self.init(title: title, date: date)
+  }
+
+  func encodeWithCoder(aCoder: NSCoder) {
+    aCoder.encodeObject(title, forKey: "title")
+    aCoder.encodeObject(date, forKey: "date")
+  }
 }
+
+

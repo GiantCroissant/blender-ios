@@ -15,12 +15,17 @@ class RecipeManager {
   private let userDefaults = NSUserDefaults.standardUserDefaults()
   private var collectionIds = [String]()
   private var recipes = [Recipe]()
+  private var records = [Record]()
 
   init() {
     if userDefaults.arrayForKey("collection") == nil {
       updateUserDefaults()
     }
     collectionIds = userDefaults.arrayForKey("collection") as! [String]
+
+    if userDefaults.arrayForKey("record") == nil {
+      userDefaults.setObject(records, forKey: "record")
+    }
 
     if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
       do {
@@ -73,8 +78,20 @@ class RecipeManager {
   }
 
   func loadRecords() -> [Record] {
-    
-    return [Record]()
+    return records
+  }
+
+  /*
+  let encodedData = NSKeyedArchiver.archivedDataWithRootObject(teams)
+  userDefaults.setObject(encodedData, forKey: "teams")
+  */
+
+  func saveRecord(recipe: Recipe) {
+    let newRecord = Record(title: recipe.title, date: NSDate().stringFormattedAsRFC3339)
+    records.append(newRecord)
+    let encodedRecords = NSKeyedArchiver.archivedDataWithRootObject(records)
+    userDefaults.setObject(encodedRecords, forKey: "record")
+    userDefaults.synchronize()
   }
 
 }
