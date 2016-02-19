@@ -1298,9 +1298,12 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                             <constraint firstAttribute="width" constant="32" id="Lsl-HR-szb"/>
                                                             <constraint firstAttribute="width" secondItem="ngr-1o-iHn" secondAttribute="height" multiplier="1:1" id="RyP-Ed-wFH"/>
                                                         </constraints>
-                                                        <state key="normal" image="btn_collected">
+                                                        <state key="normal" image="collect_n">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onCollect:" destination="mB0-wd-UGh" eventType="touchUpInside" id="iKq-S9-hzH"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="食譜名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-EW-frr">
                                                         <rect key="frame" x="16" y="16" width="72" height="21.5"/>
@@ -2013,8 +2016,8 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
     </scenes>
     <resources>
         <image name="1_1" width="480" height="269"/>
-        <image name="btn_collected" width="44" height="44"/>
         <image name="checked_icon" width="53" height="53"/>
+        <image name="collect_n" width="44" height="44"/>
         <image name="device_not_connected" width="44" height="44"/>
         <image name="menu" width="22" height="22"/>
         <image name="mrblender_logo-1" width="200" height="120"/>

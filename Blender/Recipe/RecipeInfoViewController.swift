@@ -24,7 +24,20 @@ class RecipeInfoViewController: UIViewController {
     ingredientsLabel.text = recipe.getIngredients()
     stepsLabel.text = recipe.getSteps()
     descriptionLabel.text = recipe.description
+    configureCollectButtonIcon()
   }
+
+  @IBAction func onCollect(sender: AnyObject) {
+    RecipeManager.sharedInstance.collectRecipe(recipe.id)
+    configureCollectButtonIcon()
+  }
+
+  func configureCollectButtonIcon() {
+    let collected = RecipeManager.sharedInstance.isCollected(recipe.id)
+    let imageName = collected ? "collect_y" : "collect_n"
+    collectButton.setImage(UIImage(named: imageName), forState: .Normal)
+  }
+
 }
 
 extension Recipe {

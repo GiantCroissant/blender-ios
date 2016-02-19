@@ -13,14 +13,14 @@ class RecipeManager {
   static let sharedInstance = RecipeManager()
 
   private let userDefaults = NSUserDefaults.standardUserDefaults()
-  private var collectionIds = [Int]()
+  private var collectionIds = [String]()
   private var recipes = [Recipe]()
 
   init() {
     if userDefaults.arrayForKey("collection") == nil {
       updateUserDefaults()
     }
-    collectionIds = userDefaults.arrayForKey("collection") as! [Int]
+    collectionIds = userDefaults.arrayForKey("collection") as! [String]
 
     if let path = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
       do {
@@ -37,11 +37,11 @@ class RecipeManager {
     }
   }
 
-  func getCollectionRecipeIds() -> [Int] {
+  func getCollectionRecipeIds() -> [String] {
     return collectionIds
   }
 
-  func collectRecipe(recipeId: Int) {
+  func collectRecipe(recipeId: String) {
     if collectionIds.contains(recipeId) {
       collectionIds.removeObject(recipeId)
       updateUserDefaults()
@@ -50,6 +50,10 @@ class RecipeManager {
       collectionIds.append(recipeId)
       updateUserDefaults()
     }
+  }
+
+  func isCollected(recipeId: String) -> Bool {
+    return collectionIds.contains(recipeId)
   }
 
   private func updateUserDefaults() {
