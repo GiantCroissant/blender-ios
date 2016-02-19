@@ -1225,7 +1225,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeK-sC-Fkd" customClass="YTPlayerView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.1647058824" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="0Np-RS-cdi"/>
                                     <constraint firstAttribute="width" secondItem="eeK-sC-Fkd" secondAttribute="height" multiplier="4:3" id="eMy-ye-SRc"/>
