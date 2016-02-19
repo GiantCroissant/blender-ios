@@ -10,7 +10,7 @@ import UIKit
 
 class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, BlenderConnectionState {
 
-  let DEBUG_MODE = true
+  let DEBUG_MODE = false
 
   @IBOutlet weak var startBlendingBtn: UIButton!
   @IBOutlet weak var skipBlendingBtn: UIButton!
