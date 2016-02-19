@@ -95,8 +95,13 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
   func completeStep() {
     checkStates[currentStep] = true
     currentStep++
+
+
     updateExcuteButton()
     recipeSteps.reloadData()
+
+    let index = NSIndexPath(forRow: currentStep - 1, inSection: 0)
+    recipeSteps.scrollToRowAtIndexPath(index, atScrollPosition: .Bottom, animated: true)
   }
 
   func updateExcuteButton() {
