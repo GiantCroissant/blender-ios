@@ -1297,10 +1297,10 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-On-cCS" userLabel="Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="482.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="480.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIx-Vo-zyF" userLabel="CardView" customClass="CardView" customModule="Blender" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="16" width="343" height="450.5"/>
+                                                <rect key="frame" x="16" y="16" width="343" height="448.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-1o-iHn">
                                                         <rect key="frame" x="295" y="11" width="32" height="32"/>
@@ -1313,51 +1313,51 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="雪梨香蕉汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-EW-frr">
-                                                        <rect key="frame" x="16" y="16" width="90" height="21.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="食譜名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-EW-frr">
+                                                        <rect key="frame" x="16" y="16" width="72" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.41176470590000003" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_03" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-LZ-ZMp">
-                                                        <rect key="frame" x="16" y="53" width="311" height="207"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_1" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-LZ-ZMp">
+                                                        <rect key="frame" x="16" y="54" width="311" height="207"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Xmi-LZ-ZMp" secondAttribute="height" multiplier="3:2" id="lol-ov-eVn"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="材料" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbB-F4-Fiw" userLabel="材料">
-                                                        <rect key="frame" x="16" y="276" width="32" height="19.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <rect key="frame" x="16" y="277" width="32" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.41176470588235292" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHA-fb-w8y" userLabel="材料">
                                                         <rect key="frame" x="16" y="334" width="32" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作法文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-oe-6I8">
+                                                        <rect key="frame" x="16" y="356" width="311" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="材料文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIw-Vp-15e">
-                                                        <rect key="frame" x="16" y="297.5" width="68" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作法文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-oe-6I8">
-                                                        <rect key="frame" x="16" y="356" width="68" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8h-m2-YTl" userLabel="材料">
-                                                        <rect key="frame" x="16" y="392.5" width="32" height="19.5"/>
+                                                        <rect key="frame" x="16" y="391" width="32" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOo-bG-MxY">
+                                                        <rect key="frame" x="16" y="413" width="311" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOo-bG-MxY">
-                                                        <rect key="frame" x="16" y="414" width="68" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="材料文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIw-Vp-15e">
+                                                        <rect key="frame" x="16" y="298" width="311" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1370,12 +1370,15 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <constraint firstItem="NTr-EW-frr" firstAttribute="leading" secondItem="lIx-Vo-zyF" secondAttribute="leading" constant="16" id="5Ob-g3-KS1"/>
                                                     <constraint firstItem="hOx-oe-6I8" firstAttribute="top" secondItem="VHA-fb-w8y" secondAttribute="bottom" constant="2" id="75q-Fn-wx6"/>
                                                     <constraint firstItem="VHA-fb-w8y" firstAttribute="leading" secondItem="lIx-Vo-zyF" secondAttribute="leading" constant="16" id="KVx-us-Jhl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lIw-Vp-15e" secondAttribute="trailing" constant="16" id="Nw1-CZ-3Km"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hOx-oe-6I8" secondAttribute="trailing" constant="16" id="Quq-AU-XKe"/>
                                                     <constraint firstItem="lIw-Vp-15e" firstAttribute="top" secondItem="RbB-F4-Fiw" secondAttribute="bottom" constant="2" id="SkX-6A-4T4"/>
                                                     <constraint firstAttribute="bottom" secondItem="Xmi-LZ-ZMp" secondAttribute="bottom" constant="300" id="Tra-OE-OfP"/>
                                                     <constraint firstItem="RbB-F4-Fiw" firstAttribute="leading" secondItem="lIx-Vo-zyF" secondAttribute="leading" constant="16" id="Ud2-cE-ql4"/>
                                                     <constraint firstAttribute="bottom" secondItem="EOo-bG-MxY" secondAttribute="bottom" constant="16" id="UwE-3X-hUx"/>
                                                     <constraint firstItem="EOo-bG-MxY" firstAttribute="leading" secondItem="lIx-Vo-zyF" secondAttribute="leading" constant="16" id="VeK-bM-3qR"/>
                                                     <constraint firstAttribute="trailing" secondItem="ngr-1o-iHn" secondAttribute="trailing" constant="16" id="VgI-oe-1Va"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EOo-bG-MxY" secondAttribute="trailing" constant="16" id="aRS-dt-rte"/>
                                                     <constraint firstItem="EOo-bG-MxY" firstAttribute="top" secondItem="d8h-m2-YTl" secondAttribute="bottom" constant="2" id="fwB-n6-euv"/>
                                                     <constraint firstItem="Xmi-LZ-ZMp" firstAttribute="top" secondItem="NTr-EW-frr" secondAttribute="bottom" constant="16" id="gCz-yT-tt7"/>
                                                     <constraint firstAttribute="bottom" secondItem="Xmi-LZ-ZMp" secondAttribute="bottom" constant="16" id="geN-Ig-jEy"/>
@@ -1437,8 +1440,11 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                     <toolbarItems/>
                     <connections>
                         <outlet property="collectButton" destination="ngr-1o-iHn" id="cq3-Jc-5To"/>
+                        <outlet property="descriptionLabel" destination="EOo-bG-MxY" id="fA9-ri-hFb"/>
+                        <outlet property="ingredientsLabel" destination="lIw-Vp-15e" id="udj-KN-MS4"/>
                         <outlet property="recipeImage" destination="Xmi-LZ-ZMp" id="YdT-Dx-JuH"/>
                         <outlet property="recipeTitle" destination="NTr-EW-frr" id="9zI-CY-QQ9"/>
+                        <outlet property="stepsLabel" destination="hOx-oe-6I8" id="EQe-GR-fSb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGf-Oa-NON" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2017,6 +2023,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
         </scene>
     </scenes>
     <resources>
+        <image name="1_1" width="480" height="269"/>
         <image name="btn_collected" width="44" height="44"/>
         <image name="checked_icon" width="53" height="53"/>
         <image name="demo_youtube" width="760" height="1340"/>
@@ -2025,7 +2032,6 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
         <image name="mrblender_logo-1" width="200" height="120"/>
         <image name="recipe" width="260" height="208"/>
         <image name="recipe_02" width="160" height="124"/>
-        <image name="recipe_03" width="160" height="124"/>
         <image name="side_icon_personal" width="44" height="44"/>
         <image name="side_icon_recipe" width="44" height="44"/>
         <image name="side_icon_shop" width="44" height="44"/>
