@@ -605,8 +605,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nz1-5s-sFb">
-                                            <rect key="frame" x="0.0" y="98" width="375" height="1"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz1-5s-sFb">
+                                            <rect key="frame" x="0.0" y="99" width="375" height="1"/>
                                             <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="p2E-0V-XWl"/>
@@ -643,7 +643,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSJ-Kk-dwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585.5" y="995.5"/>
+            <point key="canvasLocation" x="2146.5" y="601.5"/>
         </scene>
         <!--食譜清單-->
         <scene sceneID="lF1-9r-CHN">
@@ -928,10 +928,10 @@
             </objects>
             <point key="canvasLocation" x="1059" y="2520"/>
         </scene>
-        <!--View Controller-->
+        <!--Personal Record View Controller-->
         <scene sceneID="uyj-FF-2sD">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pKY-mj-fLG" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pKY-mj-fLG" customClass="PersonalRecordViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wXX-gb-r4a"/>
                         <viewControllerLayoutGuide type="bottom" id="TMg-CL-aJ5"/>
@@ -940,31 +940,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康履歷" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3me-rQ-uYs">
-                                <rect key="frame" x="153" y="324" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-O1-a8f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recordCell" id="3VP-Rq-DmT" customClass="RecordCell" customModule="Blender" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3VP-Rq-DmT" id="h1v-gy-1mr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="製作日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLk-xv-HBx">
+                                                    <rect key="frame" x="16" y="59.5" width="343" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="3ui-A3-bp6"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="103" id="yQk-wf-FUG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="yQk-wf-FUG"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食譜名稱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgI-45-4Zm">
+                                                    <rect key="frame" x="16" y="24" width="343" height="27.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="eyC-gq-hsd"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="yV5-RW-QZI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="eyC-gq-hsd"/>
+                                                            <exclude reference="yV5-RW-QZI"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rLk-xv-HBx" secondAttribute="trailing" constant="16" id="5Aa-U7-gPi"/>
+                                                <constraint firstAttribute="bottom" secondItem="rLk-xv-HBx" secondAttribute="bottom" constant="24" id="9GL-8B-5wP"/>
+                                                <constraint firstItem="EgI-45-4Zm" firstAttribute="leading" secondItem="h1v-gy-1mr" secondAttribute="leading" constant="16" id="9WB-Un-rBd"/>
+                                                <constraint firstItem="EgI-45-4Zm" firstAttribute="top" secondItem="h1v-gy-1mr" secondAttribute="top" constant="24" id="j0W-ND-t5v"/>
+                                                <constraint firstItem="rLk-xv-HBx" firstAttribute="leading" secondItem="h1v-gy-1mr" secondAttribute="leading" constant="16" id="pkN-bE-j5C"/>
+                                                <constraint firstAttribute="trailing" secondItem="EgI-45-4Zm" secondAttribute="trailing" constant="16" id="qG6-Am-ooi"/>
+                                                <constraint firstItem="rLk-xv-HBx" firstAttribute="top" secondItem="EgI-45-4Zm" secondAttribute="bottom" constant="8" id="rwD-rJ-rwz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="madeDate" destination="rLk-xv-HBx" id="K7X-T6-xgC"/>
+                                            <outlet property="recipeTitle" destination="EgI-45-4Zm" id="Yvn-ok-Wat"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="pKY-mj-fLG" id="P8t-qE-5oE"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3me-rQ-uYs" firstAttribute="top" secondItem="wXX-gb-r4a" secondAttribute="bottom" constant="20" id="TS0-0p-F9O"/>
-                            <constraint firstAttribute="centerX" secondItem="3me-rQ-uYs" secondAttribute="centerX" id="YOp-1t-6R2"/>
-                            <constraint firstAttribute="centerY" secondItem="3me-rQ-uYs" secondAttribute="centerY" id="xK8-Dz-TmI"/>
+                            <constraint firstItem="TMg-CL-aJ5" firstAttribute="top" secondItem="GKE-O1-a8f" secondAttribute="bottom" id="2Ok-YN-y6c"/>
+                            <constraint firstItem="GKE-O1-a8f" firstAttribute="leading" secondItem="iSs-zt-pFz" secondAttribute="leading" id="PxZ-G7-fNH"/>
+                            <constraint firstItem="GKE-O1-a8f" firstAttribute="top" secondItem="wXX-gb-r4a" secondAttribute="bottom" id="Qql-Ai-CcN"/>
+                            <constraint firstAttribute="trailing" secondItem="GKE-O1-a8f" secondAttribute="trailing" id="odZ-B5-m5z"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="TS0-0p-F9O"/>
-                            </mask>
-                        </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="recordTableView" destination="GKE-O1-a8f" id="IWn-58-Q0H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29W-tz-LYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2125.5" y="995.5"/>
+            <point key="canvasLocation" x="1663.5" y="601.5"/>
         </scene>
         <!--Recipe Produce View Controller-->
         <scene sceneID="lXF-US-w24">
@@ -1218,7 +1274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tic-Gq-ubV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676.5" y="509.5"/>
+            <point key="canvasLocation" x="2676.5" y="577.5"/>
         </scene>
         <!--Recipe Video View Controller-->
         <scene sceneID="02G-AZ-TMG">

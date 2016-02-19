@@ -72,6 +72,11 @@ class RecipeManager {
     return recipes.sort { $0.viewedCount > $1.viewedCount }
   }
 
+  func loadRecords() -> [Record] {
+    
+    return [Record]()
+  }
+
 }
 
 // Swift 2 Array Extension
