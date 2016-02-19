@@ -31,6 +31,10 @@ class RecipeManager {
     return recipes.filter { collectionIds.contains($0.id) }
   }
 
+  func getRecipe(recipeId: String) -> Recipe? {
+    return recipes.filter { $0.id == recipeId }.first
+  }
+
   func collectRecipe(recipeId: String) {
     if collectionIds.contains(recipeId) {
       collectionIds.removeObject(recipeId)
@@ -63,7 +67,7 @@ class RecipeManager {
   }
 
   func saveRecord(recipe: Recipe) {
-    let newRecord = Record(title: recipe.title, date: NSDate().stringFormattedAsRFC3339)
+    let newRecord = Record(recipeId: recipe.id, title: recipe.title, date: NSDate().stringFormattedAsRFC3339)
     records.append(newRecord)
     records.sortInPlace { $0.date.toNSDate() > $1.date.toNSDate() }
 

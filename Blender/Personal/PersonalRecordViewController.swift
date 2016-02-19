@@ -15,10 +15,24 @@ class PersonalRecordViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    records = RecipeManager.sharedInstance.loadRecords()
     recordTableView.rowHeight = UITableViewAutomaticDimension
     recordTableView.estimatedRowHeight = 100
   }
+
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    records = RecipeManager.sharedInstance.loadRecords()
+    recordTableView.reloadData()
+  }
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "detail" {
+      let cell = sender as! RecordCell
+      let vc = segue.destinationViewController as! RecipeDetailsViewController
+      vc.recipe = RecipeManager.sharedInstance.getRecipe(cell.record.recipeId)
+    }
+  }
+
 }
 
 extension PersonalRecordViewController: UITableViewDataSource {
@@ -55,21 +69,25 @@ class RecordCell: UITableViewCell {
 }
 
 class Record: NSObject, NSCoding {
+  var recipeId: String!
   var title: String!
   var date: String!
 
-  init(title: String, date: String) {
+  init(recipeId: String, title: String, date: String) {
+    self.recipeId = recipeId
     self.title = title
     self.date = date
   }
 
-  required convenience init(coder aDecoder: NSCoder) {
+  required convenience init?(coder aDecoder: NSCoder) {
+    let recipeId = aDecoder.decodeObjectForKey("recipeId") as! String
     let title = aDecoder.decodeObjectForKey("title") as! String
     let date = aDecoder.decodeObjectForKey("date") as! String
-    self.init(title: title, date: date)
+    self.init(recipeId: recipeId, title: title, date: date)
   }
 
   func encodeWithCoder(aCoder: NSCoder) {
+    aCoder.encodeObject(recipeId, forKey: "recipeId")
     aCoder.encodeObject(title, forKey: "title")
     aCoder.encodeObject(date, forKey: "date")
   }
