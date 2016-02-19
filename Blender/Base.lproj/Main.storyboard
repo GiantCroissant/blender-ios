@@ -1037,7 +1037,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="步驟" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXL-CW-lhh">
-                                                            <rect key="frame" x="36" y="12" width="257" height="75.5"/>
+                                                            <rect key="frame" x="36" y="12" width="261" height="75.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1046,11 +1046,12 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <constraints>
                                                         <constraint firstItem="bZi-z5-Sjx" firstAttribute="leading" secondItem="eIg-Ra-e4z" secondAttribute="leading" constant="12" id="3lU-j4-SuA"/>
                                                         <constraint firstAttribute="bottom" secondItem="mK5-Kp-0j0" secondAttribute="bottom" constant="12" id="9nP-qo-xqT"/>
+                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="top" secondItem="HXL-CW-lhh" secondAttribute="top" id="C3V-Xg-417"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="12" id="EgP-rp-chh"/>
                                                         <constraint firstItem="bZi-z5-Sjx" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="F9s-TE-KxI"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="20" id="HMI-h8-bmO"/>
                                                         <constraint firstAttribute="trailing" secondItem="mK5-Kp-0j0" secondAttribute="trailing" constant="12" id="UNM-ke-7HA"/>
-                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="12" id="kZY-Rd-GCB"/>
+                                                        <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="8" id="kZY-Rd-GCB"/>
                                                         <constraint firstItem="HXL-CW-lhh" firstAttribute="leading" secondItem="bZi-z5-Sjx" secondAttribute="trailing" constant="12" id="qLf-U9-v75"/>
                                                         <constraint firstAttribute="bottom" secondItem="HXL-CW-lhh" secondAttribute="bottom" constant="12" id="xsm-pR-w08"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="zHo-vO-oD6"/>
@@ -1061,6 +1062,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                             <exclude reference="9nP-qo-xqT"/>
                                                             <exclude reference="EgP-rp-chh"/>
                                                             <exclude reference="HMI-h8-bmO"/>
+                                                            <exclude reference="zHo-vO-oD6"/>
                                                         </mask>
                                                     </variation>
                                                 </tableViewCellContentView>
