@@ -73,6 +73,8 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
   func configureTableView() {
     recipeSteps.rowHeight = UITableViewAutomaticDimension
     recipeSteps.estimatedRowHeight = 160.0
+    recipeSteps.layoutMargins = UIEdgeInsetsZero
+    recipeSteps.separatorInset = UIEdgeInsetsZero
   }
 
   func didUpdateState() {
@@ -184,12 +186,9 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
 
     cell.stepNumber.text = String(indexPath.row + 1)
     cell.stepContent.text = demoSteps[indexPath.row]
-    dispatch_async(dispatch_get_main_queue(), {() in
-      cell.stepContent.numberOfLines = 2
-      cell.stepContent.sizeToFit()
-    })
-
     cell.stepCheckIcon.hidden = !demoCheckState[indexPath.row]
+    cell.layoutMargins = UIEdgeInsetsZero
+
     return cell
   }
 
