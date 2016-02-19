@@ -740,8 +740,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tvh-lD-SUP" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvh-lD-SUP" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="otX-y3-glW"/>
@@ -775,14 +775,14 @@
                                     <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2xq-IO-3qd"/>
                                 </connections>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Us-CUh" userLabel="Operation Setting Page">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Us-CUh" userLabel="Operation Setting Page">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <connections>
                                     <segue destination="kXr-RX-BPY" kind="embed" id="gwq-a6-dFq"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSG-ct-QP3" userLabel="Connection Setting Page">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSG-ct-QP3" userLabel="Connection Setting Page">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <connections>
                                     <segue destination="QOg-cs-g39" kind="embed" id="ubG-Me-auv"/>
                                 </connections>
@@ -1020,7 +1020,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="99.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="F53472DE-EFFC-447E-B18D-3994A679244C" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-Kp-0j0">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-Kp-0j0">
                                                             <rect key="frame" x="305" y="12" width="26" height="26"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="mK5-Kp-0j0" secondAttribute="height" multiplier="1:1" id="3C7-5R-IaU"/>
@@ -1450,7 +1450,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <viewControllerLayoutGuide type="bottom" id="yw5-Fp-RHc"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NoD-yp-KaN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adC-El-3z0" userLabel="Control Panel">
@@ -1635,7 +1635,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5W-Fy-ebe" userLabel="TimerPicker">
-                                <rect key="frame" x="0.0" y="285" width="375" height="254"/>
+                                <rect key="frame" x="0.0" y="305" width="375" height="254"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Om-O2-oZN" userLabel="Tool Bar">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -1713,7 +1713,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di3-w2-LGO" userLabel="SpeedPicker">
-                                <rect key="frame" x="0.0" y="285" width="375" height="254"/>
+                                <rect key="frame" x="0.0" y="305" width="375" height="254"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-7Z-Y36" userLabel="Tool Bar">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -1829,7 +1829,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                         <viewControllerLayoutGuide type="bottom" id="1bc-xl-toj"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p3y-Rb-msy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-tm-Xvk" customClass="CardView" customModule="Blender" customModuleProvider="target">
@@ -1884,10 +1884,10 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XV-FA-FBf" userLabel="Devices Area">
-                                <rect key="frame" x="0.0" y="138" width="375" height="401"/>
+                                <rect key="frame" x="0.0" y="138" width="375" height="421"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zja-ra-Tvo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="421"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="blenderDeviceCell" rowHeight="64" id="u3R-By-t3R" customClass="BLEDeviceTableViewCell" customModule="Blender" customModuleProvider="target">
@@ -2014,245 +2014,8 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
     </scenes>
     <resources>
         <image name="1_1" width="480" height="269"/>
-        <image name="F53472DE-EFFC-447E-B18D-3994A679244C" width="53" height="53">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
-GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
-c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7NTMsIDUzfdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
-HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPETSCTU0AKgAAK+wAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUHwkwLkkWcDVTGYA1UxmANVMZ
-gDVTGYA1UxmANVMZgDVTGYA1UxmANVMZgDVTGYA1UxmANVMZgDVTGYA1UxmANVMZgDVTGYA1UxmANVMZ
-gDVTGYA1UxmANVMZgDVTGYA1UxmANVMZgDVTGYA1UxmANVMZgDVTGYA1UxmANVMZgDVTGYA1UxmAITQQ
-UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAGCgMQSXMjsGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/XZIs4BQfCTAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAElzI7BrpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/ZJ0w8AYKAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAUHwkwa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/PF4ckAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAANVMZgGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9QfSbAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANVMZgGunM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/yg+E2AoPhNga6cz/2unM/9rpzP/a6cz/2unM/9rpzP/UH0m
-wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVTGYBrpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/8oPhNgAAAA
-AAAAAAAoPhNga6cz/2unM/9rpzP/a6cz/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAANVMZgGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/KD4TYAAAAAAAAAAAAAAAAAAAAAAoPhNga6cz/2unM/9rpzP/a6cz
-/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/yg+E2AAAAAAAAAA
-AAAAAAAAAAAAAAAAAENoIKBrpzP/a6cz/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/8oPhNgAAAAAAAAAAAAAAAAAAAAAAAAAABDaCCga6cz/2unM/9rpzP/a6cz
-/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANVMZ
-gGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/KD4TYAAAAAAAAAAAAAAA
-AAAAAAAAAAAAQ2ggoGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/yg+E2AAAAAAAAAAAAAAAAAAAAAAAAAAAENoIKBrpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-ADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/8oPhNgAAAAAAAAAAAAAAAAAAAA
-AAAAAABDaCCga6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANVMZgGunM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/KD4TYAAAAAAAAAAAAAAAAAAAAAAAAAAAQ2ggoGunM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/Q2ggoBQfCTBknTDwa6cz/2unM/9rpzP/a6cz
-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
-/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2SdMPAUHwkwAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAENoIKBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2SdMPAUHwkwAAAAAAAAAAAAAAAAAAAAAAAAAABDaCCga6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANVMZ
-gGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2SdMPAUHwkwAAAA
-AAAAAAAAAAAAQ2ggoGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2SdMPAUHwkwAAAAAENoIKBrpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-ADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2SdMPBJcyOwa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANVMZgGunM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVTGYBrpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9QfSbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAANVMZgGunM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/1B9JsAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1UxmAa6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/UH0mwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAACE0EFBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9DaCCgAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF2SLOBrpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/xopDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAFB8JMGSdMPBrpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz
-/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/9rpzP/a6cz/2unM/8oPhNgAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgoD
-EDxeHJBQfSbAUH0mwFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0m
-wFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0mwFB9JsBQfSbAUH0m
-wFB9JsBQfSbAUH0mwFB9JsBDaCCgGikMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAA4BAAADAAAAAQA1AAABAQADAAAAAQA1AAABAgADAAAABAAALJoBAwADAAAAAQABAAAB
-BgADAAAAAQACAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQA1AAAB
-FwAEAAAAAQAAK+QBHAADAAAAAQABAAABUgADAAAAAQABAAABUwADAAAABAAALKKHcwAHAAAH2AAALKoA
-AAAAAAgACAAIAAgAAQABAAEAAQAAB9hhcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIAGQALABoAC2Fjc3BB
-UFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2RzY20AAAF4AAAFnGNwcnQA
-AAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdYWVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMA
-AAecAAAADmNoYWQAAAesAAAALGJUUkMAAAecAAAADmdUUkMAAAecAAAADmRlc2MAAAAAAAAAFEdlbmVy
-aWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAACgA
-AAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQAAAH+cHRCUgAAACYAAAIidWtVQQAAACoA
-AAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAAACIA
-AAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQAAANmZGVERQAAACwAAAOKa29LUgAAABYA
-AAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFKUAAAABoAAAPiZWxHUgAAACIAAAP8cHRQTwAAACYA
-AAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhUSAAAACQAAARsdHJUUgAAACIAAASQZmlGSQAAACgA
-AASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAAACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYA
-AAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAA
-UgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgA
-cgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgAdQBuAGcAUABlAHIAZgBpAGwAIABSAEcA
-QgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcA
-QgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMA
-IABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBCACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsA
-IABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbAXkBegF
-1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkAbABvACAAUgBHAEIAIABnAGUAbgBlAHIA
-aQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4A
-ZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgAIABSAEcAQgAg1QS4XNMMx3xmbpAaACAAUgBHAEIA
-IGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68D
-uwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUA
-ZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicO
-RA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIA
-LQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBvAGYAaQBsAFUA
-bgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4E
-RAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAAUgBHAEIAIAYnBkQGOQYnBkUARwBlAG4A
-ZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUg
-SW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAAAPNSAAEAAAABFs9YWVogAAAAAAAAdE0A
-AD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEB
-zQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD3AAAwGzSJSYnKFokY2xhc3Nu
-YW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMnKSpaTlNJbWFnZVJlcFhOU09iamVjdNIlJiwt
-V05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJheaMvLCrTMjMKNDU2V05TV2hpdGVcTlNDb2xvclNw
-YWNlRDAgMAAQA4AM0iUmODlXTlNDb2xvcqI4KtIlJjs8V05TSW1hZ2WiOypfEA9OU0tleWVkQXJjaGl2
-ZXLRP0BUcm9vdIABAAgAEQAaACMALQAyADcARgBMAFcAXgBlAHIAeQCBAIMAhQCKAIwAjgCXAJwApwCp
-AKsArQCyALUAtwC5ALsAvQDCANkA2wDdNWM1aDVzNXw1jzWTNZ41pzWsNbQ1tzW8Ncs1zzXWNd416zXw
-NfI19DX5NgE2BDYJNhE2FDYmNik2LgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAADYwA
-</mutableData>
-        </image>
         <image name="btn_collected" width="44" height="44"/>
+        <image name="checked_icon" width="53" height="53"/>
         <image name="device_not_connected" width="44" height="44"/>
         <image name="menu" width="22" height="22"/>
         <image name="mrblender_logo-1" width="200" height="120"/>
