@@ -991,52 +991,52 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 <rect key="frame" x="9" y="9" width="357" height="445"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未連結" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-qp-jIn">
-                                        <rect key="frame" x="304" y="8" width="39" height="16"/>
+                                        <rect key="frame" x="302" y="20" width="39" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.57647058823529407" green="0.58431372549019611" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雪梨香蕉生菜汁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyq-QC-UdJ">
-                                        <rect key="frame" x="14" y="8" width="140" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食譜名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyq-QC-UdJ">
+                                        <rect key="frame" x="16" y="16" width="80" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.41176470588235292" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AAm-aB-rgK">
-                                        <rect key="frame" x="14" y="40" width="329" height="397"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AAm-aB-rgK">
+                                        <rect key="frame" x="14" y="56" width="329" height="381.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeStepCell" rowHeight="62" id="kdR-ck-Yl5" customClass="RecipeProduceTableViewCell" customModule="Blender" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="22" width="329" height="62"/>
+                                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeStepCell" id="kdR-ck-Yl5" customClass="RecipeProduceTableViewCell" customModule="Blender" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="22" width="329" height="40"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdR-ck-Yl5" id="eIg-Ra-e4z">
-                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="62"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="40"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-Kp-0j0">
-                                                            <rect key="frame" x="299" y="12" width="30" height="30"/>
+                                                            <rect key="frame" x="287" y="12" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="mK5-Kp-0j0" secondAttribute="height" multiplier="1:1" id="3C7-5R-IaU"/>
                                                                 <constraint firstAttribute="width" constant="30" id="6qm-Rv-h56"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-z5-Sjx">
-                                                            <rect key="frame" x="0.0" y="10" width="8" height="20.5"/>
+                                                            <rect key="frame" x="12" y="12" width="8" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXL-CW-lhh">
-                                                            <rect key="frame" x="12" y="10" width="275" height="42"/>
-                                                            <string key="text">雪梨洗淨去皮，切成可放入榨汁機內 雪梨洗淨去皮，切成可放入榨汁機內
-
-</string>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXL-CW-lhh">
+                                                            <rect key="frame" x="32" y="12" width="243" height="16"/>
+                                                            <string key="text">步驟文字
+步驟文字
+步驟文字</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qg-8P-FcJ" userLabel="Line">
-                                                            <rect key="frame" x="0.0" y="61" width="329" height="1"/>
+                                                            <rect key="frame" x="0.0" y="39" width="329" height="1"/>
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="ieN-DE-Usd"/>
@@ -1044,21 +1044,23 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                                         </view>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="bZi-z5-Sjx" firstAttribute="leading" secondItem="eIg-Ra-e4z" secondAttribute="leading" id="3lU-j4-SuA"/>
+                                                        <constraint firstItem="bZi-z5-Sjx" firstAttribute="leading" secondItem="eIg-Ra-e4z" secondAttribute="leading" constant="12" id="3lU-j4-SuA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mK5-Kp-0j0" secondAttribute="bottom" constant="12" id="9nP-qo-xqT"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="12" id="EgP-rp-chh"/>
-                                                        <constraint firstItem="bZi-z5-Sjx" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="10" id="F9s-TE-KxI"/>
+                                                        <constraint firstItem="bZi-z5-Sjx" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="F9s-TE-KxI"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="leading" secondItem="HXL-CW-lhh" secondAttribute="trailing" constant="20" id="HMI-h8-bmO"/>
                                                         <constraint firstItem="8qg-8P-FcJ" firstAttribute="leading" secondItem="eIg-Ra-e4z" secondAttribute="leading" id="OoV-zc-HIo"/>
-                                                        <constraint firstAttribute="trailing" secondItem="mK5-Kp-0j0" secondAttribute="trailing" id="UNM-ke-7HA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="mK5-Kp-0j0" secondAttribute="trailing" constant="12" id="UNM-ke-7HA"/>
                                                         <constraint firstAttribute="trailing" secondItem="8qg-8P-FcJ" secondAttribute="trailing" id="gB7-Dg-fWG"/>
                                                         <constraint firstAttribute="bottom" secondItem="8qg-8P-FcJ" secondAttribute="bottom" id="owc-kc-Lqo"/>
-                                                        <constraint firstItem="HXL-CW-lhh" firstAttribute="leading" secondItem="bZi-z5-Sjx" secondAttribute="trailing" constant="4" id="qLf-U9-v75"/>
-                                                        <constraint firstAttribute="bottom" secondItem="HXL-CW-lhh" secondAttribute="bottom" constant="10" id="xsm-pR-w08"/>
+                                                        <constraint firstItem="HXL-CW-lhh" firstAttribute="leading" secondItem="bZi-z5-Sjx" secondAttribute="trailing" constant="12" id="qLf-U9-v75"/>
+                                                        <constraint firstAttribute="bottom" secondItem="HXL-CW-lhh" secondAttribute="bottom" constant="12" id="xsm-pR-w08"/>
                                                         <constraint firstItem="mK5-Kp-0j0" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="zHo-vO-oD6"/>
-                                                        <constraint firstItem="HXL-CW-lhh" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="10" id="zsy-Ft-SRz"/>
+                                                        <constraint firstItem="HXL-CW-lhh" firstAttribute="top" secondItem="eIg-Ra-e4z" secondAttribute="top" constant="12" id="zsy-Ft-SRz"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
+                                                            <exclude reference="9nP-qo-xqT"/>
                                                             <exclude reference="HMI-h8-bmO"/>
                                                         </mask>
                                                     </variation>
@@ -1079,18 +1081,20 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="AAm-aB-rgK" secondAttribute="trailing" constant="14" id="0CT-5A-MA2"/>
-                                    <constraint firstItem="Pyq-QC-UdJ" firstAttribute="top" secondItem="qWQ-L2-gyg" secondAttribute="top" constant="8" id="GdA-E0-IGI"/>
+                                    <constraint firstItem="Pyq-QC-UdJ" firstAttribute="top" secondItem="qWQ-L2-gyg" secondAttribute="top" constant="16" id="GdA-E0-IGI"/>
+                                    <constraint firstItem="qfM-qp-jIn" firstAttribute="centerY" secondItem="Pyq-QC-UdJ" secondAttribute="centerY" id="HA5-t6-FIg"/>
                                     <constraint firstItem="qfM-qp-jIn" firstAttribute="top" secondItem="qWQ-L2-gyg" secondAttribute="top" constant="8" id="I6Y-Pl-DV0"/>
                                     <constraint firstAttribute="bottom" secondItem="AAm-aB-rgK" secondAttribute="bottom" constant="8" id="QXq-Rn-QfY"/>
-                                    <constraint firstItem="Pyq-QC-UdJ" firstAttribute="leading" secondItem="qWQ-L2-gyg" secondAttribute="leading" constant="14" id="XHQ-Mo-k5U"/>
-                                    <constraint firstAttribute="trailing" secondItem="qfM-qp-jIn" secondAttribute="trailing" constant="14" id="h55-bQ-1E6"/>
-                                    <constraint firstItem="AAm-aB-rgK" firstAttribute="top" secondItem="Pyq-QC-UdJ" secondAttribute="bottom" constant="8" id="kK7-SK-BHh"/>
+                                    <constraint firstItem="Pyq-QC-UdJ" firstAttribute="leading" secondItem="qWQ-L2-gyg" secondAttribute="leading" constant="16" id="XHQ-Mo-k5U"/>
+                                    <constraint firstAttribute="trailing" secondItem="qfM-qp-jIn" secondAttribute="trailing" constant="16" id="h55-bQ-1E6"/>
+                                    <constraint firstItem="AAm-aB-rgK" firstAttribute="top" secondItem="Pyq-QC-UdJ" secondAttribute="bottom" constant="16" id="kK7-SK-BHh"/>
                                     <constraint firstAttribute="height" constant="388" id="rCf-hL-gta"/>
                                     <constraint firstItem="AAm-aB-rgK" firstAttribute="leading" secondItem="qWQ-L2-gyg" secondAttribute="leading" constant="14" id="yex-BH-7D1"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="rCf-hL-gta"/>
+                                        <exclude reference="I6Y-Pl-DV0"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1209,7 +1213,7 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tic-Gq-ubV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2696.5" y="722.5"/>
+            <point key="canvasLocation" x="2676.5" y="509.5"/>
         </scene>
         <!--Recipe Video View Controller-->
         <scene sceneID="02G-AZ-TMG">
@@ -2010,9 +2014,9 @@ ECFA 于2011年1月生效，本公司立即响应，并将拥有大陆CCC认证�
         <image name="time_setup_icon" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="A0S-vB-Eb0"/>
         <segue reference="vSq-4L-U57"/>
         <segue reference="FcL-qU-1cx"/>
         <segue reference="JRu-xA-XMY"/>
-        <segue reference="02K-jX-39Q"/>
     </inferredMetricsTieBreakers>
 </document>

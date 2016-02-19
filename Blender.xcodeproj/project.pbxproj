@@ -35,7 +35,6 @@
 		3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */; };
 		3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AA01B9C55E700490A0B /* OperationSetting.swift */; };
 		3BF48AFF1B9CA21A00490A0B /* RecipeProduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */; };
-		3BF48B011B9CB59300490A0B /* RecipeProduceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */; };
 		3BF48B031B9CDF6F00490A0B /* BlenderBluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B021B9CDF6F00490A0B /* BlenderBluetoothManager.swift */; };
 		3BF48B051B9CE53700490A0B /* BLEDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF48B041B9CE53700490A0B /* BLEDeviceTableViewCell.swift */; };
 		6D154B55F41DA28782029AA5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EEBE8B2746132E78B505A1 /* Pods.framework */; };
@@ -88,7 +87,6 @@
 		3BF48A9E1B9C542D00490A0B /* ConnectionSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSetting.swift; sourceTree = "<group>"; };
 		3BF48AA01B9C55E700490A0B /* OperationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationSetting.swift; sourceTree = "<group>"; };
 		3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeProduceViewController.swift; sourceTree = "<group>"; };
-		3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeProduceTableViewCell.swift; sourceTree = "<group>"; };
 		3BF48B021B9CDF6F00490A0B /* BlenderBluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderBluetoothManager.swift; sourceTree = "<group>"; };
 		3BF48B041B9CE53700490A0B /* BLEDeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceTableViewCell.swift; sourceTree = "<group>"; };
 		3C9690D9914711358135D3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 				3BC01CD31C76837B00867841 /* RecipeInfoViewController.swift */,
 				3B0BA6511B5829DB0044103F /* RecipeVideoViewController.swift */,
 				3BF48AFE1B9CA21A00490A0B /* RecipeProduceViewController.swift */,
-				3BF48B001B9CB59300490A0B /* RecipeProduceTableViewCell.swift */,
 			);
 			name = RecipeDetails;
 			sourceTree = "<group>";
@@ -457,7 +454,6 @@
 				3B0BA64A1B581E0D0044103F /* PersonalViewController.swift in Sources */,
 				3BF48AFF1B9CA21A00490A0B /* RecipeProduceViewController.swift in Sources */,
 				3BC01CD41C76837B00867841 /* RecipeInfoViewController.swift in Sources */,
-				3BF48B011B9CB59300490A0B /* RecipeProduceTableViewCell.swift in Sources */,
 				3B0BA64E1B5825240044103F /* RecipeViewController.swift in Sources */,
 				3B0BA6501B58257C0044103F /* RecipeTableViewController.swift in Sources */,
 			);
