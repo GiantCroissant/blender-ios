@@ -24,6 +24,7 @@
 		3BC01CD41C76837B00867841 /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC01CD31C76837B00867841 /* RecipeInfoViewController.swift */; };
 		3BC491731C773BE800C15742 /* PersonalRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC491721C773BE800C15742 /* PersonalRecordViewController.swift */; };
 		3BC491751C77403800C15742 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC491741C77403800C15742 /* NSDateExtension.swift */; };
+		3BC491771C775DAC00C15742 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC491761C775DAC00C15742 /* ProductViewController.swift */; };
 		3BCBD9881B81B8EC002BC353 /* BlenderTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */; };
 		3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */; };
 		3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCBD98D1B81E734002BC353 /* CardView.swift */; };
@@ -74,6 +75,7 @@
 		3BC01CD31C76837B00867841 /* RecipeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeInfoViewController.swift; sourceTree = "<group>"; };
 		3BC491721C773BE800C15742 /* PersonalRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalRecordViewController.swift; sourceTree = "<group>"; };
 		3BC491741C77403800C15742 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		3BC491761C775DAC00C15742 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		3BCBD9871B81B8EC002BC353 /* BlenderTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlenderTestViewController.swift; sourceTree = "<group>"; };
 		3BCBD98B1B81D60D002BC353 /* AYOSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYOSegmentedControl.swift; sourceTree = "<group>"; };
 		3BCBD98D1B81E734002BC353 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -118,8 +120,8 @@
 		3B0BA6461B581E0D0044103F /* Personal */ = {
 			isa = PBXGroup;
 			children = (
-				3B0BA6471B581E0D0044103F /* PersonalCollectionViewController.swift */,
 				3B0BA6481B581E0D0044103F /* PersonalViewController.swift */,
+				3B0BA6471B581E0D0044103F /* PersonalCollectionViewController.swift */,
 				3BC491721C773BE800C15742 /* PersonalRecordViewController.swift */,
 			);
 			path = Personal;
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				3BE624361BFCA6E600B3FD6D /* CompanyInfoViewController.swift */,
+				3BC491761C775DAC00C15742 /* ProductViewController.swift */,
 			);
 			name = CompanyInfo;
 			path = Recipe/CompanyInfo;
@@ -439,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC491771C775DAC00C15742 /* ProductViewController.swift in Sources */,
 				3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */,
 				3BF48B031B9CDF6F00490A0B /* BlenderBluetoothManager.swift in Sources */,
 				3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */,
