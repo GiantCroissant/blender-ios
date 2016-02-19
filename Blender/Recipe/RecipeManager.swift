@@ -41,6 +41,10 @@ class RecipeManager {
     return collectionIds
   }
 
+  func getCollectionRecipes() -> [Recipe] {
+    return recipes.filter { collectionIds.contains($0.id) }
+  }
+
   func collectRecipe(recipeId: String) {
     if collectionIds.contains(recipeId) {
       collectionIds.removeObject(recipeId)

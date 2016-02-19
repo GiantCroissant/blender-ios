@@ -504,10 +504,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-Ek-FcG" customClass="AYOSegmentedControl" customModule="Blender" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="ZBo-dh-cYo"/>
+                                    <constraint firstAttribute="height" constant="48" id="ZBo-dh-cYo"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -525,7 +525,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamily" value="HelveticaNeue-Bold"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item1" value="健康履歷"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="item2" value="收藏"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="count">
@@ -538,13 +537,13 @@
                                 </connections>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-s8-wpB" userLabel="收藏">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                                <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
                                     <segue destination="DxQ-AC-aux" kind="embed" id="CRY-Te-ngL"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sq-tX-X8q" userLabel="健康履歷容器">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                                <rect key="frame" x="0.0" y="112" width="375" height="555"/>
                                 <connections>
                                     <segue destination="pKY-mj-fLG" kind="embed" id="SN8-Pb-nfR"/>
                                 </connections>
@@ -583,50 +582,52 @@
         <scene sceneID="SCV-hT-lCC">
             <objects>
                 <tableViewController id="DxQ-AC-aux" customClass="PersonalCollectionViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="22" sectionFooterHeight="22" id="B3D-77-yW5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="B3D-77-yW5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="5VE-Rg-Eqm">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="collectionCell" rowHeight="100" id="EQI-DP-ZhJ">
-                                <rect key="frame" x="0.0" y="22" width="375" height="100"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="collectionCell" id="EQI-DP-ZhJ" customClass="CollectionCell" customModule="Blender" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="23" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EQI-DP-ZhJ" id="lLE-Bu-7EK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe" translatesAutoresizingMaskIntoConstraints="NO" id="zXV-Ws-qCe">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="zXV-Ws-qCe" secondAttribute="height" multiplier="124:99" id="H4B-OU-KLF"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2T-rc-EXy">
-                                            <rect key="frame" x="137" y="27" width="101.5" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食譜名稱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWu-9s-A9a">
+                                            <rect key="frame" x="16" y="24" width="343" height="51.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPl-3p-JWW">
-                                            <rect key="frame" x="137" y="51" width="86" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nz1-5s-sFb">
+                                            <rect key="frame" x="0.0" y="98" width="375" height="1"/>
+                                            <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="p2E-0V-XWl"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="i2T-rc-EXy" firstAttribute="leading" secondItem="zXV-Ws-qCe" secondAttribute="trailing" constant="12.5" id="Dux-dE-Qqh"/>
-                                        <constraint firstItem="JPl-3p-JWW" firstAttribute="leading" secondItem="zXV-Ws-qCe" secondAttribute="trailing" constant="12.5" id="Leg-jI-I97"/>
-                                        <constraint firstItem="zXV-Ws-qCe" firstAttribute="top" secondItem="lLE-Bu-7EK" secondAttribute="top" id="NuZ-NK-iWU"/>
-                                        <constraint firstItem="zXV-Ws-qCe" firstAttribute="leading" secondItem="lLE-Bu-7EK" secondAttribute="leading" id="Tvf-JC-wFz"/>
-                                        <constraint firstAttribute="bottom" secondItem="zXV-Ws-qCe" secondAttribute="bottom" id="bxh-7I-7Xf"/>
-                                        <constraint firstItem="i2T-rc-EXy" firstAttribute="top" secondItem="lLE-Bu-7EK" secondAttribute="top" constant="27" id="dqq-uz-ZOO"/>
-                                        <constraint firstItem="JPl-3p-JWW" firstAttribute="top" secondItem="i2T-rc-EXy" secondAttribute="bottom" constant="4.5" id="itb-tn-VLz"/>
+                                        <constraint firstAttribute="bottom" secondItem="XWu-9s-A9a" secondAttribute="bottom" constant="24" id="2BE-LQ-CuE"/>
+                                        <constraint firstAttribute="trailing" secondItem="XWu-9s-A9a" secondAttribute="trailing" constant="16" id="ADg-0o-rXE"/>
+                                        <constraint firstAttribute="bottom" secondItem="nz1-5s-sFb" secondAttribute="bottom" id="Kon-R4-Lsc"/>
+                                        <constraint firstAttribute="trailing" secondItem="nz1-5s-sFb" secondAttribute="trailing" id="dM4-v9-c8L"/>
+                                        <constraint firstItem="XWu-9s-A9a" firstAttribute="top" secondItem="lLE-Bu-7EK" secondAttribute="top" constant="24" id="rCo-0b-acJ"/>
+                                        <constraint firstItem="XWu-9s-A9a" firstAttribute="leading" secondItem="lLE-Bu-7EK" secondAttribute="leading" constant="16" id="s5T-ma-4EQ"/>
+                                        <constraint firstItem="nz1-5s-sFb" firstAttribute="leading" secondItem="lLE-Bu-7EK" secondAttribute="leading" id="xHq-VB-iWm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="LKV-X4-zsH" kind="show" id="keb-mS-7Gd"/>
+                                    <outlet property="cellBackground" destination="lLE-Bu-7EK" id="A7n-FJ-ePd"/>
+                                    <outlet property="recipeTitle" destination="XWu-9s-A9a" id="qy0-eJ-gNd"/>
+                                    <segue destination="LKV-X4-zsH" kind="show" identifier="detail" id="keb-mS-7Gd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -636,6 +637,9 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionsTableView" destination="B3D-77-yW5" id="FK7-Cr-cKM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSJ-Kk-dwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2004,6 +2008,10 @@
         <scene sceneID="Rbo-SD-Fjc">
             <objects>
                 <viewController id="5KO-Cs-ebg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hYM-A6-S4x"/>
+                        <viewControllerLayoutGuide type="bottom" id="yee-Ui-Tah"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V9d-Vl-hqg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2022,13 +2030,13 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1K-oO-UN8" userLabel="Information">
                                                 <rect key="frame" x="16" y="116" width="288" height="587.5"/>
-                                                <mutableString key="text">洋盛興業有限公司(TASCO)成立於西元1981年，擁有台灣CNS認證、大陸CCC認證、CB認證，及已獲得ISO 9001:2008驗證。專業於設計、製造家庭及廚房用電器產品，堅持以最好的質量服務客戶，​​在台灣、大陸、瑞士、菲律賓及東南亞市場已有口碑。
+                                                <string key="text">洋盛興業有限公司(TASCO)成立於西元1981年，擁有台灣CNS認證、大陸CCC認證、CB認證，及已獲得ISO 9001:2008驗證。專業於設計、製造家庭及廚房用電器產品，堅持以最好的質量服務客戶，​​在台灣、大陸、瑞士、菲律賓及東南亞市場已有口碑。
 在台灣市場我司主做OEM代工，替知名家電廠大同、尚朋堂、鍋寶、東龍、捷寶、新格、勳風……等代工，在台灣知名賣場大潤發、家樂福、愛買，及台灣三大購物台(森森購物、MOMO購物、VIVA購物)，及各大入口虛擬網站購物網，皆有販賣我司產品，我司堅持質量第一、顧客滿意為最終原則。
 本公司於2011年6月獲得台灣制MIT微笑標章殊榮。在台灣生產冰沙調理機廠商中，有大陸CCC認證及MIT微笑標章目前只有我司一家。為增加外銷出口量，2010年本司自創品牌布蘭德先生(Mr.Blender) &amp; 歐斯樂(OLSER)，並於台灣及北京完成商標註冊，期望以自有品牌Mr.Blender &amp; OLSER 在全球市場打出響亮名聲。
 ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證之冰沙調理機進軍至北京餐飲市場，並於華北區北京成立一總代理(奧華世紀(北京)科技發展有限公司)，循正當合法程序，完稅檢疫合格方式，出口至大陸市場，進一步也將與購物台合作來推廣市場，期希在大陸市場共創雙2011年起本公司已陸續參與，台灣外貿協會舉辦的大陸各地台灣名品博覽會，及台灣MIT微笑標章推動辦公室舉辦印尼、新加坡、泰國、馬來西亞等海外台灣制MIT產品巡迴展覽，藉以開拓大陸及海外市場，來增加品牌知名度。
 2012年起本公司產品也與客戶配合，以置入型行銷的方式在大陸知名的頻道(如旅遊衛視、尋味大中華、魔幻廚房、幸福鑑定團、番茄生活王、時代風尚、料理達人等各大電視台)來置入本公司產品，以打響品牌知名度。
 經由5年在大陸市場品牌開拓，2013年陸續參與大陸的購物頻道，如：四川星空購物、北京央廣購物，2013年9月更置入到中央電視台體系-北京中視購物，成績斐然，可說已在大陸市場開啟一扇門。
-為配合大陸市場內需及銷售服務網，2014年2月在華南地區成立一代理商(深圳京洋科技有限公司)，以符大陸市場日漸擴大，建立銷售服務網及售後服務駐點，後續也將在華中、大西北地區成立銷售及售後服務駐點，以加速服務日漸成長的消費族群。</mutableString>
+為配合大陸市場內需及銷售服務網，2014年2月在華南地區成立一代理商(深圳京洋科技有限公司)，以符大陸市場日漸擴大，建立銷售服務網及售後服務駐點，後續也將在華中、大西北地區成立銷售及售後服務駐點，以加速服務日漸成長的消費族群。</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2086,6 +2094,10 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
         <scene sceneID="52G-6A-Hes">
             <objects>
                 <viewController id="wNV-hZ-Fnj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6UX-kU-TrH"/>
+                        <viewControllerLayoutGuide type="bottom" id="sO5-RH-OJm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qic-MI-Vcw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2104,7 +2116,6 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
         <image name="device_not_connected" width="44" height="44"/>
         <image name="menu" width="22" height="22"/>
         <image name="mrblender_logo-1" width="200" height="120"/>
-        <image name="recipe" width="260" height="208"/>
         <image name="recipe_02" width="160" height="124"/>
         <image name="side_icon_personal" width="44" height="44"/>
         <image name="side_icon_recipe" width="44" height="44"/>
@@ -2114,9 +2125,9 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
         <image name="time_setup_icon" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A0S-vB-Eb0"/>
-        <segue reference="vSq-4L-U57"/>
-        <segue reference="FcL-qU-1cx"/>
         <segue reference="JRu-xA-XMY"/>
+        <segue reference="keb-mS-7Gd"/>
+        <segue reference="A0S-vB-Eb0"/>
+        <segue reference="FcL-qU-1cx"/>
     </inferredMetricsTieBreakers>
 </document>
