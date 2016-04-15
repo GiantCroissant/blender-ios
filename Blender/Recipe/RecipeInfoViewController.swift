@@ -58,7 +58,7 @@ extension Recipe {
   func getSteps() -> String {
     var counter = 0
     return steps.reduce("") {
-      counter++
+      counter += 1
       return $0 + String(counter) + " " + $1.action + "\n"
       }.cutLast(2)
   }
@@ -75,7 +75,7 @@ extension String {
     get {
       let startIndex = self.startIndex.advancedBy(r.startIndex)
       let endIndex = self.startIndex.advancedBy(r.endIndex)
-      return self[Range(start: startIndex, end: endIndex)]
+      return self[startIndex..<endIndex]
     }
   }
 }

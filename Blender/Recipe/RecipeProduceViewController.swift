@@ -41,7 +41,7 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
       blendSpeeds.append(step.machineAction?.speed ?? 0)
       blendTimes.append(step.machineAction?.time ?? 0)
       checkStates.append(false)
-      totalStepCount++
+      totalStepCount += 1
     }
     updateExcuteButton()
   }
@@ -100,7 +100,7 @@ class RecipeProduceViewController: UIViewController, UITableViewDataSource, UITa
 
   func completeStep() {
     checkStates[currentStep] = true
-    currentStep++
+    currentStep += 1
 
 
     updateExcuteButton()
