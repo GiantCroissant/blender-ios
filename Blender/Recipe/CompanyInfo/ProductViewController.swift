@@ -14,7 +14,9 @@ class ProductViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    product.append("專業養生調理機")
+    product.append("營養調理機")
+    product.append("食物料理加工機")
+    product.append("電鍋")
   }
 
 }
@@ -28,10 +30,15 @@ extension ProductViewController: UITableViewDataSource {
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("productCell", forIndexPath: indexPath) as! ProdcutCell
     cell.title.text = product[indexPath.row]
+
+    let customBgView = UIView()
+    customBgView.backgroundColor = UIColor(rgba: "#8cc34b33")
+    cell.selectedBackgroundView = customBgView
     return cell
   }
 
 }
+
 
 class ProdcutCell: UITableViewCell {
   @IBOutlet weak var title: UILabel!

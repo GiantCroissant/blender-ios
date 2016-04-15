@@ -2234,7 +2234,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                         <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yOP-7Y-oOf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yOP-7Y-oOf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="j4U-aN-nDd">
@@ -2243,23 +2243,23 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                     <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" id="QaE-Pk-eSl" customClass="ProdcutCell" customModule="Blender" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="29" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="56" id="QaE-Pk-eSl" customClass="ProdcutCell" customModule="Blender" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="29" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QaE-Pk-eSl" id="GvK-dW-2XK">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DoQ-Zz-fNo">
-                                                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                                                    <rect key="frame" x="0.0" y="55" width="320" height="1"/>
                                                     <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="RUn-eQ-Pq6"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-RI-Izg">
-                                                    <rect key="frame" x="16" y="11.5" width="42" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="16" y="18.5" width="39.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2280,6 +2280,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="wNV-hZ-Fnj" id="Mp3-Wo-aQ7"/>
+                                    <outlet property="delegate" destination="wNV-hZ-Fnj" id="hTl-cF-Xn6"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -2473,6 +2474,6 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
         <segue reference="02K-jX-39Q"/>
         <segue reference="JRu-xA-XMY"/>
         <segue reference="FcL-qU-1cx"/>
-        <segue reference="vSq-4L-U57"/>
+        <segue reference="6xJ-xX-vSI"/>
     </inferredMetricsTieBreakers>
 </document>

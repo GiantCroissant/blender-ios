@@ -18,7 +18,7 @@ class ConnectionSetting: UIViewController, UITableViewDataSource, UITableViewDel
 
     @IBAction func onSwitchValueChanged(sender: UISwitch) {
         updateLayout(sender.on);
-
+ 
         if sender.on {
             BlenderBluetoothManager.sharedLoader.scanBLEDevices()
 
