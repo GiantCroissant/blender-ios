@@ -16,12 +16,6 @@ class ProductCell: UITableViewCell {
     didSet {
       title.text = product.title
       descriptions.text = product.getDescriptions()
-
-      print("product.getDescriptions() = \(product.getDescriptions())")
-
-//      product.descriptions.reduce("", combine: <#T##(T, ProductDescription) throws -> T#>)
-
-//      descriptions.text = product.
     }
   }
 }
