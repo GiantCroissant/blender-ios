@@ -2312,7 +2312,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
         <!--專業養生調理機-->
         <scene sceneID="Ajg-gT-RRn">
             <objects>
-                <tableViewController title="專業養生調理機" id="Lcl-37-1qg" sceneMemberID="viewController">
+                <tableViewController title="專業養生調理機" id="Lcl-37-1qg" customClass="ProductListViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1r2-2w-Lh2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2338,8 +2338,8 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                                         <constraint firstAttribute="width" secondItem="hcb-BB-ODZ" secondAttribute="height" multiplier="1:1" id="dNt-Da-sLL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="健康食品調製機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-ry-4Fm">
-                                                    <rect key="frame" x="143" y="68" width="140" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康食品調製機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-ry-4Fm">
+                                                    <rect key="frame" x="144" y="68" width="140" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>

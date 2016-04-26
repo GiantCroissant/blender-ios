@@ -23,8 +23,8 @@ class ProductViewController: UIViewController {
     if let cell = sender as? ProdcutCell {
       print("cell title = \(cell.title)")
 
-//      RecipeManager.sharedInstance.loadRecentRecipes()
-      ProductManager.sharedInstance.readProductsFromBundleJson()
+      let vc = segue.destinationViewController as! ProductListViewController
+      vc.category = "營養調理機"
     }
   }
 

@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ProductListViewController: UIViewController {
-  
+class ProductListViewController: UITableViewController {
+  var category: String = ""
 
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    print("category = \(category)")
+  }
 }

@@ -19,7 +19,7 @@ class ProductManager {
     print("products = \(products)")
   }
 
-  func readProductsFromBundleJson() -> [Product] {
+  private func readProductsFromBundleJson() -> [Product] {
     if let path = NSBundle.mainBundle().pathForResource("products", ofType: "json") {
       do {
         let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
