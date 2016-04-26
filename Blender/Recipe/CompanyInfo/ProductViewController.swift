@@ -20,7 +20,7 @@ class ProductViewController: UIViewController {
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if let cell = sender as? ProdcutCell {
+    if let cell = sender as? ProductCategoryCell {
       let vc = segue.destinationViewController as! ProductListViewController
       vc.category = cell.title.text!
     }
@@ -35,7 +35,7 @@ extension ProductViewController: UITableViewDataSource {
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("productCell", forIndexPath: indexPath) as! ProdcutCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("product_category_cell", forIndexPath: indexPath) as! ProductCategoryCell
     cell.title.text = product[indexPath.row]
 
     let customBgView = UIView()
@@ -47,7 +47,7 @@ extension ProductViewController: UITableViewDataSource {
 }
 
 
-class ProdcutCell: UITableViewCell {
+class ProductCategoryCell: UITableViewCell {
   @IBOutlet weak var title: UILabel!
 
 }

@@ -29,5 +29,12 @@ class ProductListViewController: UITableViewController {
     return cell
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    if let cell = sender as? ProdcutCell {
+//      let vc = segue.destinationViewController as! ProductListViewController
+//      vc.category = cell.title.text!
+//    }
+  }
+
 }
 

@@ -22,6 +22,7 @@
 		3B42FFBC1CCEFB9800E24D67 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFBB1CCEFB9800E24D67 /* Product.swift */; };
 		3B42FFBE1CCF019300E24D67 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFBD1CCF019300E24D67 /* ProductManager.swift */; };
 		3B42FFC01CCF0ABF00E24D67 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFBF1CCF0ABF00E24D67 /* ProductCell.swift */; };
+		3B42FFC21CCF126800E24D67 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFC11CCF126800E24D67 /* ProductInfoViewController.swift */; };
 		3B48AEB21C747C3500FF4E11 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B48AEB11C747C3500FF4E11 /* data.json */; };
 		3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48AEB41C74920D00FF4E11 /* Recipe.swift */; };
 		3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */; };
@@ -77,6 +78,7 @@
 		3B42FFBB1CCEFB9800E24D67 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3B42FFBD1CCF019300E24D67 /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		3B42FFBF1CCF0ABF00E24D67 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		3B42FFC11CCF126800E24D67 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		3B48AEB11C747C3500FF4E11 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3B48AEB41C74920D00FF4E11 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				3BE624361BFCA6E600B3FD6D /* CompanyInfoViewController.swift */,
 				3BC491761C775DAC00C15742 /* ProductViewController.swift */,
 				3B42FFB71CCEF76D00E24D67 /* ProductListViewController.swift */,
+				3B42FFC11CCF126800E24D67 /* ProductInfoViewController.swift */,
 				3B42FFBD1CCF019300E24D67 /* ProductManager.swift */,
 				3B42FFBF1CCF0ABF00E24D67 /* ProductCell.swift */,
 			);
@@ -476,6 +479,7 @@
 				3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */,
 				3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */,
 				3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */,
+				3B42FFC21CCF126800E24D67 /* ProductInfoViewController.swift in Sources */,
 				3B3410251B572758008C975C /* SWRevealViewController.m in Sources */,
 				3BF48B051B9CE53700490A0B /* BLEDeviceTableViewCell.swift in Sources */,
 				3B0BA6541B582AFE0044103F /* RecipeDetailsViewController.swift in Sources */,
