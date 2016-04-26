@@ -21,10 +21,8 @@ class ProductViewController: UIViewController {
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if let cell = sender as? ProdcutCell {
-      print("cell title = \(cell.title)")
-
       let vc = segue.destinationViewController as! ProductListViewController
-      vc.category = "營養調理機"
+      vc.category = cell.title.text!
     }
   }
 

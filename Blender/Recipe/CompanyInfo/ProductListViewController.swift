@@ -14,5 +14,7 @@ class ProductListViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     print("category = \(category)")
+
+    self.title = category
   }
 }

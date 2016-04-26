@@ -16,7 +16,6 @@ class ProductManager {
 
   init() {
     products = readProductsFromBundleJson()
-    print("products = \(products)")
   }
 
   private func readProductsFromBundleJson() -> [Product] {
