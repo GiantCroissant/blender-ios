@@ -19,6 +19,7 @@
 		3B3410271B57B8BA008C975C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3410261B57B8BA008C975C /* SideMenuViewController.swift */; };
 		3B42FFB81CCEF76D00E24D67 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFB71CCEF76D00E24D67 /* ProductListViewController.swift */; };
 		3B42FFBA1CCEF8E700E24D67 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B42FFB91CCEF8E700E24D67 /* products.json */; };
+		3B42FFBC1CCEFB9800E24D67 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFBB1CCEFB9800E24D67 /* Product.swift */; };
 		3B48AEB21C747C3500FF4E11 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B48AEB11C747C3500FF4E11 /* data.json */; };
 		3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48AEB41C74920D00FF4E11 /* Recipe.swift */; };
 		3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */; };
@@ -71,6 +72,7 @@
 		3B3410261B57B8BA008C975C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		3B42FFB71CCEF76D00E24D67 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		3B42FFB91CCEF8E700E24D67 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		3B42FFBB1CCEFB9800E24D67 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3B48AEB11C747C3500FF4E11 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3B48AEB41C74920D00FF4E11 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				3B48AEB41C74920D00FF4E11 /* Recipe.swift */,
+				3B42FFBB1CCEFB9800E24D67 /* Product.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				3BE624371BFCA6E600B3FD6D /* CompanyInfoViewController.swift in Sources */,
 				3BCBD98E1B81E734002BC353 /* CardView.swift in Sources */,
 				3BD7512D1B4BCDD700CA0134 /* AppDelegate.swift in Sources */,
+				3B42FFBC1CCEFB9800E24D67 /* Product.swift in Sources */,
 				3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */,
 				3BF48AA11B9C55E700490A0B /* OperationSetting.swift in Sources */,
 				3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */,
