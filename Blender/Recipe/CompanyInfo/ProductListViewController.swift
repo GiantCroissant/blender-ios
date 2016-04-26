@@ -20,18 +20,6 @@ class ProductListViewController: UITableViewController {
     print("products = \(products)")
   }
 
-/*
-   @available(iOS 2.0, *)
-   public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-
-   // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-   // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
-   @available(iOS 2.0, *)
-   public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-
- */
-
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return products.count
   }
