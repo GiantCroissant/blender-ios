@@ -19,6 +19,12 @@ class ProductViewController: UIViewController {
     product.append("電鍋")
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if let cell = sender as? ProdcutCell {
+      print("cell title = \(cell.title)")
+    }
+  }
+
 }
 
 extension ProductViewController: UITableViewDataSource {
