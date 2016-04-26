@@ -37,9 +37,10 @@ class ProductListViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell", forIndexPath: indexPath) as! RecipeCell
-    cell.recipe = recipes[indexPath.row]
+    let cell = tableView.dequeueReusableCellWithIdentifier("product_cell", forIndexPath: indexPath) as! ProductCell
+    cell.product = products[indexPath.row]
     return cell
   }
 
 }
+

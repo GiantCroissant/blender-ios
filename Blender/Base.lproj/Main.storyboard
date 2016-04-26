@@ -2323,7 +2323,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                             <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="alG-38-NaW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="product_cell" rowHeight="200" id="alG-38-NaW" customClass="ProductCell" customModule="Blender" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="29" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="alG-38-NaW" id="xHQ-t1-kIa">
@@ -2333,37 +2333,45 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AS-628" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-mi-4Ms">
                                             <rect key="frame" x="58" y="8" width="82" height="184"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="82" id="P9J-ia-qct"/>
+                                                <constraint firstAttribute="width" constant="82" id="TAh-Tk-PGu"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-zv-8k2">
-                                            <rect key="frame" x="180" y="20" width="120" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全方位營養調理機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-zv-8k2">
+                                            <rect key="frame" x="154" y="26" width="150" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="XkV-F6-Xjf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpg-jP-Z0Q">
-                                            <rect key="frame" x="180" y="41" width="120" height="139"/>
+                                            <rect key="frame" x="154" y="60" width="120" height="123"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="139" id="icK-0K-HsA"/>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="139" id="icK-0K-HsA"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="icK-0K-HsA"/>
+                                                </mask>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="uQ3-zv-8k2" secondAttribute="trailing" constant="20" id="9sa-1n-ds3"/>
-                                        <constraint firstItem="vpg-jP-Z0Q" firstAttribute="leading" secondItem="qsU-mi-4Ms" secondAttribute="trailing" constant="40" id="RVh-Av-E9f"/>
-                                        <constraint firstAttribute="bottom" secondItem="qsU-mi-4Ms" secondAttribute="bottom" constant="8" id="XW4-uh-X3y"/>
-                                        <constraint firstAttribute="trailing" secondItem="vpg-jP-Z0Q" secondAttribute="trailing" constant="20" id="Xhc-W2-1mJ"/>
-                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="top" constant="20" id="Y5s-a7-8ZJ"/>
-                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leading" constant="58" id="YiW-0r-3tV"/>
-                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="top" constant="8" id="dcu-Jk-Bup"/>
+                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="leading" secondItem="vpg-jP-Z0Q" secondAttribute="leading" id="0gt-ez-P8X"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="vpg-jP-Z0Q" secondAttribute="trailing" constant="38" id="54L-cf-QFT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="vpg-jP-Z0Q" secondAttribute="bottom" constant="9" id="7h8-A2-g8T"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leadingMargin" constant="50" id="8w8-Xu-RbJ"/>
+                                        <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" constant="8" symbolic="YES" id="Gbp-N5-pHD"/>
+                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="topMargin" constant="18" id="QQo-st-Tsz"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="topMargin" id="QQo-x2-roS"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="bottom" secondItem="xHQ-t1-kIa" secondAttribute="bottomMargin" id="bk9-sW-Cbz"/>
+                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="leading" secondItem="qsU-mi-4Ms" secondAttribute="trailing" constant="14" id="chj-Pc-eaV"/>
                                         <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" id="jVC-Xw-KUs"/>
-                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="leading" secondItem="qsU-mi-4Ms" secondAttribute="trailing" constant="40" id="rOB-n5-WOc"/>
-                                        <constraint firstAttribute="bottom" secondItem="vpg-jP-Z0Q" secondAttribute="bottom" constant="20" id="xtO-fB-OIL"/>
-                                        <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" id="xyR-U7-bBt"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uQ3-zv-8k2" secondAttribute="trailing" constant="8" id="tAQ-J9-18O"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
@@ -2371,6 +2379,10 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptions" destination="vpg-jP-Z0Q" id="7CW-o8-dag"/>
+                                    <outlet property="title" destination="uQ3-zv-8k2" id="bb9-Zw-Ome"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
