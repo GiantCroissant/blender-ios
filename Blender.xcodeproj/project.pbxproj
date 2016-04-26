@@ -20,6 +20,7 @@
 		3B42FFB81CCEF76D00E24D67 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFB71CCEF76D00E24D67 /* ProductListViewController.swift */; };
 		3B42FFBA1CCEF8E700E24D67 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B42FFB91CCEF8E700E24D67 /* products.json */; };
 		3B42FFBC1CCEFB9800E24D67 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFBB1CCEFB9800E24D67 /* Product.swift */; };
+		3B42FFBE1CCF019300E24D67 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B42FFBD1CCF019300E24D67 /* ProductManager.swift */; };
 		3B48AEB21C747C3500FF4E11 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B48AEB11C747C3500FF4E11 /* data.json */; };
 		3B48AEB51C74920D00FF4E11 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48AEB41C74920D00FF4E11 /* Recipe.swift */; };
 		3B5C3EEE1B81AA6B00208458 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */; };
@@ -73,6 +74,7 @@
 		3B42FFB71CCEF76D00E24D67 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		3B42FFB91CCEF8E700E24D67 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		3B42FFBB1CCEFB9800E24D67 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3B42FFBD1CCF019300E24D67 /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		3B48AEB11C747C3500FF4E11 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3B48AEB41C74920D00FF4E11 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3B5C3EED1B81AA6B00208458 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				3BE624361BFCA6E600B3FD6D /* CompanyInfoViewController.swift */,
 				3BC491761C775DAC00C15742 /* ProductViewController.swift */,
 				3B42FFB71CCEF76D00E24D67 /* ProductListViewController.swift */,
+				3B42FFBD1CCF019300E24D67 /* ProductManager.swift */,
 			);
 			name = CompanyInfo;
 			path = Recipe/CompanyInfo;
@@ -453,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC491771C775DAC00C15742 /* ProductViewController.swift in Sources */,
+				3B42FFBE1CCF019300E24D67 /* ProductManager.swift in Sources */,
 				3BF48A9F1B9C542D00490A0B /* ConnectionSetting.swift in Sources */,
 				3BF48B031B9CDF6F00490A0B /* BlenderBluetoothManager.swift in Sources */,
 				3BCBD98C1B81D60D002BC353 /* AYOSegmentedControl.swift in Sources */,

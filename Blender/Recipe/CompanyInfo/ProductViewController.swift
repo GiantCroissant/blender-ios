@@ -22,6 +22,9 @@ class ProductViewController: UIViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if let cell = sender as? ProdcutCell {
       print("cell title = \(cell.title)")
+
+//      RecipeManager.sharedInstance.loadRecentRecipes()
+      ProductManager.sharedInstance.readProductsFromBundleJson()
     }
   }
 
