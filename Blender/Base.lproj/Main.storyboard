@@ -2414,7 +2414,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZy-cD-L60" userLabel="Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="475"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axo-uW-3Vp">
                                                 <rect key="frame" x="136" y="16" width="104" height="232"/>
@@ -2491,7 +2491,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                             <constraint firstAttribute="trailing" secondItem="awV-jJ-8Up" secondAttribute="trailing" constant="16" id="p6D-EY-voq"/>
                                             <constraint firstAttribute="bottom" secondItem="axo-uW-3Vp" secondAttribute="bottom" constant="16" id="tOy-Ve-w2E"/>
                                             <constraint firstItem="axo-uW-3Vp" firstAttribute="top" secondItem="aZy-cD-L60" secondAttribute="top" constant="16" id="ufO-9m-KTL"/>
-                                            <constraint firstAttribute="bottom" secondItem="pX0-XP-334" secondAttribute="bottom" constant="20" id="zJt-kC-K0y"/>
+                                            <constraint firstAttribute="bottom" secondItem="pX0-XP-334" secondAttribute="bottom" constant="16" id="zJt-kC-K0y"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">

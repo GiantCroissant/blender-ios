@@ -24,7 +24,7 @@ class ProductInfoViewController: UIViewController {
     productId.text = product.id
     productInfos.text = product.getInfos()
     productSpecs.text = product.getSpecs()
-    productDescriptions.text = product.getDescriptions()
+    productDescriptions.attributedText = product.getAttributedDescriptions();
   }
 
 }
@@ -48,6 +48,32 @@ extension Product {
     return descriptions.reduce("") {
       return $0 + $1.title + " : " + "\n" + $1.desc + "\n\n"
     }
+  }
+
+  func getAttributedDescriptions() -> NSMutableAttributedString {
+    let descs = NSMutableAttributedString()
+
+    let titleAttrs = [
+      NSForegroundColorAttributeName: UIColor(rgba: "#336900"),
+      NSFontAttributeName: UIFont.systemFontOfSize(14)
+    ]
+
+    let descAttrs = [
+      NSForegroundColorAttributeName: UIColor(rgba: "#4d4d4e"),
+      NSFontAttributeName: UIFont.systemFontOfSize(12)
+    ]
+
+    descriptions.forEach { desc in
+
+      let title = NSAttributedString(string: desc.title + " : \n", attributes: titleAttrs)
+      descs.appendAttributedString(title)
+
+      let content = NSAttributedString(string: desc.desc + "\n\n", attributes: descAttrs)
+      descs.appendAttributedString(content)
+
+    }
+
+    return descs;
   }
 }
 
