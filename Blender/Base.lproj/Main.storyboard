@@ -2330,14 +2330,20 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-mi-4Ms">
-                                            <rect key="frame" x="48" y="8" width="82" height="184"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-mi-4Ms">
+                                            <rect key="frame" x="24" y="8" width="120" height="184"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="82" id="TAh-Tk-PGu"/>
+                                                <constraint firstAttribute="width" constant="120" id="Zla-wR-4rU"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="TAh-Tk-PGu"/>
+                                                </mask>
+                                            </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Titile ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-zv-8k2">
-                                            <rect key="frame" x="144" y="26" width="160" height="26"/>
+                                            <rect key="frame" x="158" y="26" width="146" height="26"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="26" id="XkV-F6-Xjf"/>
                                             </constraints>
@@ -2346,7 +2352,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Descriptions ]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpg-jP-Z0Q">
-                                            <rect key="frame" x="144" y="60" width="130" height="123"/>
+                                            <rect key="frame" x="158" y="60" width="116" height="123"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="139" id="icK-0K-HsA"/>
                                             </constraints>
@@ -2364,7 +2370,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                         <constraint firstItem="uQ3-zv-8k2" firstAttribute="leading" secondItem="vpg-jP-Z0Q" secondAttribute="leading" id="0gt-ez-P8X"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="vpg-jP-Z0Q" secondAttribute="trailing" constant="38" id="54L-cf-QFT"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="vpg-jP-Z0Q" secondAttribute="bottom" constant="9" id="7h8-A2-g8T"/>
-                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leadingMargin" constant="40" id="8w8-Xu-RbJ"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leadingMargin" constant="16" id="8w8-Xu-RbJ"/>
                                         <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" constant="8" symbolic="YES" id="Gbp-N5-pHD"/>
                                         <constraint firstItem="uQ3-zv-8k2" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="topMargin" constant="18" id="QQo-st-Tsz"/>
                                         <constraint firstItem="qsU-mi-4Ms" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="topMargin" id="QQo-x2-roS"/>
@@ -2416,12 +2422,19 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZy-cD-L60" userLabel="Content">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axo-uW-3Vp">
-                                                <rect key="frame" x="136" y="16" width="104" height="232"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axo-uW-3Vp">
+                                                <rect key="frame" x="20" y="16" width="335" height="232"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="104" id="HYD-hF-FCC"/>
                                                     <constraint firstAttribute="height" constant="232" id="Lad-SN-r15"/>
                                                     <constraint firstAttribute="width" constant="104" id="Lzz-HU-Etj"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="HYD-hF-FCC"/>
+                                                        <exclude reference="Lzz-HU-Etj"/>
+                                                    </mask>
+                                                </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ ID ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-AN-X5V">
                                                 <rect key="frame" x="16" y="276" width="343" height="29"/>
@@ -2473,6 +2486,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                             <constraint firstItem="RkL-AN-X5V" firstAttribute="leading" secondItem="aZy-cD-L60" secondAttribute="leading" constant="16" id="7FF-8O-8z1"/>
                                             <constraint firstItem="axo-uW-3Vp" firstAttribute="centerX" secondItem="aZy-cD-L60" secondAttribute="centerX" id="7Tg-jl-vJE"/>
                                             <constraint firstItem="CCF-MH-DPx" firstAttribute="leading" secondItem="aZy-cD-L60" secondAttribute="leading" constant="16" id="8OM-6G-eYf"/>
+                                            <constraint firstItem="axo-uW-3Vp" firstAttribute="leading" secondItem="aZy-cD-L60" secondAttribute="leading" constant="20" id="DNm-gw-LmK"/>
                                             <constraint firstAttribute="trailing" secondItem="RWh-C2-8Fy" secondAttribute="trailing" constant="16" id="GVr-7Z-KIm"/>
                                             <constraint firstItem="CCF-MH-DPx" firstAttribute="top" secondItem="RkL-AN-X5V" secondAttribute="bottom" constant="12" id="Ic1-b9-KWQ"/>
                                             <constraint firstItem="RWh-C2-8Fy" firstAttribute="leading" secondItem="aZy-cD-L60" secondAttribute="leading" constant="16" id="MhL-fE-T3F"/>
@@ -2491,6 +2505,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                             <constraint firstAttribute="trailing" secondItem="awV-jJ-8Up" secondAttribute="trailing" constant="16" id="p6D-EY-voq"/>
                                             <constraint firstAttribute="bottom" secondItem="axo-uW-3Vp" secondAttribute="bottom" constant="16" id="tOy-Ve-w2E"/>
                                             <constraint firstItem="axo-uW-3Vp" firstAttribute="top" secondItem="aZy-cD-L60" secondAttribute="top" constant="16" id="ufO-9m-KTL"/>
+                                            <constraint firstAttribute="trailing" secondItem="axo-uW-3Vp" secondAttribute="trailing" constant="20" id="xMc-UH-70m"/>
                                             <constraint firstAttribute="bottom" secondItem="pX0-XP-334" secondAttribute="bottom" constant="16" id="zJt-kC-K0y"/>
                                         </constraints>
                                         <variation key="default">
