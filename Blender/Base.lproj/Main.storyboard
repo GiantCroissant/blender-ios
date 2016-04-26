@@ -2429,7 +2429,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                                 <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Descriptions ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCF-MH-DPx">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Infos ]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCF-MH-DPx">
                                                 <rect key="frame" x="16" y="317" width="343" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30588235294117649" alpha="0.87" colorSpace="calibratedRGB"/>
@@ -2441,7 +2441,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Specs ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWh-C2-8Fy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Specs ]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWh-C2-8Fy">
                                                 <rect key="frame" x="16" y="376" width="343" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30588235294117649" alpha="0.87" colorSpace="calibratedRGB"/>
@@ -2453,7 +2453,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX0-XP-334">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX0-XP-334">
                                                 <rect key="frame" x="16" y="435" width="343" height="20"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="[ Descriptions ]">
@@ -2520,7 +2520,11 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="productDescriptions" destination="pX0-XP-334" id="K3m-0P-JTv"/>
+                        <outlet property="productId" destination="RkL-AN-X5V" id="avA-SD-gYW"/>
                         <outlet property="productImage" destination="axo-uW-3Vp" id="5hK-wl-Dq0"/>
+                        <outlet property="productInfos" destination="CCF-MH-DPx" id="u3X-1M-h8U"/>
+                        <outlet property="productSpecs" destination="RWh-C2-8Fy" id="5xx-d7-ENj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hej-qX-sgY" userLabel="First Responder" sceneMemberID="firstResponder"/>

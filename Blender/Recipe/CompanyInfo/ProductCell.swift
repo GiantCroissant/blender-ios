@@ -16,7 +16,7 @@ class ProductCell: UITableViewCell {
   var product: Product! {
     didSet {
       title.text = product.title
-      descriptions.text = product.getDescriptions()
+      descriptions.text = product.getDescriptionTitles()
       productImg.image = UIImage(named: product.imageName)
     }
   }
@@ -24,7 +24,7 @@ class ProductCell: UITableViewCell {
 
 
 extension Product {
-  func getDescriptions() -> String {
+  func getDescriptionTitles() -> String {
     return descriptions.reduce("") {
       return $0 + $1.title + "\n"
     }
