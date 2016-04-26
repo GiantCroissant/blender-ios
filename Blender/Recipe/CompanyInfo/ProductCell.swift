@@ -15,7 +15,23 @@ class ProductCell: UITableViewCell {
   var product: Product! {
     didSet {
       title.text = product.title
+      descriptions.text = product.getDescriptions()
+
+      print("product.getDescriptions() = \(product.getDescriptions())")
+
+//      product.descriptions.reduce("", combine: <#T##(T, ProductDescription) throws -> T#>)
+
 //      descriptions.text = product.
     }
   }
 }
+
+
+extension Product {
+  func getDescriptions() -> String {
+    return descriptions.reduce("") {
+      return $0 + $1.title + "\n"
+    }
+  }
+}
+

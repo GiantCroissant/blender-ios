@@ -17,7 +17,6 @@ class ProductListViewController: UITableViewController {
     self.title = category
 
     products = ProductManager.sharedInstance.loadProductsByCategory(category)
-    print("products = \(products)")
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
