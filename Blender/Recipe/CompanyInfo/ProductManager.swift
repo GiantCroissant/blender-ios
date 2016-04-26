@@ -35,5 +35,9 @@ class ProductManager {
 
     return [Product]()
   }
+
+  func loadProductsByCategory(category: String) -> [Product] {
+    return products.filter { $0.category == category }
+  }
   
 }

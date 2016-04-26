@@ -10,11 +10,13 @@ import UIKit
 
 class ProductListViewController: UITableViewController {
   var category: String = ""
+  var products = [Product]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("category = \(category)")
-
     self.title = category
+
+    products = ProductManager.sharedInstance.loadProductsByCategory(category)
+    print("products = \(products)")
   }
 }
