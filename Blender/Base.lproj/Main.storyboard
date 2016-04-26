@@ -2330,14 +2330,14 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AS-628" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-mi-4Ms">
-                                            <rect key="frame" x="58" y="8" width="82" height="184"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-mi-4Ms">
+                                            <rect key="frame" x="48" y="8" width="82" height="184"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="82" id="TAh-Tk-PGu"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全方位營養調理機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-zv-8k2">
-                                            <rect key="frame" x="154" y="26" width="150" height="26"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Titile ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-zv-8k2">
+                                            <rect key="frame" x="144" y="26" width="160" height="26"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="26" id="XkV-F6-Xjf"/>
                                             </constraints>
@@ -2345,8 +2345,8 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                             <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpg-jP-Z0Q">
-                                            <rect key="frame" x="154" y="60" width="120" height="123"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Descriptions ]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpg-jP-Z0Q">
+                                            <rect key="frame" x="144" y="60" width="130" height="123"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="139" id="icK-0K-HsA"/>
                                             </constraints>
@@ -2364,7 +2364,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                         <constraint firstItem="uQ3-zv-8k2" firstAttribute="leading" secondItem="vpg-jP-Z0Q" secondAttribute="leading" id="0gt-ez-P8X"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="vpg-jP-Z0Q" secondAttribute="trailing" constant="38" id="54L-cf-QFT"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="vpg-jP-Z0Q" secondAttribute="bottom" constant="9" id="7h8-A2-g8T"/>
-                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leadingMargin" constant="50" id="8w8-Xu-RbJ"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leadingMargin" constant="40" id="8w8-Xu-RbJ"/>
                                         <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" constant="8" symbolic="YES" id="Gbp-N5-pHD"/>
                                         <constraint firstItem="uQ3-zv-8k2" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="topMargin" constant="18" id="QQo-st-Tsz"/>
                                         <constraint firstItem="qsU-mi-4Ms" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="topMargin" id="QQo-x2-roS"/>
@@ -2381,6 +2381,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptions" destination="vpg-jP-Z0Q" id="7CW-o8-dag"/>
+                                    <outlet property="productImg" destination="qsU-mi-4Ms" id="8oD-CC-Pta"/>
                                     <outlet property="title" destination="uQ3-zv-8k2" id="bb9-Zw-Ome"/>
                                     <segue destination="vjr-h4-mD7" kind="show" id="nfb-uI-Kcv"/>
                                 </connections>
@@ -2479,7 +2480,6 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
     </scenes>
     <resources>
         <image name="1_1" width="480" height="269"/>
-        <image name="AS-628" width="1203" height="2721"/>
         <image name="as_128" width="240" height="240"/>
         <image name="checked_icon" width="53" height="53"/>
         <image name="collect_n" width="44" height="44"/>

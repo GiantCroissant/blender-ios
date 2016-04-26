@@ -24,6 +24,7 @@ struct Product: Glossy {
   let id: String
   let title: String
   let category: String
+  let imageName: String
   let descriptions: [ProductDescription]
   let infos: [ProductInfo]
   let specs: [ProductSpecs]
@@ -32,6 +33,7 @@ struct Product: Glossy {
     self.id = "id" <~~ json ?? ""
     self.title = "title" <~~ json ?? ""
     self.category = "category" <~~ json ?? ""
+    self.imageName = "imageName" <~~ json ?? ""
     self.descriptions = "descriptions" <~~ json ?? [ProductDescription]()
     self.infos = "infos" <~~ json ?? [ProductInfo]()
     self.specs = "specs" <~~ json ?? [ProductSpecs]()
