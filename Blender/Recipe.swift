@@ -23,6 +23,7 @@ struct RecipeCollections: Glossy {
 struct Recipe: Glossy {
   let id: String
   let title: String
+  let category: String
   let image: String
   let viewedCount: Int
   let description: String
@@ -33,6 +34,7 @@ struct Recipe: Glossy {
   init?(json: JSON) {
     self.id = "id" <~~ json ?? ""
     self.title = "title" <~~ json ?? ""
+    self.category = "category" <~~ json ?? ""
     self.image = "image" <~~ json ?? ""
     self.viewedCount = "viewedCount" <~~ json ?? 0
     self.description = "description" <~~ json ?? ""

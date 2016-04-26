@@ -53,11 +53,13 @@ class RecipeTableViewController: UITableViewController {
 class RecipeCell: UITableViewCell {
   @IBOutlet weak var recipeImage: UIImageView!
   @IBOutlet weak var title: UILabel!
+  @IBOutlet weak var category: UILabel!
 
   var recipe: Recipe! {
     didSet {
       recipeImage.image = UIImage(named: recipe.image)
       title.text = recipe.title
+      category.text = recipe.category
     }
   }
 
