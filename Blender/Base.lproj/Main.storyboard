@@ -2424,7 +2424,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.69019607839999997" green="0.69411764710000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="axo-uW-3Vp" firstAttribute="centerX" secondItem="aZy-cD-L60" secondAttribute="centerX" id="7Tg-jl-vJE"/>
                                             <constraint firstAttribute="height" constant="1000" id="Pev-re-yT7"/>

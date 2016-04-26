@@ -30,10 +30,10 @@ class ProductListViewController: UITableViewController {
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//    if let cell = sender as? ProdcutCell {
-//      let vc = segue.destinationViewController as! ProductListViewController
-//      vc.category = cell.title.text!
-//    }
+    if let cell = sender as? ProductCell {
+      let vc = segue.destinationViewController as! ProductInfoViewController
+      vc.product = cell.product
+    }
   }
 
 }

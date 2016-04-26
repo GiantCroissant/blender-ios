@@ -15,6 +15,8 @@ class ProductInfoViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    productImage.image = UIImage(named: product.imageName)
   }
 
 }
