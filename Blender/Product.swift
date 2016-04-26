@@ -68,6 +68,63 @@ struct Product: Glossy {
   let descriptions: [ProductDescription]
   let infos: [ProductInfo]
   let specs: [ProductSpecs]
+
+  init?(json: JSON) {
+    self.id = "id" <~~ json ?? ""
+    self.title = "title" <~~ json ?? ""
+    self.category = "category" <~~ json ?? ""
+//    self.image = "image" <~~ json ?? ""
+//    self.viewedCount = "viewedCount" <~~ json ?? 0
+//    self.description = "description" <~~ json ?? ""
+//    self.videoCode = "videoCode" <~~ json ?? ""
+//    self.steps = "steps" <~~ json ?? [Step]()
+//    self.ingredients = "ingredients" <~~ json ?? [Ingredient]()
+  }
+
+  func toJSON() -> JSON? {
+    return jsonify([])
+  }
 }
 
+struct ProductDescription: Glossy {
+  let title: String
+  let desc: String
+
+  init?(json: JSON) {
+    self.title = "title" <~~ json ?? ""
+    self.desc = "desc" <~~ json ?? ""
+  }
+
+  func toJSON() -> JSON? {
+    return jsonify([])
+  }
+}
+
+struct ProductInfo: Glossy {
+  let title: String
+  let desc: String
+
+  init?(json: JSON) {
+    self.title = "title" <~~ json ?? ""
+    self.desc = "desc" <~~ json ?? ""
+  }
+
+  func toJSON() -> JSON? {
+    return jsonify([])
+  }
+}
+
+struct ProductSpecs: Glossy {
+  let title: String
+  let desc: String
+
+  init?(json: JSON) {
+    self.title = "title" <~~ json ?? ""
+    self.desc = "desc" <~~ json ?? ""
+  }
+
+  func toJSON() -> JSON? {
+    return jsonify([])
+  }
+}
 
