@@ -2313,7 +2313,7 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
         <scene sceneID="Ajg-gT-RRn">
             <objects>
                 <tableViewController title="專業養生調理機" id="Lcl-37-1qg" customClass="ProductListViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1r2-2w-Lh2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="203" sectionHeaderHeight="28" sectionFooterHeight="28" id="1r2-2w-Lh2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2322,60 +2322,58 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
-                        <sections>
-                            <tableViewSection id="aKa-3E-bIN">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="5rc-kA-AEm">
-                                        <rect key="frame" x="0.0" y="1" width="320" height="160"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5rc-kA-AEm" id="2qs-ye-PCV">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="as_128" translatesAutoresizingMaskIntoConstraints="NO" id="hcb-BB-ODZ">
-                                                    <rect key="frame" x="16" y="16" width="128" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="hcb-BB-ODZ" secondAttribute="height" multiplier="1:1" id="dNt-Da-sLL"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康食品調製機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-ry-4Fm">
-                                                    <rect key="frame" x="144" y="68" width="140" height="24"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ry6-e1-PRL">
-                                                    <rect key="frame" x="0.0" y="159" width="320" height="1"/>
-                                                    <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="ZAu-rm-ovh"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="alG-38-NaW">
+                                <rect key="frame" x="0.0" y="29" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="alG-38-NaW" id="xHQ-t1-kIa">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AS-628" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-mi-4Ms">
+                                            <rect key="frame" x="58" y="8" width="82" height="184"/>
                                             <constraints>
-                                                <constraint firstItem="hcb-BB-ODZ" firstAttribute="top" secondItem="2qs-ye-PCV" secondAttribute="top" constant="16" id="DDZ-HV-HU4"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ry6-e1-PRL" secondAttribute="bottom" id="IIk-iy-h0h"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ry6-e1-PRL" secondAttribute="trailing" id="JEi-VV-zzG"/>
-                                                <constraint firstItem="hcb-BB-ODZ" firstAttribute="leading" secondItem="2qs-ye-PCV" secondAttribute="leading" constant="16" id="Tb1-dE-1TR"/>
-                                                <constraint firstAttribute="bottom" secondItem="hcb-BB-ODZ" secondAttribute="bottom" constant="16" id="beH-6Q-jXB"/>
-                                                <constraint firstItem="Ry6-e1-PRL" firstAttribute="leading" secondItem="2qs-ye-PCV" secondAttribute="leading" id="e5L-lT-4r0"/>
-                                                <constraint firstItem="dn1-ry-4Fm" firstAttribute="leading" secondItem="hcb-BB-ODZ" secondAttribute="trailing" id="eOe-oh-Wja"/>
-                                                <constraint firstItem="dn1-ry-4Fm" firstAttribute="centerY" secondItem="hcb-BB-ODZ" secondAttribute="centerY" id="ttt-lw-1XF"/>
-                                                <constraint firstItem="dn1-ry-4Fm" firstAttribute="top" secondItem="hcb-BB-ODZ" secondAttribute="top" id="wb0-Hf-w8S"/>
+                                                <constraint firstAttribute="width" constant="82" id="P9J-ia-qct"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="wb0-Hf-w8S"/>
-                                                </mask>
-                                            </variation>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="vjr-h4-mD7" kind="show" id="4ZL-fp-LPl"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ3-zv-8k2">
+                                            <rect key="frame" x="180" y="20" width="120" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpg-jP-Z0Q">
+                                            <rect key="frame" x="180" y="41" width="120" height="139"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="139" id="icK-0K-HsA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="uQ3-zv-8k2" secondAttribute="trailing" constant="20" id="9sa-1n-ds3"/>
+                                        <constraint firstItem="vpg-jP-Z0Q" firstAttribute="leading" secondItem="qsU-mi-4Ms" secondAttribute="trailing" constant="40" id="RVh-Av-E9f"/>
+                                        <constraint firstAttribute="bottom" secondItem="qsU-mi-4Ms" secondAttribute="bottom" constant="8" id="XW4-uh-X3y"/>
+                                        <constraint firstAttribute="trailing" secondItem="vpg-jP-Z0Q" secondAttribute="trailing" constant="20" id="Xhc-W2-1mJ"/>
+                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="top" constant="20" id="Y5s-a7-8ZJ"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="leading" secondItem="xHQ-t1-kIa" secondAttribute="leading" constant="58" id="YiW-0r-3tV"/>
+                                        <constraint firstItem="qsU-mi-4Ms" firstAttribute="top" secondItem="xHQ-t1-kIa" secondAttribute="top" constant="8" id="dcu-Jk-Bup"/>
+                                        <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" id="jVC-Xw-KUs"/>
+                                        <constraint firstItem="uQ3-zv-8k2" firstAttribute="leading" secondItem="qsU-mi-4Ms" secondAttribute="trailing" constant="40" id="rOB-n5-WOc"/>
+                                        <constraint firstAttribute="bottom" secondItem="vpg-jP-Z0Q" secondAttribute="bottom" constant="20" id="xtO-fB-OIL"/>
+                                        <constraint firstItem="vpg-jP-Z0Q" firstAttribute="top" secondItem="uQ3-zv-8k2" secondAttribute="bottom" id="xyR-U7-bBt"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="jVC-Xw-KUs"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="Lcl-37-1qg" id="Ryj-pK-1fF"/>
                             <outlet property="delegate" destination="Lcl-37-1qg" id="5YW-Sh-9Yh"/>
@@ -2395,17 +2393,17 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                         <viewControllerLayoutGuide type="bottom" id="X8x-Hh-7nK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uad-if-TRL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="as_128" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-6R-NDp">
-                                <rect key="frame" x="80" y="24" width="160" height="160"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="as_128" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-6R-NDp">
+                                <rect key="frame" x="220" y="24" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="MK7-p4-VVb"/>
                                     <constraint firstAttribute="height" constant="160" id="Mz1-K7-KFj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AS-128 ( 灰 )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwW-zH-GPD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AS-128 ( 灰 )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwW-zH-GPD">
                                 <rect key="frame" x="24" y="208" width="109" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.41176470590000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2463,11 +2461,12 @@ ECFA 於2011年1月生效，本公司立即響應，並將擁有大陸CCC認證�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NWz-sB-P4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2277" y="2625"/>
+            <point key="canvasLocation" x="2429" y="2645"/>
         </scene>
     </scenes>
     <resources>
         <image name="1_1" width="480" height="269"/>
+        <image name="AS-628" width="1203" height="2721"/>
         <image name="as_128" width="240" height="240"/>
         <image name="checked_icon" width="53" height="53"/>
         <image name="collect_n" width="44" height="44"/>
